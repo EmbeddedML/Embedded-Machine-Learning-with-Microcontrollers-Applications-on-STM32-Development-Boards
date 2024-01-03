@@ -1,0 +1,9 @@
+conda activate deneme_env
+python export_scripts/export_cls_bayes.py
+python export_scripts/export_cls_dt.py
+python export_scripts/export_cls_knn.py
+python export_scripts/export_cls_svm.py
+python export_scripts/export_reg_dt.py
+python export_scripts/export_reg_knn.py
+python export_scripts/export_reg_lr.py
+python export_scripts/export_reg_pr.py
