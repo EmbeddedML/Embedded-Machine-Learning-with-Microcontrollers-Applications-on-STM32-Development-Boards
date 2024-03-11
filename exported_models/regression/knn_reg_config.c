@@ -1,4 +1,4 @@
-#include "knn_config.h"
+#include "knn_reg_config.h"
 const float DATA[NUM_SAMPLES][NUM_FEATURES] = {{0.  },
  {0.05},
  {0.1 },

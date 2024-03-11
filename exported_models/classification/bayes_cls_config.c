@@ -1,4 +1,4 @@
-#include "bayes_config.h"
+#include "bayes_cls_config.h"
 float MEANS[NUM_CLASSES][NUM_FEATURES] = {{-2.04824109,-1.90133108},
  { 2.00999565, 1.99583551}};
 const float CLASS_PRIORS[NUM_CLASSES] = {0.50375,0.49625};

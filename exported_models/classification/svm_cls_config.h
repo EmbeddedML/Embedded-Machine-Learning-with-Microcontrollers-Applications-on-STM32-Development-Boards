@@ -1,9 +1,9 @@
-#ifndef SVM_CONFIG_H_INCLUDED
-#define SVM_CONFIG_H_INCLUDED
-#define NUM_CLASSES 3
-#define NUM_INTERCEPTS 3
+#ifndef SVM_CLS_CONFIG_H_INCLUDED
+#define SVM_CLS_CONFIG_H_INCLUDED
+#define NUM_CLASSES 2
+#define NUM_INTERCEPTS 1
 #define NUM_FEATURES 2
-#define NUM_SV 300
+#define NUM_SV 293
 enum KernelType{
 	LINEAR,
 	POLY,
@@ -16,4 +16,5 @@ extern const float w_sum[NUM_CLASSES + 1];
 extern const float svm_gamma;
 extern const float coef0;
 extern const int degree;
+extern const enum KernelType type;
 #endif

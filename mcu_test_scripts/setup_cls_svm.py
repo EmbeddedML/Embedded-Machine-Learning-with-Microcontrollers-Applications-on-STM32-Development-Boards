@@ -3,13 +3,12 @@ import numpy as np
 from sklearn2c import SVMClassifier
 import py_serial 
 
-py_serial.SERIAL_Init("COM3")
+py_serial.SERIAL_Init("COM6")
 
-test_samples = np.load(osp.join("classification_data","cls_test_samples"))
-test_labels = np.load(osp.join("classification_data","cls_test_labels"))
+test_samples = np.load(osp.join("classification_data","cls_test_samples.npy"))
+test_labels = np.load(osp.join("classification_data","cls_test_labels.npy"))
 
-svm = SVMClassifier()
-svm.load(osp.join("classification_data","SVM_classifier.joblib"))
+svm = SVMClassifier.load(osp.join("classification_models", "svm_classifier.joblib"))
 
 i = 0
 while 1:
@@ -26,7 +25,7 @@ while 1:
             i = 0
         py_serial.SERIAL_Write(inputs)
 
-    pcout = svm.inference(np.reshape(inputs, (1, datalength)))
+    pcout = svm.predict(np.reshape(inputs, (1, datalength)))
     rqType, datalength, dataType = py_serial.SERIAL_PollForRequest()
     if rqType == py_serial.MCU_WRITES:
         mcuout = py_serial.SERIAL_Read()
