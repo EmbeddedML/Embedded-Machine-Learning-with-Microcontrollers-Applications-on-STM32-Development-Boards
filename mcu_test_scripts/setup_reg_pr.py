@@ -5,12 +5,8 @@ import py_serial
 
 
 py_serial.SERIAL_Init("COM3")
-
-train_samples = np.load(osp.join("regression_data","reg_train_samples"))
-train_labels = np.load(osp.join("regression_data","reg_train_labels"))
-
-poly = PolynomialRegressor(deg = 3)
-poly.load(osp.join("regression_models","poly_reg.joblib"))
+train_samples = np.load(osp.join("regression_data", "reg_samples.npy"))
+poly = PolynomialRegressor.load(osp.join("regression_models","poly_regressor_sine.joblib"))
 
 i = 0
 while 1:
@@ -29,7 +25,7 @@ while 1:
         py_serial.SERIAL_Write(inputs)
 
 
-    pcout = poly.inference(inputs)
+    pcout = poly.predict(inputs)
     rqType, datalength, dataType = py_serial.SERIAL_PollForRequest()
     if rqType == py_serial.MCU_WRITES:
         mcuout = py_serial.SERIAL_Read()

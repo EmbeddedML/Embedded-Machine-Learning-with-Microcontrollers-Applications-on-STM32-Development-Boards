@@ -3,15 +3,14 @@ import numpy as np
 from sklearn2c import KNNClassifier
 import py_serial 
 
-py_serial.SERIAL_Init("COM3")
+py_serial.SERIAL_Init("COM6")
 
-test_samples = np.load(osp.join("classification_data","cls_test_samples"))
-test_labels = np.load(osp.join("classification_data","cls_test_labels"))
+test_samples = np.load(osp.join("classification_data","cls_test_samples.npy"))
+test_labels = np.load(osp.join("classification_data","cls_test_labels.npy"))
 
-knn = KNNClassifier()
-knn.load(osp.join("classification_data","KNN_classifier.joblib"))
-
+knn = KNNClassifier.load(osp.join("classification_models", "KNN_classifier.joblib"))
 i = 0
+
 while 1:
     rqType, datalength, dataType = py_serial.SERIAL_PollForRequest()
     if rqType == py_serial.MCU_WRITES:
@@ -26,7 +25,7 @@ while 1:
             i = 0
         py_serial.SERIAL_Write(inputs)
 
-    pcout = knn.inference(np.reshape(inputs, (1, datalength)))
+    pcout = knn.predict(np.reshape(inputs, (1, datalength)))
     rqType, datalength, dataType = py_serial.SERIAL_PollForRequest()
     if rqType == py_serial.MCU_WRITES:
         mcuout = py_serial.SERIAL_Read()

@@ -3,14 +3,9 @@ import numpy as np
 from sklearn2c import DTRegressor
 import py_serial
 
-
-py_serial.SERIAL_Init("COM3")
-
-train_samples = np.load(osp.join("regression_data", "reg_train_samples"))
-train_labels = np.load(osp.join("regression_data", "reg_train_labels"))
-
-dtr = DTRegressor()
-dtr.load(osp.join("regression_models", "dtr.joblib"))
+py_serial.SERIAL_Init("COM6")
+train_samples = np.load(osp.join("regression_data", "reg_samples.npy"))
+dtr = DTRegressor().load(osp.join("regression_models", "dt_regressor_sine.joblib"))
 
 i = 0
 while 1:
@@ -28,7 +23,7 @@ while 1:
             i = 0
         py_serial.SERIAL_Write(inputs)
 
-    pcout = dtr.inference(inputs)
+    pcout = dtr.predict(inputs)
     rqType, datalength, dataType = py_serial.SERIAL_PollForRequest()
     if rqType == py_serial.MCU_WRITES:
         mcuout = py_serial.SERIAL_Read()

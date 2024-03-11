@@ -7,9 +7,9 @@ train_line_values = np.load(osp.join("regression_data", "reg_line_values.npy"))
 train_sine_values = np.load(osp.join("regression_data", "reg_sine_values.npy"))
 
 line_dtr_model = DTRegressor()
-dtr_save_path = osp.join("regression_models", "dtr_line_reg.joblib")
+dtr_save_path = osp.join("regression_models", "dt_regressor_line.joblib")
 line_dtr_model.train(train_samples, train_line_values, dtr_save_path)
 
 sine_dtr_model = DTRegressor()
-dtr_save_path = osp.join("regression_models", "dtr_sine_reg.joblib")
+dtr_save_path = osp.join("regression_models", "dt_regressor_sine.joblib")
 sine_dtr_model.train(train_samples, train_sine_values, dtr_save_path)

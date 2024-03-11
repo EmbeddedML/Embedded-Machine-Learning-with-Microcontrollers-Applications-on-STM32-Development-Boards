@@ -4,13 +4,11 @@ from sklearn2c import LinearRegressor
 import py_serial
 
 
-py_serial.SERIAL_Init("COM3")
+py_serial.SERIAL_Init("COM6")
 
-train_samples = np.load(osp.join("regression_data","reg_train_samples"))
-train_labels = np.load(osp.join("regression_data","reg_train_labels"))
+train_samples = np.load(osp.join("regression_data", "reg_samples.npy"))
+linear = LinearRegressor().load(osp.join("regression_models","linear_regressor_sine.joblib"))
 
-linear = LinearRegressor()
-linear.load(osp.join("regression_models","linear_reg.joblib"))
 
 i = 0
 while 1:
@@ -29,7 +27,7 @@ while 1:
         py_serial.SERIAL_Write(inputs)
 
 
-    pcout = linear.inference(np.reshape(inputs, (1, datalength)))
+    pcout = linear.predict(np.reshape(inputs, (1, datalength)))
     rqType, datalength, dataType = py_serial.SERIAL_PollForRequest()
     if rqType == py_serial.MCU_WRITES:
         mcuout = py_serial.SERIAL_Read()

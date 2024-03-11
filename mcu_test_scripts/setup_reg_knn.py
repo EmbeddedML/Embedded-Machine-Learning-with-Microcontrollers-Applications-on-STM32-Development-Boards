@@ -5,12 +5,8 @@ import py_serial
 
 
 py_serial.SERIAL_Init("COM6")
-
-train_samples = np.load(osp.join("regression_data","reg_train_samples"))
-train_labels = np.load(osp.join("regression_data","reg_train_labels"))
-
-knn = KNNRegressor()
-knn.load(osp.join("regression_models","knn_reg.joblib"))
+train_samples = np.load(osp.join("regression_data", "reg_samples.npy"))
+knn = KNNRegressor().load(osp.join("regression_models","knn_regressor_sine.joblib"))
 
 i = 0
 while 1:
@@ -29,7 +25,7 @@ while 1:
         py_serial.SERIAL_Write(inputs)
 
 
-    pcout = knn.inference(inputs)
+    pcout = knn.predict(inputs)
     rqType, datalength, dataType = py_serial.SERIAL_PollForRequest()
     if rqType == py_serial.MCU_WRITES:
         mcuout = py_serial.SERIAL_Read()
