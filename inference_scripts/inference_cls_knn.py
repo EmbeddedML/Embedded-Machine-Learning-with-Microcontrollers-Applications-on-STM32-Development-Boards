@@ -5,6 +5,6 @@ from sklearn2c import KNNClassifier
 test_samples = np.load(osp.join("classification_data","cls_test_samples.npy"))
 test_labels = np.load(osp.join("classification_data","cls_test_labels.npy"))
 
-knn = KNNClassifier.load(osp.join("classification_models", "KNN_classifier.joblib"))
+knn = KNNClassifier.load(osp.join("classification_models", "knn_classifier.joblib"))
 predictions = knn.predict(test_samples)
 print(predictions)

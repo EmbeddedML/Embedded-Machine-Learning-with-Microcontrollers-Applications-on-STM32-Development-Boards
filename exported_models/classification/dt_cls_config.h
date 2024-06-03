@@ -1,6 +1,6 @@
 #ifndef DT_CLS_CONFIG_H_INCLUDED
 #define DT_CLS_CONFIG_H_INCLUDED
-#define NUM_NODES 285
+#define NUM_NODES 287
 #define NUM_FEATURES 2
 #define NUM_CLASSES 2
 extern const int LEFT_CHILDREN[NUM_NODES];

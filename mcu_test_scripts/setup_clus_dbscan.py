@@ -1,18 +1,12 @@
 import os.path as osp
-from sklearn.datasets import make_blobs
 from sklearn2c.clustering import Dbscan
-from sklearn.model_selection import train_test_split
 import py_serial
 import numpy as np
 
-py_serial.SERIAL_Init("COM3")
+py_serial.SERIAL_Init("COM11")
 
-#test_samples = np.load(osp.join("classification_data","cls_test_samples.npy"))
-#test_labels = np.load(osp.join("classification_data","cls_test_labels.npy"))
-samples, _ = make_blobs(200, 2, centers = 3, random_state= 42)
-train_samples, test_samples = train_test_split(
-    samples, test_size=0.2, random_state=42
-)
+test_samples = np.load(osp.join("classification_data","cls_test_samples.npy"))
+test_labels = np.load(osp.join("classification_data","cls_test_labels.npy"))
 MODELS_DIR = "clustering_models"
 
 dbscan_model_dir = osp.join(MODELS_DIR, "dbscan_clustering.joblib")

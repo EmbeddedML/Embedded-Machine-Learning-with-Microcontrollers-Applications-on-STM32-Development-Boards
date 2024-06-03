@@ -3,12 +3,12 @@ import numpy as np
 from sklearn2c import KNNClassifier
 import py_serial 
 
-py_serial.SERIAL_Init("COM6")
+py_serial.SERIAL_Init("COM11")
 
 test_samples = np.load(osp.join("classification_data","cls_test_samples.npy"))
 test_labels = np.load(osp.join("classification_data","cls_test_labels.npy"))
 
-knn = KNNClassifier.load(osp.join("classification_models", "KNN_classifier.joblib"))
+knn = KNNClassifier.load(osp.join("classification_models", "knn_classifier.joblib"))
 i = 0
 
 while 1:

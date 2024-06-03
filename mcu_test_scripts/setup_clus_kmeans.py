@@ -1,9 +1,9 @@
 import os.path as osp
 import numpy as np
-from sklearn2c.clustering import (Kmeans)
+from sklearn2c.clustering import Kmeans
 import py_serial 
 
-py_serial.SERIAL_Init("COM3")
+py_serial.SERIAL_Init("COM11")
 
 test_samples = np.load(osp.join("classification_data","cls_test_samples.npy"))
 test_labels = np.load(osp.join("classification_data","cls_test_labels.npy"))

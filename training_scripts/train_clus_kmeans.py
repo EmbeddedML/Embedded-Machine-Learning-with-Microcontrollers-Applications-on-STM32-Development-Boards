@@ -1,7 +1,6 @@
 import os.path as osp
 import numpy as np
-import os.path as osp
-from sklearn2c.clustering import (Kmeans)
+from sklearn2c.clustering import Kmeans
 
 train_samples = np.load(osp.join("classification_data", "cls_train_samples.npy"))
 train_labels = np.load(osp.join("classification_data", "cls_train_labels.npy"))

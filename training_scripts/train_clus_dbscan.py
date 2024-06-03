@@ -1,14 +1,10 @@
-import os.path as osp
-from sklearn.datasets import make_blobs
+import numpy as np
+import os.path as osp 
 from sklearn2c.clustering import Dbscan
-from sklearn.model_selection import train_test_split
 
-samples, _ = make_blobs(200, 2, centers = 3, random_state= 42)
-train_samples, test_samples = train_test_split(
-    samples, test_size=0.2, random_state=42
-)
-MODELS_DIR = "clustering_models"
+train_samples = np.load(osp.join("classification_data", "cls_train_samples.npy"))
+train_labels = np.load(osp.join("classification_data", "cls_train_labels.npy"))
 
 dbscan = Dbscan(eps = 1)
-dbscan_model_dir = osp.join(MODELS_DIR, "dbscan_clustering.joblib")
-dbscan.train(train_samples, save_path=dbscan_model_dir)
+model_save_path = osp.join("clustering_models", "dbscan_clustering.joblib")
+dbscan.train(train_samples, model_save_path)
