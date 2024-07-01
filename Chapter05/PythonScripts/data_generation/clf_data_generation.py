@@ -13,7 +13,6 @@ def Gaussian2D(mean, L, theta, data_size):
     cov = R @ L @ R.T
     return np.random.multivariate_normal(mean, cov, data_size)
 
-
 mean = [-2, -2]
 E = np.diag([1, 10])
 theta = np.radians(45)
@@ -21,7 +20,6 @@ theta = np.radians(45)
 class1_samples = Gaussian2D(mean, E, theta, DATA_SIZE)
 
 mean = [2, 2]
-E = np.diag([1, 10])
 theta = np.radians(-45)
 
 class2_samples = Gaussian2D(mean, E, theta, DATA_SIZE)
