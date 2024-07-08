@@ -1,8 +1,0 @@
-#ifndef KNN_REG_CONFIG_H_INCLUDED
-#define KNN_REG_CONFIG_H_INCLUDED
-#define NUM_NEIGHBORS 5
-#define NUM_FEATURES 1
-#define NUM_SAMPLES 200
-extern const float DATA[NUM_SAMPLES][NUM_FEATURES];
-extern const float DATA_VALUES[NUM_SAMPLES];
-#endif
