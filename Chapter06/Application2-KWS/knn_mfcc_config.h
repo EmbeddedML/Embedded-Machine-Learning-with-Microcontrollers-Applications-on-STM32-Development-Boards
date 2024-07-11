@@ -1,0 +1,10 @@
+#ifndef KNN_MFCC_CONFIG_H_INCLUDED
+#define KNN_MFCC_CONFIG_H_INCLUDED
+#define NUM_CLASSES 10
+#define NUM_NEIGHBORS 3
+#define NUM_FEATURES 26
+#define NUM_SAMPLES 2500
+extern char* LABELS[NUM_CLASSES];
+extern const float DATA[NUM_SAMPLES][NUM_FEATURES];
+extern const int DATA_LABELS[NUM_SAMPLES];
+#endif
