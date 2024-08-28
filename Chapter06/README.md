@@ -3,8 +3,8 @@
 ## Listings
 <center>
 
-| Description  | Code    |
-| -----------------------------------------------------------| ----------------------------------------------------------------- |
+| Description                                                | Code                                                              |
+| ---------------------------------------------------------- | ----------------------------------------------------------------- |
 | Training the Bayes classifier                              | [![Code](../Images/py.png)](PythonScripts/train_cls_bayes.py)     |
 | Inference with the Bayes classifier in Python              | [![Code](../Images/py.png)](PythonScripts/inference_cls_bayes.py) |
 | Exporting the Bayes classifier                             | [![Code](../Images/py.png)](PythonScripts/export_cls_bayes.py)    |
