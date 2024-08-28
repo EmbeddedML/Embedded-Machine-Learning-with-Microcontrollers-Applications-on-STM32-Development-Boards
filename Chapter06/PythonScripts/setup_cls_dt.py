@@ -1,14 +1,17 @@
-import os.path as osp
+import os
+import sys
 import numpy as np
 from sklearn2c import DTClassifier
+sys.path.append("Common")
 import py_serial 
 
+dirname = os.path.dirname
 py_serial.SERIAL_Init("COM6")
 
-test_samples = np.load(osp.join("classification_data","cls_test_samples.npy"))
-test_labels = np.load(osp.join("classification_data","cls_test_labels.npy"))
+test_samples = np.load(os.path.join(dirname(__file__), "classification_data","cls_test_samples.npy"))
+test_labels = np.load(os.path.join(dirname(__file__), "classification_data","cls_test_labels.npy"))
 
-dtc = DTClassifier.load(osp.join("classification_models", "dt_classifier.joblib"))
+dtc = DTClassifier.load(os.path.join(dirname(__file__), "classification_models", "dt_classifier.joblib"))
 
 i = 0
 while 1:

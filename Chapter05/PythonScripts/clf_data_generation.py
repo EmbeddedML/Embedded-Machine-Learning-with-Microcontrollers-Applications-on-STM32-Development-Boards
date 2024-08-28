@@ -1,17 +1,21 @@
-import os.path as osp
+import os
 import numpy as np
 from sklearn.model_selection import train_test_split
 
 np.random.seed(42)  # For reproducibility
-
+dirname = os.path.dirname
+CLASSIFICATION_DATA_DIR = os.path.join(
+    dirname(__file__), "classification_data"
+)
 DATA_SIZE = 1000
-CLASSIFICATION_DATA_DIR = "classification_data"
+
 
 def Gaussian2D(mean, L, theta, data_size):
     c, s = np.cos(theta), np.sin(theta)
     R = np.array([[c, -s], [s, c]])
     cov = R @ L @ R.T
     return np.random.multivariate_normal(mean, cov, data_size)
+
 
 mean = [-2, -2]
 E = np.diag([1, 10])
@@ -30,7 +34,7 @@ train_samples, test_samples, train_labels, test_labels = train_test_split(
     samples, labels, test_size=0.2
 )
 
-np.save(osp.join(CLASSIFICATION_DATA_DIR, "cls_train_samples.npy"), train_samples)
-np.save(osp.join(CLASSIFICATION_DATA_DIR, "cls_test_samples.npy"), test_samples)
-np.save(osp.join(CLASSIFICATION_DATA_DIR, "cls_train_labels.npy"), train_labels)
-np.save(osp.join(CLASSIFICATION_DATA_DIR, "cls_test_labels.npy"), test_labels)
+np.save(os.path.join(CLASSIFICATION_DATA_DIR, "cls_train_samples.npy"), train_samples)
+np.save(os.path.join(CLASSIFICATION_DATA_DIR, "cls_test_samples.npy"), test_samples)
+np.save(os.path.join(CLASSIFICATION_DATA_DIR, "cls_train_labels.npy"), train_labels)
+np.save(os.path.join(CLASSIFICATION_DATA_DIR, "cls_test_labels.npy"), test_labels)

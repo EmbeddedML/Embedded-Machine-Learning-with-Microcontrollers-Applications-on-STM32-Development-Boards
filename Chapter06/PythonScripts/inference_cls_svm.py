@@ -1,10 +1,12 @@
-import os.path as osp
+import os
 import numpy as np
 from sklearn2c import SVMClassifier
 
-test_samples = np.load(osp.join("classification_data","cls_test_samples.npy"))
-test_labels = np.load(osp.join("classification_data","cls_test_labels.npy"))
+dirname = os.path.dirname
 
-svc = SVMClassifier.load(osp.join("classification_models", "svm_classifier.joblib"))
+test_samples = np.load(os.path.join(dirname(__file__), "classification_data","cls_test_samples.npy"))
+test_labels = np.load(os.path.join(dirname(__file__), "classification_data","cls_test_labels.npy"))
+
+svc = SVMClassifier.load(os.path.join(dirname(__file__), "classification_models", "svm_classifier.joblib"))
 predictions = svc.predict(test_samples)
 print(predictions)

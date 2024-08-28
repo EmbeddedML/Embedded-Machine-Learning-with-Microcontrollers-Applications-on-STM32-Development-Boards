@@ -3,7 +3,7 @@ from sklearn.preprocessing import StandardScaler
 
 np.random.seed(42)  # For reproducibility
 
-def Gaussian2D(mean,E,theta,data_size):
+def Gaussian2D(mean,L,theta,data_size):
     c, s = np.cos(theta), np.sin(theta)
     R = np.array([[c, -s], [s, c]])
     cov=R@L@R.T

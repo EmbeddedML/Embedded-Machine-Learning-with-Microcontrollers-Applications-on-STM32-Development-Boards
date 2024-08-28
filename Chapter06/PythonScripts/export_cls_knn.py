@@ -1,7 +1,9 @@
-import os.path as osp
+import os
 from sklearn2c import KNNClassifier
 
-model_path = osp.join("classification_models","knn_classifier.joblib")
-export_path = osp.join("exported_models","classification","knn_cls_config")
+dirname = os.path.dirname
+
+model_path = os.path.join(dirname(__file__),"classification_models","knn_classifier.joblib")
+export_path = os.path.join(dirname(__file__), "exported_models","knn_cls_config")
 knn = KNNClassifier.load(model_path)
 knn.export(export_path)

@@ -1,9 +1,9 @@
-import os.path as osp
+import os
 from data_utils import read_data
 from feature_utils import create_features
 
 
-DATA_PATH = osp.join("WISDM_ar_v1.1", "WISDM_ar_v1.1_raw.txt")
+DATA_PATH = os.path.join("WISDM_ar_v1.1", "WISDM_ar_v1.1_raw.txt")
 TIME_PERIODS = 80
 STEP_DISTANCE = 40
 data_df = read_data(DATA_PATH)

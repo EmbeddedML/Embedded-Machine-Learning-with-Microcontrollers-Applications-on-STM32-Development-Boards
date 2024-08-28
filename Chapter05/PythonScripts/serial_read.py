@@ -1,3 +1,5 @@
+import sys
+sys.path.append("Common")
 import py_serial
 
 py_serial.SERIAL_Init("COM4")

@@ -1,6 +1,6 @@
 #include "knn_cls_config.h"
-char* LABELS[NUM_CLASSES] = {0,1};
-const float DATA[NUM_SAMPLES][NUM_FEATURES] = {{-2.70255383e+00,-4.72532919e+00},
+char* labels[NUM_CLASSES] = {0,1};
+const float data[NUM_SAMPLES][NUM_FEATURES] = {{-2.70255383e+00,-4.72532919e+00},
  { 3.07746047e+00, 3.54288774e+00},
  {-2.52044711e+00,-2.86979420e+00},
  { 3.09952420e+00, 1.86497079e+00},
