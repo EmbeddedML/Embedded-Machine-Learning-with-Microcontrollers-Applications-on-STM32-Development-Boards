@@ -1,10 +1,10 @@
-# Chapter 5 - INTRODUCTION TO MACHINE LEARNING
+# Chapter 12 - EMBEDDING THE NEURAL NETWORK MODEL TO THE MICROCONTROLLER
 
-## About This Chapter
+## ABout This Chapter
 
-This chapter summarizes three key concepts to be used in machine learning methods. Therefore, we will first start with random number generation as pseudo sensor data. This will help us while testing machine learning methods when there is no active sensor around. Then, we will consider feature extraction as a way of summarizing the acquired sensor data as the second concept. This will act as a bridge between Chapter 4 on data acquisition and following chapters. Then, we will evaluate sensor data normalization as the third concept. Finally, we will consider feature extraction from accelerometer data, audio signals, and digital images as end of chapter applications. These will show us how the topics considered in this chapter can be applied to real-life machine learning problems.
+We introduced the TensorFlow platform and fundamentals of neural networks in previous chapters. It is time to embed the trained neural network models to the microcontroller. To do so, we will benefit from TensorFlow Lite as the specialized version of TensorFlow for embedded systems (including microcontrollers). Hence, we will start with its properties. Then, we will show ways of converting TensorFlow and Keras models to TensorFlow Lite format. Model conversion is not sufficient alone to embed the model on a microcontroller. The main reason is the size of TensorFlow Lite model. In other words, the model should be optimized beforehand since microcontrollers have limited flash and RAM size. Therefore, we will cover model optimization via quantization, pruning, and weight clustering. Operations to be performed up to this point will be done on PC. The next step is embedding the final TensorFlow Lite model to the microcontroller. Hence, we will consider necessary steps to be followed for this purpose. Embedding the trained neural network model to the microcontroller can also be done by the STM32Cube.AI platform. We will cover it to provide a second way of embedding a TensorFlow or Keras model to the STM32 microcontroller. Throughout the chapter, we will reconsider the neural network models introduced in Chapter 11 and embed them to the microcontroller. We will also apply the same procedure to the end of chapter applications.
 
-## Listings
+<!-- ## Listings
 <center>
 
 | Description  | Code    |
@@ -30,5 +30,5 @@ This chapter summarizes three key concepts to be used in machine learning method
 | Keyword Spotting                    | [![Code](../Images/py.png)](Application2-KWS/mfcc_main.py) | [![Code](../Images/stm32.png)](Application1-HAR/.ioc) |
 | Handwritten Digit Recognition       | [![Code](../Images/py.png)](Application3-HDR/mnist.py)     | [![Code](../Images/stm32.png)](Application3-HDR/.ioc) |
 
-</center>
+</center> -->
 

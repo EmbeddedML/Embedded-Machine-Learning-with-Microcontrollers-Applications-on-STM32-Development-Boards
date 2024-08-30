@@ -1,10 +1,10 @@
-# Chapter 5 - INTRODUCTION TO MACHINE LEARNING
+# Chapter 13 - CONVOLUTIONAL NEURAL NETWORKS
 
 ## About This Chapter
 
-This chapter summarizes three key concepts to be used in machine learning methods. Therefore, we will first start with random number generation as pseudo sensor data. This will help us while testing machine learning methods when there is no active sensor around. Then, we will consider feature extraction as a way of summarizing the acquired sensor data as the second concept. This will act as a bridge between Chapter 4 on data acquisition and following chapters. Then, we will evaluate sensor data normalization as the third concept. Finally, we will consider feature extraction from accelerometer data, audio signals, and digital images as end of chapter applications. These will show us how the topics considered in this chapter can be applied to real-life machine learning problems.
+Convolutional neural networks (CNN) are extensively used in image classification and object recognition applications. Therefore, we consider them in this chapter. We introduce mathematical definition of the convolution operation and its implementation by a single neuron first. Afterward, we introduce the convolution definition under Keras. Then, we explore how to form a complete CNN model under Keras. Here, we focus on feature extraction and classification blocks forming the CNN model. Afterward, we consider training and testing steps of the formed model. We then explore transfer learning to benefit from existing CNN models to be modified for our own problem. We next consider implementation steps for embedding the trained and tested CNN model on the STM32 microcontroller. Finally, we provide examples on the usage of CNN models to solve real-life problems.
 
-## Listings
+<!-- ## Listings
 <center>
 
 | Description  | Code    |
@@ -31,4 +31,4 @@ This chapter summarizes three key concepts to be used in machine learning method
 | Handwritten Digit Recognition       | [![Code](../Images/py.png)](Application3-HDR/mnist.py)     | [![Code](../Images/stm32.png)](Application3-HDR/.ioc) |
 
 </center>
-
+ -->

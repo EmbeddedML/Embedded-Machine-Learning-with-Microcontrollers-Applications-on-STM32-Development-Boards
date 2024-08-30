@@ -1,5 +1,9 @@
 # Chapter 6 - CLASSIFICATION
 
+## About This Chapter
+
+The aim of classification is to infer type of an unknown sample summarized by its features. Classifier is the machine learning system performing this operation. The classifier should have been trained beforehand for this purpose by labeled data. Hence, we assume that a supervisor has labeled the data to be used in training. To explain the classifier concept, we will start with its definition. Then, we will introduce the Bayes, k-nearest neighbor (kNN), support vector machine (SVM), and decision tree classifiers. While handling each classifier, we will start with its theoretical background. Then, we will explore its training on PC in Python language. Afterward, we will show methods of deploying the trained classifier to the STM32 microcontroller. As end of the chapter applications, we will form classifiers for the accelerometer data, audio signals, and digital images.We will benefit from the extracted features in Chapter 5 for this purpose.
+
 ## Listings
 <center>
 

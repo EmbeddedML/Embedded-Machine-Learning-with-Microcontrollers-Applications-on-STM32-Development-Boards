@@ -1,10 +1,10 @@
-# Chapter 5 - INTRODUCTION TO MACHINE LEARNING
+# Chapter 11 - MULTI-LAYER NEURAL NETWORKS
 
 ## About This Chapter
 
-This chapter summarizes three key concepts to be used in machine learning methods. Therefore, we will first start with random number generation as pseudo sensor data. This will help us while testing machine learning methods when there is no active sensor around. Then, we will consider feature extraction as a way of summarizing the acquired sensor data as the second concept. This will act as a bridge between Chapter 4 on data acquisition and following chapters. Then, we will evaluate sensor data normalization as the third concept. Finally, we will consider feature extraction from accelerometer data, audio signals, and digital images as end of chapter applications. These will show us how the topics considered in this chapter can be applied to real-life machine learning problems.
+The single neuron considered in Chapter 10 can be used as an introductory tool for understanding the working principles of neural networks. However, it is not sufficient enough to solve complex machine learning problems. Therefore, we should form a more powerful structure called multi-layer neural networks, generally called neural networks. We will consider this structure in this chapter. To do so, we will start with the background information on neural networks. Here, we will define structure of the neural network as well as deep and shallow neural networks. We will also form the fully-connected neural network in line with the background information. Then, we will show how to implement a neural network in Keras. Here, we will cover the layer structure and how to use it in forming the network. Next, we will focus on training the neural network. To do so, we will briefly introduce the theory behind the backpropagation algorithm. We will also explore training steps under Keras. Afterward, we will form a classifier and regressor via neural networks. Finally, we will consider real-life applications introduced in previous chapters now from the neural networks perspective.
 
-## Listings
+<!-- ## Listings
 <center>
 
 | Description  | Code    |
@@ -30,5 +30,5 @@ This chapter summarizes three key concepts to be used in machine learning method
 | Keyword Spotting                    | [![Code](../Images/py.png)](Application2-KWS/mfcc_main.py) | [![Code](../Images/stm32.png)](Application1-HAR/.ioc) |
 | Handwritten Digit Recognition       | [![Code](../Images/py.png)](Application3-HDR/mnist.py)     | [![Code](../Images/stm32.png)](Application3-HDR/.ioc) |
 
-</center>
+</center> -->
 

@@ -1,10 +1,10 @@
-# Chapter 5 - INTRODUCTION TO MACHINE LEARNING
+# Chapter 14 - RECURRENCE IN NEURAL NETWORKS
 
 ## About This Chapter
 
-This chapter summarizes three key concepts to be used in machine learning methods. Therefore, we will first start with random number generation as pseudo sensor data. This will help us while testing machine learning methods when there is no active sensor around. Then, we will consider feature extraction as a way of summarizing the acquired sensor data as the second concept. This will act as a bridge between Chapter 4 on data acquisition and following chapters. Then, we will evaluate sensor data normalization as the third concept. Finally, we will consider feature extraction from accelerometer data, audio signals, and digital images as end of chapter applications. These will show us how the topics considered in this chapter can be applied to real-life machine learning problems.
+We only had forward connections in neural network models up to this point. In this chapter, we will add feedback connection between neurons to form recurrence. This will help us in forming neural network structures with memory capability. Hence, they will be more suitable for sequential data processing. To explain these concepts better, we will first associate recurrence with memory in this chapter. Afterward, we will introduce three popular neural network models based on recurrence as recurrent neural networks (RNN), gated recurrent unit (GRU), and long short-term memory (LSTM). While introducing each model, we will first provide general information about it. Then, we will focus on its formation and training in Keras. Then, we will provide the usage examples of recurrence models on PC. Afterward, we will consider implementing recurrence models on the STM32 microcontroller. Finally, we will provide examples on the usage of recurrence based models to solve real-life problems.
 
-## Listings
+<!-- ## Listings
 <center>
 
 | Description  | Code    |
@@ -30,5 +30,4 @@ This chapter summarizes three key concepts to be used in machine learning method
 | Keyword Spotting                    | [![Code](../Images/py.png)](Application2-KWS/mfcc_main.py) | [![Code](../Images/stm32.png)](Application1-HAR/.ioc) |
 | Handwritten Digit Recognition       | [![Code](../Images/py.png)](Application3-HDR/mnist.py)     | [![Code](../Images/stm32.png)](Application3-HDR/.ioc) |
 
-</center>
-
+</center> -->
