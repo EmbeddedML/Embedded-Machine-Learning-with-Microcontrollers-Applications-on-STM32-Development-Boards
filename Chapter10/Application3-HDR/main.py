@@ -3,18 +3,10 @@ import numpy as np
 import cv2
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 import tensorflow as tf
-from mnist import load_images, load_labels
 from matplotlib import pyplot as plt
+from Models.paths import KERAS_MODEL_DIR
 
-train_img_path = os.path.join("MNIST-dataset", "train-images.idx3-ubyte")
-train_label_path = os.path.join("MNIST-dataset", "train-labels.idx1-ubyte")
-test_img_path = os.path.join("MNIST-dataset", "t10k-images.idx3-ubyte")
-test_label_path = os.path.join("MNIST-dataset", "t10k-labels.idx1-ubyte")
-
-train_images = load_images(train_img_path)
-train_labels = load_labels(train_label_path)
-test_images = load_images(test_img_path)
-test_labels = load_labels(test_label_path)
+(train_images, train_labels), (test_images, test_labels) = tf.keras.datasets.mnist.load_data()
 
 train_huMoments = np.empty((len(train_images),7))
 test_huMoments = np.empty((len(test_images),7))
@@ -59,4 +51,4 @@ cm_display.plot()
 cm_display.ax_.set_title("Single Neuron Classifier Confusion Matrix")
 plt.show()
 
-model.save("mnist_single_neuron.h5")
+model.save(os.path.join(KERAS_MODEL_DIR,"hdr_perceptron.h5"))
