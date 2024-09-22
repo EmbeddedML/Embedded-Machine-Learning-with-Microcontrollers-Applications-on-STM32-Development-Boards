@@ -1,16 +1,15 @@
-import os.path as osp
+import os
 import numpy as np
 import tensorflow as tf
+from Data.paths import CLASSIFICATION_DATA_DIR
+from Models.paths import SAVED_MODEL_DIR, TFLITE_MODEL_DIR
 
-DATA_DIR = "classification_data"
-MODEL_DIR = "models"
+saved_model_dir= os.path.join(SAVED_MODEL_DIR, 'nn_classification')
 
-saved_model_dir='models/nn_classification_model_tf'
-
-train_samples = np.load(osp.join(DATA_DIR, "cls_train_samples.npy"))
-train_labels = np.load(osp.join(DATA_DIR, "cls_train_labels.npy"))
-test_samples = np.load(osp.join(DATA_DIR, "cls_test_samples.npy"))
-test_labels = np.load(osp.join(DATA_DIR, "cls_test_labels.npy"))
+train_samples = np.load(os.path.join(CLASSIFICATION_DATA_DIR, "cls_train_samples.npy"))
+train_labels = np.load(os.path.join(CLASSIFICATION_DATA_DIR, "cls_train_labels.npy"))
+test_samples = np.load(os.path.join(CLASSIFICATION_DATA_DIR, "cls_test_samples.npy"))
+test_labels = np.load(os.path.join(CLASSIFICATION_DATA_DIR, "cls_test_labels.npy"))
 
 # test the actual model on a test sample image
 model = tf.keras.models.load_model(saved_model_dir)
@@ -18,7 +17,7 @@ model = tf.keras.models.load_model(saved_model_dir)
 predictions = model.predict(test_samples)
 predicted_labels = np.where(predictions < 0.5, 0, 1).squeeze()
 
-tflite_model_file= osp.join("models","nn_classification_model.tflite")
+tflite_model_file= os.path.join(TFLITE_MODEL_DIR, "nn_classification.tflite")
 
 # Convert test_samples to float32 format
 test_samples = test_samples.astype(np.float32)

@@ -1,19 +1,23 @@
-import os.path as osp
+import os
 import numpy as np
 import tensorflow as tf
+from Data.paths import CLASSIFICATION_DATA_DIR
+from Models.paths import SAVED_MODEL_DIR, TFLITE_MODEL_DIR
 
-DATA_DIR = "classification_data"
+saved_model_dir = os.path.join(SAVED_MODEL_DIR, "nn_classification")
+int_w_float_model_path = os.path.join(TFLITE_MODEL_DIR, "quantized_model_int_w_float.tflite")
+full_int_model_path = os.path.join(TFLITE_MODEL_DIR, "quantized_model_full_int.tflite")
 
-saved_model_dir='models/nn_classification_model_tf'
-
-train_samples = np.load(osp.join(DATA_DIR, "cls_train_samples.npy"))
+train_samples = np.load(os.path.join(CLASSIFICATION_DATA_DIR, "cls_train_samples.npy"))
 
 # Convert train_samples to float32 format
 train_samples = train_samples.astype(np.float32)
 
+
 def representative_dataset():
-  for input_value in tf.data.Dataset.from_tensor_slices(train_samples).batch(1).take(100):
-    yield [input_value]
+    for input_value in (tf.data.Dataset.from_tensor_slices(train_samples).batch(1).take(100)):
+        yield [input_value]
+
 
 # Full integer quantization
 # Integer with float fallback (using default float input/output)
@@ -23,8 +27,8 @@ converter.representative_dataset = representative_dataset
 tflite_model_quant = converter.convert()
 
 # Save the model.
-with open('models/quantized_model_int_w_float.tflite', 'wb') as f:
-  f.write(tflite_model_quant)
+with open(int_w_float_model_path, "wb") as f:
+    f.write(tflite_model_quant)
 
 # Full integer quantization
 # Integer only
@@ -39,5 +43,5 @@ converter.inference_output_type = tf.uint8  # or tf.int8
 tflite_model_quant = converter.convert()
 
 # Save the model.
-with open('models/quantized_model_full_int.tflite', 'wb') as f:
-  f.write(tflite_model_quant)
+with open(full_int_model_path, "wb") as f:
+    f.write(tflite_model_quant)

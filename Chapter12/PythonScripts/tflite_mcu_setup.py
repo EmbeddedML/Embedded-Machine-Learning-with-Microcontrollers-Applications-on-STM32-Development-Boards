@@ -1,17 +1,16 @@
-import os.path as osp
+import os
 import numpy as np
 import tensorflow as tf
-import py_serial 
+from Common import py_serial
+from Data.paths import CLASSIFICATION_DATA_DIR
+from Models.paths import KERAS_MODEL_DIR
 
-py_serial.SERIAL_Init("COM3")
+py_serial.SERIAL_Init("COM4")
 
-DATA_DIR = "classification_data"
-MODEL_DIR = "models"
+test_samples = np.load(os.path.join(CLASSIFICATION_DATA_DIR, "cls_test_samples.npy"))
+test_labels = np.load(os.path.join(CLASSIFICATION_DATA_DIR, "cls_test_labels.npy"))
 
-test_samples = np.load(osp.join(DATA_DIR, "cls_test_samples.npy"))
-test_labels = np.load(osp.join(DATA_DIR, "cls_test_labels.npy"))
-
-model = tf.keras.models.load_model(osp.join(MODEL_DIR, "nn_classification_model_keras.h5"))
+model = tf.keras.models.load_model(os.path.join(KERAS_MODEL_DIR, "nn_classification_model_keras.h5"))
 
 i = 0
 while 1:
@@ -37,7 +36,3 @@ while 1:
         print("PC Output : " + str(pcout))
         print("MCU Output : " + str(mcuout))
         print()
-
-        
-
-    
