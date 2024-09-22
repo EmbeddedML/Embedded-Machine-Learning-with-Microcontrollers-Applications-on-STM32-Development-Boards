@@ -1,10 +1,9 @@
 import os
 from sklearn2c import SVMClassifier
+from Models.paths import CLASSIFICATION_MODEL_DIR, CLASSIFICATION_EXPORT_DIR
 
-dirname = os.path.dirname
-
-model_path = os.path.join(dirname(__file__), "classification_models","svm_classifier.joblib")
-export_path = os.path.join(dirname(__file__), "exported_models","svm_cls_config")
+model_path = os.path.join(CLASSIFICATION_MODEL_DIR,"svm_classifier.joblib")
+export_path = os.path.join(CLASSIFICATION_EXPORT_DIR,"svm_cls_config")
 
 svm = SVMClassifier.load(model_path)
 svm.export(export_path)

@@ -1,18 +1,16 @@
 import os
-import sys
 import numpy as np
 from sklearn2c import BayesClassifier
-sys.path.append("Common")
-import py_serial 
+from Common import py_serial 
+from Data.paths import CLASSIFICATION_DATA_DIR
+from Models.paths import CLASSIFICATION_MODEL_DIR
 
-dirname = os.path.dirname
+py_serial.SERIAL_Init("COM4")
 
-py_serial.SERIAL_Init("COM6")
+test_samples = np.load(os.path.join(CLASSIFICATION_DATA_DIR,"cls_test_samples.npy"))
+test_labels = np.load(os.path.join(CLASSIFICATION_DATA_DIR,"cls_test_labels.npy"))
 
-test_samples = np.load(os.path.join(dirname(__file__), "classification_data","cls_test_samples.npy"))
-test_labels = np.load(os.path.join(dirname(__file__), "classification_data","cls_test_labels.npy"))
-
-bayesian = BayesClassifier.load(os.path.join(dirname(__file__), "classification_models", "bayes_classifier.joblib"))
+bayesian = BayesClassifier.load(os.path.join(CLASSIFICATION_MODEL_DIR, "bayes_classifier.joblib"))
 
 i = 0
 while 1:

@@ -1,10 +1,9 @@
 import os
 from sklearn2c import DTClassifier
+from Models.paths import CLASSIFICATION_MODEL_DIR, CLASSIFICATION_EXPORT_DIR
 
-dirname = os.path.dirname
-
-model_path = os.path.join(dirname(__file__), "classification_models","dt_classifier.joblib")
-export_path = os.path.join(dirname(__file__), "exported_models","dt_cls_config")
+model_path = os.path.join(CLASSIFICATION_MODEL_DIR,"dt_classifier.joblib")
+export_path = os.path.join(CLASSIFICATION_EXPORT_DIR,"dt_cls_config")
 
 dtc = DTClassifier.load(model_path)
 dtc.export(export_path)

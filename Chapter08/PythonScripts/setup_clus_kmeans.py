@@ -1,14 +1,16 @@
-import os.path as osp
+import os
 import numpy as np
 from sklearn2c.clustering import Kmeans
-import py_serial 
+import py_serial
+from Data.paths import CLASSIFICATION_DATA_DIR
+from Models.paths import CLUSTERING_MODEL_DIR
 
-py_serial.SERIAL_Init("COM11")
+py_serial.SERIAL_Init("COM4")
 
-test_samples = np.load(osp.join("classification_data","cls_test_samples.npy"))
-test_labels = np.load(osp.join("classification_data","cls_test_labels.npy"))
+test_samples = np.load(os.path.join(CLASSIFICATION_DATA_DIR,"cls_test_samples.npy"))
+test_labels = np.load(os.path.join(CLASSIFICATION_DATA_DIR,"cls_test_labels.npy"))
 
-kmeans = Kmeans.load(osp.join("clustering_models", "kmeans_clustering.joblib"))
+kmeans = Kmeans.load(os.path.join(CLUSTERING_MODEL_DIR, "kmeans_clustering.joblib"))
 
 i = 0
 while 1:

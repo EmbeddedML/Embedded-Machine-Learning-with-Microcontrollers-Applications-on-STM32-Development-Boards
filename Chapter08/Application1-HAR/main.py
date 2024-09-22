@@ -1,12 +1,11 @@
-import os.path as osp
-from data_utils import read_data
-from feature_utils import create_features
+from .data_utils import read_data
+from .feature_utils import create_features
 from sklearn2c import Dbscan
+from Data.paths import WISDM_PATH
 
-DATA_PATH = osp.join("WISDM_ar_v1.1", "WISDM_ar_v1.1_raw.txt")
 TIME_PERIODS = 80
 STEP_DISTANCE = 40
-data_df = read_data(DATA_PATH)
+data_df = read_data(WISDM_PATH)
 df_train = data_df[data_df["user"] <= 28]
 df_test = data_df[data_df["user"] > 28]
 

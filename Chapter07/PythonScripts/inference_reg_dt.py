@@ -1,14 +1,16 @@
-import os.path as osp
+import os
 import numpy as np
 from sklearn2c import DTRegressor
 from matplotlib import pyplot as plt
+from Data.paths import REGRESSION_DATA_DIR
+from Models.paths import REGRESSION_MODEL_DIR
 
-samples = np.load(osp.join("regression_data", "reg_samples.npy"))
-line_values = np.load(osp.join("regression_data", "reg_line_values.npy"))
-sine_values = np.load(osp.join("regression_data", "reg_sine_values.npy"))
+samples = np.load(os.path.join(REGRESSION_DATA_DIR, "reg_samples.npy"))
+line_values = np.load(os.path.join(REGRESSION_DATA_DIR, "reg_line_values.npy"))
+sine_values = np.load(os.path.join(REGRESSION_DATA_DIR, "reg_sine_values.npy"))
 
-line_model_path = osp.join("regression_models", "dt_regressor_line.joblib")
-sine_model_path = osp.join("regression_models", "dt_regressor_sine.joblib")
+line_model_path = os.path.join(REGRESSION_MODEL_DIR, "dt_regressor_line.joblib")
+sine_model_path = os.path.join(REGRESSION_MODEL_DIR, "dt_regressor_sine.joblib")
 
 dt_regressor_line = DTRegressor.load(line_model_path)
 dt_regressor_sine = DTRegressor.load(sine_model_path)

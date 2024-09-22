@@ -1,12 +1,12 @@
 import os
 import numpy as np
 from sklearn2c import DTClassifier
+from Data.paths import CLASSIFICATION_DATA_DIR
+from Models.paths import CLASSIFICATION_MODEL_DIR
 
-dirname = os.path.dirname
+test_samples = np.load(os.path.join(CLASSIFICATION_DATA_DIR,"cls_test_samples.npy"))
+test_labels = np.load(os.path.join(CLASSIFICATION_DATA_DIR,"cls_test_labels.npy"))
 
-test_samples = np.load(os.path.join(dirname(__file__),"classification_data","cls_test_samples.npy"))
-test_labels = np.load(os.path.join(dirname(__file__),"classification_data","cls_test_labels.npy"))
-
-dtc = DTClassifier.load(os.path.join(dirname(__file__),"classification_models", "dt_classifier.joblib"))
+dtc = DTClassifier.load(os.path.join(CLASSIFICATION_MODEL_DIR, "dt_classifier.joblib"))
 predictions = dtc.predict(test_samples)
 print(predictions)

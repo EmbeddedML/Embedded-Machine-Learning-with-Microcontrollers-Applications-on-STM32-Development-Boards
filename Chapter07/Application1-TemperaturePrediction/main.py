@@ -5,8 +5,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error
 from matplotlib import pyplot as plt
+from Data.paths import TEMPERATURE_DATA_PATH
 
-df = pd.read_csv('temperature_dataset.csv')
+df = pd.read_csv(TEMPERATURE_DATA_PATH)
 y = df['Room_Temp'][::4]
 prev_values_count = 5
 

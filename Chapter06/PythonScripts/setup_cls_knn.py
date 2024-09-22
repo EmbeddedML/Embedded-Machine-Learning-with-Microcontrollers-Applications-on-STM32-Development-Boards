@@ -1,17 +1,16 @@
 import os
-import sys
 import numpy as np
 from sklearn2c import KNNClassifier
-sys.path.append("Common")
 import py_serial 
+from Data.paths import CLASSIFICATION_DATA_DIR
+from Models.paths import CLASSIFICATION_MODEL_DIR
 
-dirname = os.path.dirname
-py_serial.SERIAL_Init("COM11")
+py_serial.SERIAL_Init("COM4")
 
-test_samples = np.load(os.path.join(dirname(__file__),"classification_data","cls_test_samples.npy"))
-test_labels = np.load(os.path.join(dirname(__file__),"classification_data","cls_test_labels.npy"))
+test_samples = np.load(os.path.join(CLASSIFICATION_DATA_DIR,"cls_test_samples.npy"))
+test_labels = np.load(os.path.join(CLASSIFICATION_DATA_DIR,"cls_test_labels.npy"))
 
-knn = KNNClassifier.load(os.path.join(dirname(__file__),"classification_models", "knn_classifier.joblib"))
+knn = KNNClassifier.load(os.path.join(CLASSIFICATION_MODEL_DIR, "knn_classifier.joblib"))
 i = 0
 
 while 1:

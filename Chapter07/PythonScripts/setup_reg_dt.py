@@ -1,11 +1,13 @@
-import os.path as osp
+import os
 import numpy as np
 from sklearn2c import DTRegressor
 import py_serial
+from Data.paths import REGRESSION_DATA_DIR
+from Models.paths import REGRESSION_MODEL_DIR
 
-py_serial.SERIAL_Init("COM6")
-train_samples = np.load(osp.join("regression_data", "reg_samples.npy"))
-dtr = DTRegressor().load(osp.join("regression_models", "dt_regressor_sine.joblib"))
+py_serial.SERIAL_Init("COM4")
+train_samples = np.load(os.path.join(REGRESSION_DATA_DIR, "reg_samples.npy"))
+dtr = DTRegressor().load(os.path.join(REGRESSION_MODEL_DIR, "dt_regressor_sine.joblib"))
 
 i = 0
 while 1:

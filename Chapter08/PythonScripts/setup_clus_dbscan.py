@@ -1,15 +1,16 @@
-import os.path as osp
+import os
 from sklearn2c.clustering import Dbscan
 import py_serial
 import numpy as np
+from Data.paths import CLASSIFICATION_DATA_DIR
+from Models.paths import CLUSTERING_MODEL_DIR
 
-py_serial.SERIAL_Init("COM11")
+py_serial.SERIAL_Init("COM4")
 
-test_samples = np.load(osp.join("classification_data","cls_test_samples.npy"))
-test_labels = np.load(osp.join("classification_data","cls_test_labels.npy"))
-MODELS_DIR = "clustering_models"
+test_samples = np.load(os.path.join(CLASSIFICATION_DATA_DIR,"cls_test_samples.npy"))
+test_labels = np.load(os.path.join(CLASSIFICATION_DATA_DIR,"cls_test_labels.npy"))
 
-dbscan_model_dir = osp.join(MODELS_DIR, "dbscan_clustering.joblib")
+dbscan_model_dir = os.path.join(CLUSTERING_MODEL_DIR, "dbscan_clustering.joblib")
 dbscan = Dbscan.load(dbscan_model_dir)
 
 i = 0
