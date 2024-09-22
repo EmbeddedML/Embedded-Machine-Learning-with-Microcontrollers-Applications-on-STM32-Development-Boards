@@ -1,6 +1,6 @@
-from data_loader import create_datasets
 from keras import callbacks
 from keras.models import load_model
+from .data_loader import create_datasets
 
 train_ds, val_ds, test_ds, input_shape = create_datasets(8000, 512, 256, 32)
 kws_cnn_model = load_model("resnet_tl_mnist.h5")
