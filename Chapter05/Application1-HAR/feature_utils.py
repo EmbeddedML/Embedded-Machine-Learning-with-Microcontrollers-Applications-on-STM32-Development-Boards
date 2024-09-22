@@ -7,9 +7,9 @@ def create_features(df, time_steps, step_size):
     z_segments = []
     labels = []
     for i in range(0, len(df) - time_steps, step_size):
-        xs = df["x-axis"].values[i : i + time_steps]
-        ys = df["y-axis"].values[i : i + time_steps]
-        zs = df["z-axis"].values[i : i + time_steps]
+        xs = df["x-accel"].values[i : i + time_steps]
+        ys = df["y-accel"].values[i : i + time_steps]
+        zs = df["z-accel"].values[i : i + time_steps]
 
         count_per_label = df["activity"][i : i + time_steps].value_counts()
         label_count = count_per_label.iloc[0]

@@ -1,3 +1,4 @@
+import os
 import numpy as np
 from scipy.io import wavfile
 import cmsisdsp as dsp
@@ -16,18 +17,9 @@ def create_mfcc_features(recordings_list, FFTSize, sample_rate, numOfMelFilters,
     mfcc_features = np.empty((num_samples, numOfDctOutputs * 2), np.float32)
     labels = np.empty(num_samples)
 
-    for sample_idx, wav_path in enumerate(recordings_list):
-        file_specs = wav_path.split(".")[0]
-        digit, person, recording = file_specs.split("_")
-        _, sample = wavfile.read(wav_path)
-        sample = sample.astype(np.float32)
-        sample = sample / max(abs(sample))
-        first_half = sample[:FFTSize]
-        second_half = sample[FFTSize:2*FFTSize]
+    mfccf32 = dsp.arm_mfcc_instance_f32()
 
-        mfccf32 = dsp.arm_mfcc_instance_f32()
-
-        status = dsp.arm_mfcc_init_f32(
+    status = dsp.arm_mfcc_init_f32(
             mfccf32,
             FFTSize,
             numOfMelFilters,
@@ -38,6 +30,16 @@ def create_mfcc_features(recordings_list, FFTSize, sample_rate, numOfMelFilters,
             packedFilters,
             window,
         )
+
+    for sample_idx, wav_path in enumerate(recordings_list):
+        wav_file = os.path.basename(wav_path)
+        file_specs = wav_file.split(".")[0]
+        digit, person, recording = file_specs.split("_")
+        _, sample = wavfile.read(wav_path)
+        sample = sample.astype(np.float32)
+        sample = sample / max(abs(sample))
+        first_half = sample[:FFTSize]
+        second_half = sample[FFTSize:2*FFTSize]
 
         tmp = np.zeros(FFTSize + 2)
         first_half_mfcc = dsp.arm_mfcc_f32(mfccf32, first_half, tmp)

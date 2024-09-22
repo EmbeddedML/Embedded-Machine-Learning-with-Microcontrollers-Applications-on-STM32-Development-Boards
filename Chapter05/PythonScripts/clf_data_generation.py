@@ -1,14 +1,10 @@
 import os
 import numpy as np
 from sklearn.model_selection import train_test_split
+from Data.paths import CLASSIFICATION_DATA_DIR
 
 np.random.seed(42)  # For reproducibility
-dirname = os.path.dirname
-CLASSIFICATION_DATA_DIR = os.path.join(
-    dirname(__file__), "classification_data"
-)
 DATA_SIZE = 1000
-
 
 def Gaussian2D(mean, L, theta, data_size):
     c, s = np.cos(theta), np.sin(theta)

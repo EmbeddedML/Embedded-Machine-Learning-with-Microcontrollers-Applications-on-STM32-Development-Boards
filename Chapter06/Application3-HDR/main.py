@@ -3,13 +3,14 @@ import numpy as np
 import cv2
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 import sklearn2c
-from mnist import load_images, load_labels
+from .mnist import load_images, load_labels
 from matplotlib import pyplot as plt
+from Data.paths import MNIST_PATH
 
-train_img_path = os.path.join("MNIST-dataset", "train-images.idx3-ubyte")
-train_label_path = os.path.join("MNIST-dataset", "train-labels.idx1-ubyte")
-test_img_path = os.path.join("MNIST-dataset", "t10k-images.idx3-ubyte")
-test_label_path = os.path.join("MNIST-dataset", "t10k-labels.idx1-ubyte")
+train_img_path = os.path.join(MNIST_PATH, "train-images.idx3-ubyte")
+train_label_path = os.path.join(MNIST_PATH, "train-labels.idx1-ubyte")
+test_img_path = os.path.join(MNIST_PATH, "t10k-images.idx3-ubyte")
+test_label_path = os.path.join(MNIST_PATH, "t10k-labels.idx1-ubyte")
 
 train_images = load_images(train_img_path)
 train_labels = load_labels(train_label_path)

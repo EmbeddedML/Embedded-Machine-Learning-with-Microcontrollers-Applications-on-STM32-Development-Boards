@@ -1,10 +1,9 @@
 import os
 import numpy as np
+from Data.paths import REGRESSION_DATA_DIR
 
 np.random.seed(42)  # For reproducibility
 
-dirname = os.path.dirname
-REGRESSION_DATA_DIR = os.path.join(dirname(__file__), "regression_data")
 DATA_SIZE = 200
 
 # Generate noisy line data

@@ -3,13 +3,11 @@ from sklearn.preprocessing import MinMaxScaler
 
 np.random.seed(42)  # For reproducibility
 
-
 def Gaussian2D(mean, L, theta, data_size):
     c, s = np.cos(theta), np.sin(theta)
     R = np.array([[c, -s], [s, c]])
     cov = R @ L @ R.T
     return np.random.multivariate_normal(mean, cov, data_size)
-
 
 DATA_SIZE = 1000
 mean = [-2, -2]
