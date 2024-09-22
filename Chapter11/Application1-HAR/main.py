@@ -1,16 +1,17 @@
-import os.path as osp
+import os
 import numpy as np
 import tensorflow as tf
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from matplotlib import pyplot as plt
-from data_utils import read_data
 from sklearn.preprocessing import OneHotEncoder
-from feature_utils import create_features
+from .data_utils import read_data
+from .feature_utils import create_features
+from Data.paths import WISDM_PATH
+from Models.paths import KERAS_MODEL_DIR
 
-DATA_PATH = osp.join("WISDM_ar_v1.1", "WISDM_ar_v1.1_raw.txt")
 TIME_PERIODS = 80
 STEP_DISTANCE = 40
-data_df = read_data(DATA_PATH)
+data_df = read_data(WISDM_PATH)
 df_train = data_df[data_df["user"] <= 28]
 df_test = data_df[data_df["user"] > 28]
 
@@ -39,4 +40,4 @@ cm_display.plot()
 cm_display.ax_.set_title("Neural Network Confusion Matrix")
 plt.show()
 
-model.save("mlp_har_model.h5")
+model.save(os.path.join(KERAS_MODEL_DIR,"har_mlp.h5"))

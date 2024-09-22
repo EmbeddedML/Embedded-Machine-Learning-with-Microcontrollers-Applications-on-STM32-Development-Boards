@@ -31,10 +31,11 @@ def create_mfcc_features(recordings_list, FFTSize, sample_rate, numOfMelFilters,
         window,
     )
 
-    for sample_idx, (dir_name, wav_path) in enumerate(recordings_list):
-        file_specs = wav_path.split(".")[0]
+    for sample_idx, wav_path in enumerate(recordings_list):
+        wav_file = os.path.basename(wav_path)
+        file_specs = wav_file.split(".")[0]
         digit, person, recording = file_specs.split("_")
-        _, sample = wavfile.read(os.path.join(dir_name, wav_path))
+        _, sample = wavfile.read(wav_path)
         sample = sample.astype(np.float32)[:2 * FFTSize]
         if len(sample < 2 * FFTSize):
             sample = np.pad(sample, (0, 2 * FFTSize - len(sample)), "constant", constant_values= 0)

@@ -1,14 +1,13 @@
-import os.path as osp
+import os
 import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
+from Data.paths import REGRESSION_DATA_DIR
+from Models.paths import SAVED_MODEL_DIR, KERAS_MODEL_DIR
 
-DATA_DIR = "regression_data"
-MODEL_DIR = "models"
-
-samples = np.load(osp.join(DATA_DIR, "reg_samples.npy"))
-line_values = np.load(osp.join(DATA_DIR, "reg_line_values.npy"))
-sine_values = np.load(osp.join(DATA_DIR, "reg_sine_values.npy"))
+samples = np.load(os.path.join(REGRESSION_DATA_DIR, "reg_samples.npy"))
+line_values = np.load(os.path.join(REGRESSION_DATA_DIR, "reg_line_values.npy"))
+sine_values = np.load(os.path.join(REGRESSION_DATA_DIR, "reg_sine_values.npy"))
 
 line_model = tf.keras.models.Sequential([
   tf.keras.layers.Dense(10, input_shape=[1], activation="relu"),
@@ -39,5 +38,5 @@ plt.scatter(samples , sine_values, c = 'k')
 plt.plot(samples, sine_pred, 'b')
 plt.show()
 
-line_model.save(osp.join(MODEL_DIR,"nn_line_regression_model_tf"), save_format = "tf")
-line_model.save(osp.join(MODEL_DIR, "nn_line_regression_model_keras.h5"), save_format = "h5")
+line_model.save(os.path.join(SAVED_MODEL_DIR,"nn_line_regression_model_tf"), save_format = "tf")
+line_model.save(os.path.join(KERAS_MODEL_DIR, "nn_line_regression_model_keras.h5"), save_format = "h5")
