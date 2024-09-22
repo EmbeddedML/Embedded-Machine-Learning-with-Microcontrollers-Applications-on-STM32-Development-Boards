@@ -1,6 +1,10 @@
+import os
 import tensorflow as tf
-from resnet import ResNet
 from keras.utils import get_file
+from Models.paths import KERAS_MODEL_DIR
+from .resnet import ResNet
+
+model_checkpoint_path = os.path.join(KERAS_MODEL_DIR, "resnet_tl_mnist.h5")
 
 num_classes = 10
 (train_images, train_labels), (
@@ -35,7 +39,7 @@ for layer in model.layers[:num_layers_to_train]:
 model.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
 callbacks = [
     tf.keras.callbacks.ModelCheckpoint(
-        "models/resnet_tl_mnist.h5",
+        model_checkpoint_path,
         monitor="val_loss",
         save_best_only=True,
         mode="min",

@@ -1,6 +1,9 @@
+import os
 import tensorflow as tf
-from matplotlib import pyplot as plt
-from ShuffleNet import ShuffleNet
+from Models.paths import KERAS_MODEL_DIR
+from .shufflenet import ShuffleNet
+
+model_checkpoint_path = os.path.join(KERAS_MODEL_DIR, "shufflenet_tl_mnist.h5")
 
 num_classes = 10
 (train_images, train_labels), (
@@ -41,7 +44,7 @@ model.summary()
 model.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
 callbacks = [
     tf.keras.callbacks.ModelCheckpoint(
-        "models/shufflenet_tl_mnist.h5",
+        model_checkpoint_path,
         monitor="val_loss",
         save_best_only=True,
         mode="min",

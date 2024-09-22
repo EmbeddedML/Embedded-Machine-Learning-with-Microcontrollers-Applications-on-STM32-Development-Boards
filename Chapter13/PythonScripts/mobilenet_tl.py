@@ -1,6 +1,9 @@
+import os
 import tensorflow as tf
-from mobilenet import mobileNetV2
+from Models.paths import KERAS_MODEL_DIR
+from .mobilenet import mobileNetV2
 
+model_checkpoint_path = os.path.join(KERAS_MODEL_DIR, "mobilenet_tl_mnist.h5")
 num_classes = 10
 (train_images, train_labels), (
     test_images,
@@ -34,7 +37,7 @@ model.summary()
 model.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
 callbacks = [
     tf.keras.callbacks.ModelCheckpoint(
-        "models/mobilenet_tl_mnist.h5",
+        model_checkpoint_path,
         monitor="val_loss",
         save_best_only=True,
         mode="min",
