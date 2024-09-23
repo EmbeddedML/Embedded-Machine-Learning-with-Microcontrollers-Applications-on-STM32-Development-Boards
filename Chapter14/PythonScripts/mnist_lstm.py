@@ -1,7 +1,7 @@
+import os
 import tensorflow as tf
-from matplotlib import pyplot as plt
 import numpy as np
-import os.path as osp
+from Models.paths import KERAS_MODEL_DIR, SAVED_MODEL_DIR
 
 num_classes = 10
 
@@ -32,11 +32,7 @@ model = tf.keras.models.Sequential([
 model.summary()
 
 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
-
 model.fit(train_images, train_labels, batch_size=64, epochs=5, validation_split=0.1)
 
-MODEL_NAME = 'LSTM'
-MODEL_DIR = 'models'
-
-model.save(osp.join(MODEL_DIR, MODEL_NAME + '_model_tf'), save_format = "tf")
-model.save(osp.join(MODEL_DIR, MODEL_NAME + 'model_keras.h5'), save_format = "h5")
+model.save(os.path.join(SAVED_MODEL_DIR, 'LSTM_MNIST'), save_format = "tf")
+model.save(os.path.join(KERAS_MODEL_DIR, 'LSTM_MNIST.h5'), save_format = "h5")

@@ -1,6 +1,7 @@
 pip install sklearn2c
 pip install pandas
 pip install matplotlib
+pip install opencv-python
 pip install tensorflow==2.15
 pip install tensorflow-model-optimization
 pip install cmsisdsp

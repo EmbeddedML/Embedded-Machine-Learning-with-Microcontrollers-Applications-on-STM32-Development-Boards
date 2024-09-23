@@ -1,11 +1,12 @@
 import tensorflow as tf
-import os.path as osp
+import os
 import numpy as np
 from matplotlib import pyplot as plt
+from Data.paths import REGRESSION_DATA_DIR
 
-samples = np.load(osp.join("regression_data", "reg_samples.npy"))
-line_values = np.load(osp.join("regression_data", "reg_line_values.npy"))
-sine_values = np.load(osp.join("regression_data", "reg_sine_values.npy"))
+samples = np.load(os.path.join(REGRESSION_DATA_DIR, "reg_samples.npy"))
+line_values = np.load(os.path.join(REGRESSION_DATA_DIR, "reg_line_values.npy"))
+sine_values = np.load(os.path.join(REGRESSION_DATA_DIR, "reg_sine_values.npy"))
 
 series=sine_values
 
@@ -64,8 +65,8 @@ plt.plot(history.history['loss'])
 MODEL_NAME = 'LSTM'
 MODEL_DIR = 'models'
 
-model.save(osp.join(MODEL_DIR, MODEL_NAME + '_model_tf'), save_format = "tf")
-model.save(osp.join(MODEL_DIR, MODEL_NAME + 'model_keras.h5'), save_format = "h5")
+model.save(os.path.join(MODEL_DIR, MODEL_NAME + '_model_tf'), save_format = "tf")
+model.save(os.path.join(MODEL_DIR, MODEL_NAME + 'model_keras.h5'), save_format = "h5")
 
 y_pred = model.predict(x_train)
 

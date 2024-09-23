@@ -2,13 +2,12 @@ import os
 import numpy as np
 import cv2
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
-import tensorflow as tf
 import keras
 from keras.callbacks import EarlyStopping, ModelCheckpoint
 from matplotlib import pyplot as plt
 from Models.paths import KERAS_MODEL_DIR
 
-(train_images, train_labels), (test_images, test_labels) = tf.keras.datasets.mnist.load_data()
+(train_images, train_labels), (test_images, test_labels) =keras.datasets.mnist.load_data()
 
 train_huMoments = np.empty((len(train_images),7))
 test_huMoments = np.empty((len(test_images),7))

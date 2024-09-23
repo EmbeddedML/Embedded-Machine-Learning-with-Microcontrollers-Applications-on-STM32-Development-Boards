@@ -1,8 +1,10 @@
+import os
 import tensorflow as tf
 import keras
+from Models.paths import KERAS_MODEL_DIR
 
 num_classes = 10
-(train_images, train_labels), (val_images, val_labels)  = tf.keras.datasets.mnist.load_data()
+(train_images, train_labels), (val_images, val_labels)  = keras.datasets.mnist.load_data()
 data_shape = (32, 32, 3)
 
 def prepare_tensor(images, out_shape):
@@ -16,11 +18,11 @@ train_images = prepare_tensor(train_images, data_shape)
 val_images = prepare_tensor(val_images, data_shape)
 
 # convert class vectors to binary class matrices
-train_labels = tf.keras.utils.to_categorical(train_labels, num_classes)
-val_labels = tf.keras.utils.to_categorical(val_labels, num_classes)
+train_labels = keras.utils.to_categorical(train_labels, num_classes)
+val_labels = keras.utils.to_categorical(val_labels, num_classes)
 
-mnist_cnn_model = keras.models.load_model("resnet_tl_mnist.h5")
-model_cp_callback = keras.callbacks.ModelCheckpoint("mnist_cnn_model.h5", save_best_only=True)
+mnist_cnn_model = keras.models.load_model(os.path.join(KERAS_MODEL_DIR, "resnet_tl_mnist.h5"))
+model_cp_callback = keras.callbacks.ModelCheckpoint(os.path.join(KERAS_MODEL_DIR,"hdr_cnn.h5"), save_best_only=True)
 es_callback = keras.callbacks.EarlyStopping(verbose=1, patience=5)
 mnist_cnn_model.fit(x = train_images,
                     y = train_labels,

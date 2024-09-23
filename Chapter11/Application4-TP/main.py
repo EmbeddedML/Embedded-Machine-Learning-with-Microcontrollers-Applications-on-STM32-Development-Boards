@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
-import tensorflow as tf
+import keras
 from sklearn.metrics import mean_absolute_error
 from matplotlib import pyplot as plt
 
@@ -23,12 +23,12 @@ train_std = X_train.std()
 X_train = (X_train - train_mean)/ train_std
 X_test = (X_test - train_mean)/ train_std
 
-model = tf.keras.models.Sequential([tf.keras.layers.Dense(100, input_shape = [5], activation = "relu"),
-                                    tf.keras.layers.Dense(100, activation = "relu"),
-                                    tf.keras.layers.Dense(1)])
+model = keras.models.Sequential([keras.layers.Dense(100, input_shape = [5], activation = "relu"),
+                                    keras.layers.Dense(100, activation = "relu"),
+                                    keras.layers.Dense(1)])
 
-model.compile(optimizer=tf.keras.optimizers.SGD(learning_rate=5e-4),
-              loss=tf.keras.losses.MeanAbsoluteError())
+model.compile(optimizer=keras.optimizers.SGD(learning_rate=5e-4),
+              loss=keras.losses.MeanAbsoluteError())
 
 model.fit(X_train,
           y_train, 

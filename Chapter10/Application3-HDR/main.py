@@ -2,11 +2,11 @@ import os
 import numpy as np
 import cv2
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
-import tensorflow as tf
+import keras
 from matplotlib import pyplot as plt
 from Models.paths import KERAS_MODEL_DIR
 
-(train_images, train_labels), (test_images, test_labels) = tf.keras.datasets.mnist.load_data()
+(train_images, train_labels), (test_images, test_labels) = keras.datasets.mnist.load_data()
 
 train_huMoments = np.empty((len(train_images),7))
 test_huMoments = np.empty((len(test_images),7))
@@ -24,13 +24,13 @@ features_std = np.std(train_huMoments, axis = 0)
 train_huMoments = (train_huMoments - features_mean) / features_std
 test_huMoments = (test_huMoments - features_mean) / features_std
 
-model = tf.keras.models.Sequential([
-  tf.keras.layers.Dense(1, input_shape = [7], activation = 'sigmoid')
+model = keras.models.Sequential([
+  keras.layers.Dense(1, input_shape = [7], activation = 'sigmoid')
   ])
 
-model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=1e-3),
-              loss=tf.keras.losses.BinaryCrossentropy(),
-              metrics=[tf.keras.metrics.BinaryAccuracy()])
+model.compile(optimizer=keras.optimizers.Adam(learning_rate=1e-3),
+              loss=keras.losses.BinaryCrossentropy(),
+              metrics=[keras.metrics.BinaryAccuracy()])
 
 train_labels[train_labels != 0] = 1
 test_labels[test_labels != 0] = 1

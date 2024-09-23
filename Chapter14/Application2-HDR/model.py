@@ -3,7 +3,6 @@ from keras import layers
 from keras import Model
 from keras.optimizers import Adam
 
-
 def RNNMNISTModel(input_shape, num_classes):
     inp = Input(input_shape)
     state = layers.LSTM(16, unroll=True)(inp)

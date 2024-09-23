@@ -1,6 +1,7 @@
 import os
 import numpy as np
 import tensorflow as tf
+import keras
 from Data.paths import CLASSIFICATION_DATA_DIR
 from Models.paths import SAVED_MODEL_DIR, KERAS_MODEL_DIR, TFLITE_MODEL_DIR
 
@@ -9,17 +10,17 @@ train_labels = np.load(os.path.join(CLASSIFICATION_DATA_DIR, "cls_train_labels.n
 test_samples = np.load(os.path.join(CLASSIFICATION_DATA_DIR, "cls_test_samples.npy"))
 test_labels = np.load(os.path.join(CLASSIFICATION_DATA_DIR, "cls_test_labels.npy"))
 
-model = tf.keras.models.Sequential(
+model = keras.models.Sequential(
     [
-        tf.keras.layers.Dense(20, input_shape=[2], activation="relu"),
-        tf.keras.layers.Dense(1, activation="sigmoid"),
+        keras.layers.Dense(20, input_shape=[2], activation="relu"),
+        keras.layers.Dense(1, activation="sigmoid"),
     ]
 )
 
 model.compile(
-    optimizer=tf.keras.optimizers.Adam(learning_rate=1e-3),
-    loss=tf.keras.losses.BinaryCrossentropy(),
-    metrics=[tf.keras.metrics.BinaryAccuracy(), tf.keras.metrics.FalseNegatives()],
+    optimizer=keras.optimizers.Adam(learning_rate=1e-3),
+    loss=keras.losses.BinaryCrossentropy(),
+    metrics=[keras.metrics.BinaryAccuracy(), keras.metrics.FalseNegatives()],
 )
 
 model.fit(

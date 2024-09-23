@@ -1,15 +1,13 @@
 import os
 import tensorflow as tf
 from keras.utils import get_file, to_categorical
+from keras.datasets import mnist
 from Models.paths import KERAS_MODEL_DIR
 from .efficientnet import EfficientNet
 
 model_checkpoint_path = os.path.join(KERAS_MODEL_DIR, "efficientnet_tl_mnist.h5")
 num_classes = 10
-(train_images, train_labels), (
-    test_images,
-    test_labels,
-) = tf.keras.datasets.mnist.load_data()
+(train_images, train_labels), (test_images, test_labels) = mnist.load_data()
 data_shape = (32, 32, 3)
 
 

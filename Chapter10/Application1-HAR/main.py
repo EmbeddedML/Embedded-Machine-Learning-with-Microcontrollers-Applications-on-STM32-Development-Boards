@@ -2,7 +2,7 @@ import os
 from .data_utils import read_data
 from .feature_utils import create_features
 from sklearn import metrics
-import tensorflow as tf
+import keras
 from matplotlib import pyplot as plt
 from Data.paths import WISDM_PATH
 from Models.paths import KERAS_MODEL_DIR
@@ -16,14 +16,14 @@ df_test = data_df[data_df["user"] > 28]
 train_segments_df, train_labels = create_features(df_train, TIME_PERIODS, STEP_DISTANCE)
 test_segments_df, test_labels = create_features(df_test, TIME_PERIODS, STEP_DISTANCE)
 
-model = tf.keras.models.Sequential([
-  tf.keras.layers.Dense(1, input_shape = [10], activation = 'sigmoid')
+model = keras.models.Sequential([
+  keras.layers.Dense(1, input_shape = [10], activation = 'sigmoid')
   ])
 
-model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=1e-3),
-              loss=tf.keras.losses.BinaryCrossentropy(),
-              metrics=[tf.keras.metrics.BinaryAccuracy(),
-                       tf.keras.metrics.FalseNegatives()])
+model.compile(optimizer=keras.optimizers.Adam(learning_rate=1e-3),
+              loss=keras.losses.BinaryCrossentropy(),
+              metrics=[keras.metrics.BinaryAccuracy(),
+                       keras.metrics.FalseNegatives()])
 
 train_segments_np = train_segments_df.to_numpy()
 test_segments_np = test_segments_df.to_numpy()

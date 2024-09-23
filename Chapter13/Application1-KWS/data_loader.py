@@ -1,5 +1,6 @@
 import os
 import tensorflow as tf
+from Data.paths import FSDD_PATH
     
 def split_fn(wav_path, train):
     file_specs = tf.strings.split(wav_path, ".")[0]
@@ -35,8 +36,8 @@ def get_spectrogram(wav_path, audio_params):
     return spectrogram, digit
 
 def create_datasets(sample_length, fft_size, step_size, batch_size):
-    RECORDINGS_DIR = "recordings/*.wav"
-    ds = tf.data.Dataset.list_files(RECORDINGS_DIR)
+    recordings_path = os.path.join(FSDD_PATH, "*.wav")
+    ds = tf.data.Dataset.list_files(recordings_path)
     ds_size = tf.data.experimental.cardinality(ds).numpy()
     ds = ds.map(lambda x: get_spectrogram(x, (sample_length, fft_size, step_size))).shuffle(ds_size)
     train_ds = ds.take(int(0.8 * ds_size))

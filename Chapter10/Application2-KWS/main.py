@@ -2,7 +2,7 @@ import os
 import scipy.signal as sig
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from matplotlib import pyplot as plt
-import tensorflow as tf
+import keras
 from .mfcc_func import create_mfcc_features
 from Data.paths import FSDD_PATH
 from Models.paths import KERAS_MODEL_DIR
@@ -19,14 +19,14 @@ train_list = set(recordings_list) - test_list
 train_mfcc_features, train_labels = create_mfcc_features(train_list, FFTSize, sample_rate, numOfMelFilters, numOfDctOutputs, window)
 test_mfcc_features, test_labels = create_mfcc_features(test_list, FFTSize, sample_rate, numOfMelFilters, numOfDctOutputs, window)
 
-model = tf.keras.models.Sequential([
-  tf.keras.layers.Dense(1, input_shape = [numOfDctOutputs * 2], activation = 'sigmoid')
+model = keras.models.Sequential([
+  keras.layers.Dense(1, input_shape = [numOfDctOutputs * 2], activation = 'sigmoid')
   ])
 
-model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=1e-3),
-              loss=tf.keras.losses.BinaryCrossentropy(),
-              metrics=[tf.keras.metrics.BinaryAccuracy(),
-                       tf.keras.metrics.FalseNegatives()])
+model.compile(optimizer=keras.optimizers.Adam(learning_rate=1e-3),
+              loss=keras.losses.BinaryCrossentropy(),
+              metrics=[keras.metrics.BinaryAccuracy(),
+                       keras.metrics.FalseNegatives()])
 
 train_labels[train_labels != 0] = 1
 test_labels[test_labels != 0] = 1

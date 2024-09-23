@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error
 from matplotlib import pyplot as plt
-import tensorflow as tf
+import keras
 
 df = pd.read_csv("temperature_dataset.csv")
 y = df["Room_Temp"][::4]
@@ -24,11 +24,11 @@ train_std = X_train.std()
 X_train = (X_train - train_mean) / train_std
 X_test = (X_test - train_mean) / train_std
 
-model = tf.keras.models.Sequential([tf.keras.layers.Dense(1, input_shape=[5])])
+model = keras.models.Sequential([keras.layers.Dense(1, input_shape=[5])])
 
 model.compile(
-    optimizer=tf.keras.optimizers.SGD(learning_rate=5e-3),
-    loss=tf.keras.losses.MeanAbsoluteError(),
+    optimizer=keras.optimizers.SGD(learning_rate=5e-3),
+    loss=keras.losses.MeanAbsoluteError(),
 )
 
 model.fit(

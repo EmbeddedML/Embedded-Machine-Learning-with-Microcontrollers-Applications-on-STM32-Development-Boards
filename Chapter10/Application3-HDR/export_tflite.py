@@ -1,9 +1,10 @@
 import os
 import tensorflow as tf
+from keras.models import load_model
 from Common.tflite2cc import convert_tflite2cc
 from Models.paths import KERAS_MODEL_DIR, TFLITE_EXPORT_DIR, TFLITE_MODEL_DIR
 
-model = tf.keras.models.load_model(os.path.join(KERAS_MODEL_DIR,"hdr_perceptron.h5"))
+model = load_model(os.path.join(KERAS_MODEL_DIR,"hdr_perceptron.h5"))
 converter = tf.lite.TFLiteConverter.from_keras_model(model)
 tflite_model = converter.convert()
 tflite_save_path = os.path.join(TFLITE_MODEL_DIR, "hdr_perceptron.tflite")

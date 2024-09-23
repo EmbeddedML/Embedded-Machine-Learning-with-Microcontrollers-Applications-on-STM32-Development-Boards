@@ -1,5 +1,6 @@
 import os
 import tensorflow as tf
+from Data.paths import FSDD_PATH
 
 def mel_spectrogram(wav_path, params):
     sample_len = params[0]
@@ -47,8 +48,8 @@ def mel_spectrogram(wav_path, params):
     return normalized_mel, digit
 
 def create_datasets(sample_length, fft_size, step_size, batch_size, mel_bins):
-    RECORDINGS_DIR = "recordings/*.wav"
-    ds = tf.data.Dataset.list_files(RECORDINGS_DIR)
+    recordings_path = os.path.join(FSDD_PATH, "*.wav")
+    ds = tf.data.Dataset.list_files(recordings_path)
     ds_size = tf.data.experimental.cardinality(ds).numpy()
     ds = ds.map(lambda x: mel_spectrogram(x, (sample_length, fft_size, step_size, mel_bins))).shuffle(ds_size)
     train_ds = ds.take(int(0.8 * ds_size))
