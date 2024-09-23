@@ -2,8 +2,8 @@ import os
 from keras.callbacks import ModelCheckpoint, EarlyStopping
 from keras.datasets import mnist
 from sklearn.model_selection import train_test_split
-from model import RNNMNISTModel
 from Models.paths import KERAS_MODEL_DIR
+from .model import RNNMNISTModel
 
 checkpoint_path = os.path.join(KERAS_MODEL_DIR, "hdr_rnn")
 (train_imgs, train_labels), (test_imgs, test_labels) = mnist.load_data()

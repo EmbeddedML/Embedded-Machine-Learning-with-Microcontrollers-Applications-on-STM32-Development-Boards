@@ -1,7 +1,7 @@
 import os 
 import tensorflow as tf
 import keras
-from tflite2cc import convert_tflite2cc
+from Common.tflite2cc import convert_tflite2cc
 from Models.paths import KERAS_MODEL_DIR, TFLITE_MODEL_DIR, TFLITE_EXPORT_DIR
 
 model_path = os.path.join(KERAS_MODEL_DIR, "hdr_cnn.h5")

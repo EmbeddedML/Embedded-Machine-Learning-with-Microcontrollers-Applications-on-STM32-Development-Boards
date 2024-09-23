@@ -1,6 +1,6 @@
 import tensorflow as tf
 import keras
-from tflite2cc import convert_tflite2cc
+from Common.tflite2cc import convert_tflite2cc
 
 TFLITE_MODEL_PATH = "mlp_temperature_prediction.tflite"
 mnist_rnn_model = keras.models.load_model("mlp_temperature_prediction.h5")
