@@ -12,8 +12,8 @@ def split_fn(wav_path, train):
         return person == b"yweweler"
 
 def get_spectrogram(wav_path, audio_params):
-    file_specs = tf.strings.split(wav_path, ".")[0]
-    file_specs = tf.strings.split(file_specs, os.path.sep)[1]
+    wav_file = tf.strings.split(wav_path, os.path.sep)[-1]
+    file_specs = tf.strings.split(wav_file, ".")[0]
     digit = tf.strings.to_number(tf.strings.split(file_specs, "_")[0], out_type = tf.int32)
     wavfile = tf.io.read_file(wav_path)
     sample, _ = tf.audio.decode_wav(wavfile)
