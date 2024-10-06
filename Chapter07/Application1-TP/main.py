@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import pandas as pd
 from joblib import dump
@@ -6,6 +7,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error
 from matplotlib import pyplot as plt
 from Data.paths import TEMPERATURE_DATA_PATH
+from Models.paths import REGRESSION_MODEL_DIR
 
 df = pd.read_csv(TEMPERATURE_DATA_PATH)
 y = df['Room_Temp'][::4]
@@ -38,4 +40,4 @@ mae_test = np.sqrt(mean_absolute_error(y_test, y_test_predict))
 print(f"Training set MAE: {mae_train}\n")
 print(f"Test set MAE:{mae_test}")
 
-dump(linear_model, 'temperature_prediction_lin.joblib') 
+dump(linear_model, os.path.join(REGRESSION_MODEL_DIR,'temperature_pred_linreg.joblib'))

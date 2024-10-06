@@ -1,12 +1,15 @@
 
+import os
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
 from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import train_test_split
-from model import gru_temperature_model
+from .model import gru_temperature_model
+from Data.paths import TEMPERATURE_DATA_PATH
+from Models.paths import KERAS_MODEL_DIR
 
-df = pd.read_csv('temperature_dataset.csv')
+df = pd.read_csv(TEMPERATURE_DATA_PATH)
 y = df['Room_Temp']
 prev_values_count = 5
 
@@ -39,4 +42,4 @@ plt.show()
 mae_test = np.sqrt(mean_absolute_error(y_test, y_test_predict))
 print(f"Test set MAE:{mae_test}")
 
-temperature_model.save("mlp_temperature_prediction.h5")
+temperature_model.save(os.path.join(KERAS_MODEL_DIR,"temperature_pred_gru.h5"))
