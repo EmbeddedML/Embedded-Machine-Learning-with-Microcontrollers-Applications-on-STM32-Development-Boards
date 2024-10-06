@@ -27,7 +27,7 @@ This chapter summarizes three key concepts to be used in machine learning method
 | Description                         | Python Scripts                                             |  Project Files                                        |
 | ----------------------------------- | ---------------------------------------------------------- | ----------------------------------------------------- |
 | Human Activity Recognition          | [![Code](../Images/py.png)](Application1-HAR/main.py)      | [![Code](../Images/stm32.png)](Application1-HAR/.ioc) |
-| Keyword Spotting                    | [![Code](../Images/py.png)](Application2-KWS/mfcc_main.py) | [![Code](../Images/stm32.png)](Application1-HAR/.ioc) |
+| Keyword Spotting                    | [![Code](../Images/py.png)](Application2-KWS/mfcc_main.py) | [![Code](../Images/stm32.png)](Application2-KWS/.ioc) |
 | Handwritten Digit Recognition       | [![Code](../Images/py.png)](Application3-HDR/mnist.py)     | [![Code](../Images/stm32.png)](Application3-HDR/.ioc) |
 
 </center>
