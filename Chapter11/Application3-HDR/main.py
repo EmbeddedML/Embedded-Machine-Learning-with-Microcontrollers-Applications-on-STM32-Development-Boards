@@ -7,7 +7,8 @@ from keras.callbacks import EarlyStopping, ModelCheckpoint
 from matplotlib import pyplot as plt
 from Models.paths import KERAS_MODEL_DIR
 
-(train_images, train_labels), (test_images, test_labels) =keras.datasets.mnist.load_data()
+model_save_path = os.path.join(KERAS_MODEL_DIR, "hdr_mlp.h5")
+(train_images, train_labels), (test_images, test_labels) = keras.datasets.mnist.load_data()
 
 train_huMoments = np.empty((len(train_images),7))
 test_huMoments = np.empty((len(test_images),7))
@@ -28,10 +29,10 @@ model = keras.models.Sequential([
 
 categories = np.unique(test_labels)
 model.compile(loss=keras.losses.SparseCategoricalCrossentropy(), optimizer=keras.optimizers.Adam(1e-4))
-mc_callback = ModelCheckpoint("mlp_mnist_model.h5")
+mc_callback = ModelCheckpoint(model_save_path)
 es_callback = EarlyStopping("loss", patience = 5)
 model.fit(train_huMoments, train_labels, epochs=1000, verbose = 1, callbacks=[mc_callback, es_callback])
-
+model = keras.models.load_model(model_save_path)
 nn_preds = model.predict(test_huMoments)
 predicted_classes = np.argmax(nn_preds, axis = 1)
 
@@ -40,5 +41,3 @@ cm_display = ConfusionMatrixDisplay(confusion_matrix = conf_matrix, display_labe
 cm_display.plot()
 cm_display.ax_.set_title("Neural Network Confusion Matrix")
 plt.show()
-
-model.save(os.path.join(KERAS_MODEL_DIR, "hdr_mlp.h5"))
