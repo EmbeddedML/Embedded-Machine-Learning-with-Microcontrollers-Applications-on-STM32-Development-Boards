@@ -1,0 +1,11 @@
+sklearn2c
+pandas
+matplotlib
+opencv-python
+tensorflow==2.15
+tensorflow-model-optimization
+cmsisdsp
+torch torchvision onnx
+onnx_graphsurgeon --index-url https://pypi.ngc.nvidia.com
+sng4onnx
+onnx2tf
