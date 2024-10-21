@@ -1,5 +1,5 @@
 This is the official code repository of the book:
-**Embedded Machine Learning with Microcontrollers: Applications on ?? Development Boards**
+**Embedded Machine Learning with Microcontrollers: Applications on STM32 Development Boards**
 
 ## Before you start
 Before getting started, it is highly recommended to create a Python virtual environment and install required libraries. To do so, run the following command in your terminal:
