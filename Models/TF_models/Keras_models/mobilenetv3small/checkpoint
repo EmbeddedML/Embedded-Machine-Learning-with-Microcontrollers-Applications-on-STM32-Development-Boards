@@ -1,0 +1,2 @@
+model_checkpoint_path: "mobilenetv3small_float32.weights.tf"
+all_model_checkpoint_paths: "mobilenetv3small_float32.weights.tf"
