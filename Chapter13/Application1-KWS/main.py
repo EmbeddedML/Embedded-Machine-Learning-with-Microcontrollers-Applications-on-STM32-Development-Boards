@@ -7,7 +7,7 @@ from .data_loader import create_datasets
 from ..PythonScripts.resnet import ResNet
 
 train_ds, val_ds, test_ds, input_shape = create_datasets(8000, 512, 256, 32)
-kws_cnn_model = ResNet(10, input_shape, 8)
+kws_cnn_model = ResNet(10, input_shape, 2)
 kws_cnn_model.compile(
     optimizer=optimizers.Adam(0.0005, weight_decay=1e-6),
     loss=losses.SparseCategoricalCrossentropy(),
