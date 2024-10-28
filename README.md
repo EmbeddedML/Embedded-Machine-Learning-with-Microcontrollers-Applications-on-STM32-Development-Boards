@@ -22,7 +22,7 @@ or
 
 ### Running Embedded Project Files
 
-Furthermore, one can directly import ?? projects to ?? IDE using the ?? Projects folder under each chapter.
+Furthermore, one can directly import projects to STM32CubeIDE using the End of Chapter Projects folder under each chapter.
 
 <TBD>
 
