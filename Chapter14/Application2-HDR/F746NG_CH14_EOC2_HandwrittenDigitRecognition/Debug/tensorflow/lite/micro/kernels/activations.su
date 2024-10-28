@@ -1,0 +1,12 @@
+runtime_shape.h:64:3:tflite::RuntimeShape::~RuntimeShape()	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+activations.cc:33:7:void* tflite::{anonymous}::ReluInit(TfLiteContext*, const char*, size_t)	24	static
+activations.cc:38:14:TfLiteStatus tflite::{anonymous}::ReluEval(TfLiteContext*, TfLiteNode*)	160	static
+activations.cc:71:7:void* tflite::{anonymous}::Relu6Init(TfLiteContext*, const char*, size_t)	24	static
+activations.cc:76:14:TfLiteStatus tflite::{anonymous}::Relu6Eval(TfLiteContext*, TfLiteNode*)	168	static
+activations.cc:112:18:TFLMRegistration tflite::Register_RELU()	24	static
+activations.cc:116:18:TFLMRegistration tflite::Register_RELU6()	24	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = float]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = float]	16	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = signed char]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = signed char]	16	static

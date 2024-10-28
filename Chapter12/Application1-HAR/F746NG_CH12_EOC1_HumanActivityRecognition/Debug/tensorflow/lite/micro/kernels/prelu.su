@@ -1,0 +1,23 @@
+runtime_shape.h:64:3:tflite::RuntimeShape::~RuntimeShape()	16	static
+runtime_shape.h:66:11:int32_t tflite::RuntimeShape::DimensionsCount() const	16	static
+runtime_shape.h:67:11:int32_t tflite::RuntimeShape::Dims(int) const	16	static
+runtime_shape.h:72:8:void tflite::RuntimeShape::SetDim(int, int32_t)	24	static
+runtime_shape.h:78:23:static tflite::RuntimeShape tflite::RuntimeShape::ExtendedShape(int, const tflite::RuntimeShape&)	24	static
+runtime_shape.h:83:12:int32_t* tflite::RuntimeShape::DimsData()	16	static
+runtime_shape.h:84:18:const int32_t* tflite::RuntimeShape::DimsData() const	16	static
+runtime_shape.h:109:3:tflite::RuntimeShape::RuntimeShape(int, const tflite::RuntimeShape&, int)	40	static
+runtime_shape.h:133:12:int tflite::Offset(const tflite::RuntimeShape&, int, int, int, int)	32	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+common.h:1046:12:int tflite::SubscriptToIndex(const tflite::NdArrayDesc<4>&, int, int, int, int)	24	static
+prelu.cc:30:7:void* tflite::PreluInit(TfLiteContext*, const char*, size_t)	24	static
+prelu.cc:35:14:TfLiteStatus tflite::PreluEval(TfLiteContext*, TfLiteNode*)	224	static
+prelu.cc:71:18:TFLMRegistration tflite::Register_PRELU()	24	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = long int]	16	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = long int]	16	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = float]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = float]	16	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = signed char]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = signed char]	16	static
+prelu.h:30:13:void tflite::reference_ops::BroadcastPrelu4DSlow(const tflite::PreluParams&, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, T*) [with T = signed char]	176	static
+common.h:1139:13:void tflite::NdArrayDescsForElementwiseBroadcast(const tflite::RuntimeShape&, const tflite::RuntimeShape&, tflite::NdArrayDesc<N>*, tflite::NdArrayDesc<N>*) [with int N = 4]	96	static
+common.h:1128:22:void tflite::CopyDimsToDesc(const tflite::RuntimeShape&, tflite::NdArrayDesc<N>*) [with int N = 4]	24	static

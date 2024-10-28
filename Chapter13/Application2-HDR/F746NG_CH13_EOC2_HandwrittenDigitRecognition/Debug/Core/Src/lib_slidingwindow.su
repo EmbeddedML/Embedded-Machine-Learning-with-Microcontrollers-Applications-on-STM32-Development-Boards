@@ -1,0 +1,3 @@
+lib_slidingwindow.c:17:8:LIB_SW_Init	16	static
+lib_slidingwindow.c:35:6:LIB_SW_SlideWindow	24	static
+lib_slidingwindow.c:56:8:LIB_SW_GetWindow	48	static

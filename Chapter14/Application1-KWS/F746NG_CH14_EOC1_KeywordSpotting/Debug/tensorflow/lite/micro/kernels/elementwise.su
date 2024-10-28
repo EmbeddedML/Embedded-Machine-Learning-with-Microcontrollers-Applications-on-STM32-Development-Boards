@@ -1,0 +1,111 @@
+std_abs.h:75:3:constexpr float std::abs(float)	16	static
+cmath:184:3:constexpr float std::cos(float)	16	static
+cmath:338:3:constexpr float std::log(float)	16	static
+cmath:425:3:constexpr float std::sin(float)	16	static
+cmath:463:3:constexpr float std::sqrt(float)	16	static
+limits:1204:7:static constexpr long int std::numeric_limits<long int>::min()	4	static
+limits:1207:7:static constexpr long int std::numeric_limits<long int>::max()	4	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+fixedpoint.h:329:21:IntegerType gemmlowp::SaturatingRoundingDoublingHighMul(IntegerType, IntegerType) [with IntegerType = long int]	64	static
+common.h:961:13:void tflite::GetInvSqrtQuantizedMultiplierExp(int32_t, int, int32_t*, int*)	72	static
+kernel_util.h:158:12:int tflite::NumInputs(const TfLiteNode*)	16	static
+kernel_util.h:161:12:int tflite::NumOutputs(const TfLiteNode*)	16	static
+micro_context.h:102:22:tflite::MicroContext* tflite::GetMicroContext(const TfLiteContext*)	16	static
+elementwise.cc:46:6:bool tflite::{anonymous}::IsNumericSupportedType(TfLiteType)	16	static
+elementwise.cc:50:6:bool tflite::{anonymous}::IsLogicalSupportedType(TfLiteType)	16	static
+elementwise.cc:54:6:bool tflite::{anonymous}::IsAbsSupportedType(TfLiteType)	16	static
+elementwise.cc:58:6:bool tflite::{anonymous}::IsRsqrtSupportedType(TfLiteType)	16	static
+elementwise.cc:62:13:void tflite::{anonymous}::SetAbsOutputMultiplier(float, float, int32_t*, int*)	24	static
+elementwise.cc:69:13:void tflite::{anonymous}::SetRsqrtOutputMultiplier(float, float, int32_t*, int*)	32	static
+elementwise.cc:214:21:TfLiteStatus tflite::{anonymous}::EvalNumeric(TfLiteContext*, TfLiteNode*, float (*)(float))	32	static
+elementwise.cc:220:21:TfLiteStatus tflite::{anonymous}::EvalLogical(TfLiteContext*, TfLiteNode*, bool (*)(bool))	32	static
+elementwise.cc:227:7:void* tflite::{anonymous}::ElementWiseAbsRsqrtInit(TfLiteContext*, const char*, size_t)	24	static
+elementwise.cc:292:14:TfLiteStatus tflite::{anonymous}::AbsEval(TfLiteContext*, TfLiteNode*)	40	static
+elementwise.cc:326:14:TfLiteStatus tflite::{anonymous}::SinEval(TfLiteContext*, TfLiteNode*)	16	static
+elementwise.cc:330:14:TfLiteStatus tflite::{anonymous}::CosEval(TfLiteContext*, TfLiteNode*)	16	static
+elementwise.cc:334:14:TfLiteStatus tflite::{anonymous}::LogEval(TfLiteContext*, TfLiteNode*)	16	static
+elementwise.cc:338:14:TfLiteStatus tflite::{anonymous}::SqrtEval(TfLiteContext*, TfLiteNode*)	16	static
+elementwise.cc:348:26:tflite::{anonymous}::RsqrtEval(TfLiteContext*, TfLiteNode*)::<lambda(float)>	16	static
+elementwise.cc:348:26:static float tflite::{anonymous}::RsqrtEval(TfLiteContext*, TfLiteNode*)::<lambda(float)>::_FUN(float)	16	static
+elementwise.cc:348:26:tflite::{anonymous}::RsqrtEval(TfLiteContext*, TfLiteNode*)::<lambda(float)>::operator float (*)(float)() const	16	static
+elementwise.cc:342:14:TfLiteStatus tflite::{anonymous}::RsqrtEval(TfLiteContext*, TfLiteNode*)	32	static
+elementwise.cc:365:37:tflite::{anonymous}::SquareEval(TfLiteContext*, TfLiteNode*)::<lambda(float)>	16	static
+elementwise.cc:365:37:static float tflite::{anonymous}::SquareEval(TfLiteContext*, TfLiteNode*)::<lambda(float)>::_FUN(float)	16	static
+elementwise.cc:365:37:tflite::{anonymous}::SquareEval(TfLiteContext*, TfLiteNode*)::<lambda(float)>::operator float (*)(float)() const	16	static
+elementwise.cc:364:14:TfLiteStatus tflite::{anonymous}::SquareEval(TfLiteContext*, TfLiteNode*)	24	static
+elementwise.cc:369:37:tflite::{anonymous}::LogicalNotEval(TfLiteContext*, TfLiteNode*)::<lambda(bool)>	16	static
+elementwise.cc:369:37:static bool tflite::{anonymous}::LogicalNotEval(TfLiteContext*, TfLiteNode*)::<lambda(bool)>::_FUN(bool)	16	static
+elementwise.cc:369:37:tflite::{anonymous}::LogicalNotEval(TfLiteContext*, TfLiteNode*)::<lambda(bool)>::operator bool (*)(bool)() const	16	static
+elementwise.cc:368:14:TfLiteStatus tflite::{anonymous}::LogicalNotEval(TfLiteContext*, TfLiteNode*)	24	static
+elementwise.cc:374:18:TFLMRegistration tflite::Register_ABS()	24	static
+elementwise.cc:380:18:TFLMRegistration tflite::Register_SIN()	24	static
+elementwise.cc:385:18:TFLMRegistration tflite::Register_COS()	24	static
+elementwise.cc:390:18:TFLMRegistration tflite::Register_LOG()	24	static
+elementwise.cc:395:18:TFLMRegistration tflite::Register_SQRT()	24	static
+elementwise.cc:400:18:TFLMRegistration tflite::Register_RSQRT()	24	static
+elementwise.cc:406:18:TFLMRegistration tflite::Register_SQUARE()	24	static
+elementwise.cc:411:18:TFLMRegistration tflite::Register_LOGICAL_NOT()	24	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = long int]	16	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = long int]	16	static
+fixedpoint.h:357:20:IntegerType gemmlowp::RoundingDivideByPOT(IntegerType, int) [with IntegerType = long int]	56	static
+common.h:413:5:int tflite::CountLeadingZeros(T) [with T = long unsigned int]	16	static
+fixedpoint.h:525:12:gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType& gemmlowp::FixedPoint<tRawType, tIntegerBits>::raw() [with tRawType = long int; int tIntegerBits = 0]	16	static
+fixedpoint.h:481:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType) [with tRawType = long int; int tIntegerBits = 3]	24	static
+fixedpoint.h:559:36:gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::SaturatingRoundingMultiplyByPOT(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tExponent = -1; tRawType = long int; int tIntegerBits = 3]	16	static
+fixedpoint.h:487:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromScalarRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::ScalarRawType) [with tRawType = long int; int tIntegerBits = 3]	32	static
+fixedpoint.h:687:47:typename FixedPointType::ScalarRawType gemmlowp::RescaleConstantInitializer(int32_t) [with FixedPointType = gemmlowp::FixedPoint<long int, 3>]	16	static
+fixedpoint.h:508:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::One() [with tRawType = long int; int tIntegerBits = 3]	8	static
+fixedpoint.h:539:55:gemmlowp::FixedPoint<tRawType, (tIntegerBits_a + tIntegerBits_b)> gemmlowp::operator*(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_b>) [with tRawType = long int; int tIntegerBits_a = 3; int tIntegerBits_b = 3]	40	static
+fixedpoint.h:539:55:gemmlowp::FixedPoint<tRawType, (tIntegerBits_a + tIntegerBits_b)> gemmlowp::operator*(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_b>) [with tRawType = long int; int tIntegerBits_a = 6; int tIntegerBits_b = 3]	40	static
+fixedpoint.h:668:39:gemmlowp::FixedPoint<tRawType, tIntegerBitsDst> gemmlowp::Rescale(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tIntegerBitsDst = 3; tRawType = long int; int tIntegerBitsSrc = 9]	32	static
+fixedpoint.h:586:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator-(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = long int; int tIntegerBits = 6]	24	static
+fixedpoint.h:668:39:gemmlowp::FixedPoint<tRawType, tIntegerBitsDst> gemmlowp::Rescale(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tIntegerBitsDst = 3; tRawType = long int; int tIntegerBitsSrc = 6]	32	static
+fixedpoint.h:487:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromScalarRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::ScalarRawType) [with tRawType = long int; int tIntegerBits = 0]	32	static
+fixedpoint.h:687:47:typename FixedPointType::ScalarRawType gemmlowp::RescaleConstantInitializer(int32_t) [with FixedPointType = gemmlowp::FixedPoint<long int, 0>]	16	static
+fixedpoint.h:539:55:gemmlowp::FixedPoint<tRawType, (tIntegerBits_a + tIntegerBits_b)> gemmlowp::operator*(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_b>) [with tRawType = long int; int tIntegerBits_a = 3; int tIntegerBits_b = 0]	40	static
+fixedpoint.h:525:12:gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType& gemmlowp::FixedPoint<tRawType, tIntegerBits>::raw() [with tRawType = long int; int tIntegerBits = 3]	16	static
+elementwise.cc:196:21:TfLiteStatus tflite::{anonymous}::EvalImpl(TfLiteContext*, TfLiteNode*, T (*)(T), TfLiteStatus (*)(T), TfLiteType) [with T = float]	80	static
+elementwise.cc:196:21:TfLiteStatus tflite::{anonymous}::EvalImpl(TfLiteContext*, TfLiteNode*, T (*)(T), TfLiteStatus (*)(T), TfLiteType) [with T = bool]	80	static
+elementwise.cc:234:10:T tflite::{anonymous}::AbsEvalQuantized(TfLiteContext*, TfLiteNode*, T) [with T = signed char]	72	static
+elementwise.cc:169:21:TfLiteStatus tflite::{anonymous}::EvalImplQuantized(TfLiteContext*, TfLiteNode*, T (*)(TfLiteContext*, TfLiteNode*, T), TfLiteStatus (*)(TfLiteContext*, TfLiteNode*, T), TfLiteType) [with T = signed char]	80	static
+elementwise.cc:191:10:T tflite::{anonymous}::AbsHelper(T) [with T = short int]	16	static
+elementwise.cc:196:21:TfLiteStatus tflite::{anonymous}::EvalImpl(TfLiteContext*, TfLiteNode*, T (*)(T), TfLiteStatus (*)(T), TfLiteType) [with T = short int]	80	static
+elementwise.cc:234:10:T tflite::{anonymous}::AbsEvalQuantized(TfLiteContext*, TfLiteNode*, T) [with T = short int]	72	static
+elementwise.cc:169:21:TfLiteStatus tflite::{anonymous}::EvalImplQuantized(TfLiteContext*, TfLiteNode*, T (*)(TfLiteContext*, TfLiteNode*, T), TfLiteStatus (*)(TfLiteContext*, TfLiteNode*, T), TfLiteType) [with T = short int]	80	static
+elementwise.cc:256:10:T tflite::{anonymous}::RsqrtEvalQuantized(TfLiteContext*, TfLiteNode*, T) [with T = signed char]	72	static
+elementwise.cc:283:14:TfLiteStatus tflite::{anonymous}::validate_input_func(TfLiteContext*, TfLiteNode*, T) [with T = signed char]	32	static
+elementwise.cc:256:10:T tflite::{anonymous}::RsqrtEvalQuantized(TfLiteContext*, TfLiteNode*, T) [with T = short int]	72	static
+elementwise.cc:283:14:TfLiteStatus tflite::{anonymous}::validate_input_func(TfLiteContext*, TfLiteNode*, T) [with T = short int]	32	static
+elementwise.cc:103:14:TfLiteStatus tflite::{anonymous}::PrepareAbsRsqrt(TfLiteContext*, TfLiteNode*) [with bool (* <anonymous>)(TfLiteType) = tflite::{anonymous}::IsAbsSupportedType; int op_nameid = 0]	72	static
+elementwise.cc:79:14:TfLiteStatus tflite::{anonymous}::GenericPrepare(TfLiteContext*, TfLiteNode*) [with bool (* <anonymous>)(TfLiteType) = tflite::{anonymous}::IsNumericSupportedType]	56	static
+elementwise.cc:103:14:TfLiteStatus tflite::{anonymous}::PrepareAbsRsqrt(TfLiteContext*, TfLiteNode*) [with bool (* <anonymous>)(TfLiteType) = tflite::{anonymous}::IsRsqrtSupportedType; int op_nameid = 1]	72	static
+elementwise.cc:79:14:TfLiteStatus tflite::{anonymous}::GenericPrepare(TfLiteContext*, TfLiteNode*) [with bool (* <anonymous>)(TfLiteType) = tflite::{anonymous}::IsLogicalSupportedType]	56	static
+fixedpoint.h:64:10:tRawType gemmlowp::Dup(typename gemmlowp::FixedPointRawTypeTraits<tRawType>::ScalarRawType) [with tRawType = long int]	16	static
+fixedpoint.h:70:14:tIntegerType gemmlowp::BitAnd(tIntegerType, tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:140:14:tIntegerType gemmlowp::ShiftRight(tIntegerType, int) [with tIntegerType = long int]	16	static
+fixedpoint.h:199:14:tIntegerType gemmlowp::MaskIfLessThan(tIntegerType, tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:94:14:tIntegerType gemmlowp::Add(tIntegerType, tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:185:14:tIntegerType gemmlowp::MaskIfGreaterThan(tIntegerType, tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:416:13:IntegerType gemmlowp::SaturatingRoundingMultiplyByPOT(IntegerType) [with int Exponent = -1; IntegerType = long int]	16	static
+fixedpoint.h:525:12:gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType& gemmlowp::FixedPoint<tRawType, tIntegerBits>::raw() [with tRawType = long int; int tIntegerBits = 6]	16	static
+fixedpoint.h:525:12:gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType& gemmlowp::FixedPoint<tRawType, tIntegerBits>::raw() [with tRawType = long int; int tIntegerBits = 9]	16	static
+fixedpoint.h:416:13:IntegerType gemmlowp::SaturatingRoundingMultiplyByPOT(IntegerType) [with int Exponent = 6; IntegerType = long int]	16	static
+fixedpoint.h:481:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType) [with tRawType = long int; int tIntegerBits = 6]	24	static
+fixedpoint.h:105:14:tIntegerType gemmlowp::Sub(tIntegerType, tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:416:13:IntegerType gemmlowp::SaturatingRoundingMultiplyByPOT(IntegerType) [with int Exponent = 3; IntegerType = long int]	16	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = float]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = float]	16	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = bool]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = bool]	16	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = signed char]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = signed char]	16	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = short int]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = short int]	16	static
+fixedpoint.h:156:14:tIntegerType gemmlowp::MaskIfNonZero(tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:410:22:static IntegerType gemmlowp::ImplSaturatingRoundingMultiplyByPOT<Exponent, IntegerType, -1>::eval(IntegerType) [with int Exponent = -1; IntegerType = long int]	16	static
+fixedpoint.h:385:22:static IntegerType gemmlowp::ImplSaturatingRoundingMultiplyByPOT<Exponent, IntegerType, 1>::eval(IntegerType) [with int Exponent = 6; IntegerType = long int]	48	static
+fixedpoint.h:385:22:static IntegerType gemmlowp::ImplSaturatingRoundingMultiplyByPOT<Exponent, IntegerType, 1>::eval(IntegerType) [with int Exponent = 3; IntegerType = long int]	48	static
+fixedpoint.h:88:14:tIntegerType gemmlowp::BitNot(tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:125:14:tIntegerType gemmlowp::ShiftLeft(tIntegerType, int) [with tIntegerType = long int]	40	static
+fixedpoint.h:148:14:tIntegerType gemmlowp::SelectUsingMask(tIntegerType, tIntegerType, tIntegerType) [with tIntegerType = long int]	32	static
+fixedpoint.h:82:14:tIntegerType gemmlowp::BitXor(tIntegerType, tIntegerType) [with tIntegerType = long int]	16	static

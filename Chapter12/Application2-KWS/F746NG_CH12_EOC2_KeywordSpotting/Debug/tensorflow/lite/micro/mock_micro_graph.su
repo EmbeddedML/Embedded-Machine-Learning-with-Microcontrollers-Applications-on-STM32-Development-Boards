@@ -1,0 +1,16 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+micro_graph.h:57:3:static void tflite::MicroGraph::operator delete(void*)	16	static
+mock_micro_graph.h:55:3:static void tflite::MockMicroGraph::operator delete(void*)	16	static
+micro_graph.h:28:7:constexpr tflite::MicroGraph::MicroGraph()	16	static
+micro_graph.h:30:11:tflite::MicroGraph::~MicroGraph()	16	static
+micro_graph.h:30:11:virtual tflite::MicroGraph::~MicroGraph()	16	static
+mock_micro_graph.cc:22:1:tflite::MockMicroGraph::MockMicroGraph(tflite::SingleArenaBufferAllocator*)	48	static
+mock_micro_graph.cc:39:14:virtual TfLiteStatus tflite::MockMicroGraph::InvokeSubgraph(int)	16	static
+mock_micro_graph.cc:44:8:virtual size_t tflite::MockMicroGraph::NumSubgraphInputs(int)	16	static
+mock_micro_graph.cc:46:19:virtual TfLiteEvalTensor* tflite::MockMicroGraph::GetSubgraphInput(int, int)	24	static
+mock_micro_graph.cc:51:8:virtual size_t tflite::MockMicroGraph::NumSubgraphOutputs(int)	16	static
+mock_micro_graph.cc:53:19:virtual TfLiteEvalTensor* tflite::MockMicroGraph::GetSubgraphOutput(int, int)	24	static
+mock_micro_graph.cc:58:5:virtual int tflite::MockMicroGraph::NumSubgraphs()	16	static
+mock_micro_graph.cc:60:25:virtual tflite::MicroResourceVariables* tflite::MockMicroGraph::GetResourceVariables()	16	static
+mock_micro_graph.h:29:7:tflite::MockMicroGraph::~MockMicroGraph()	16	static
+mock_micro_graph.h:29:7:virtual tflite::MockMicroGraph::~MockMicroGraph()	16	static

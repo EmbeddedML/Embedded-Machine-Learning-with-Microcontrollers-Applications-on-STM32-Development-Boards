@@ -1,0 +1,10 @@
+ibuffer_allocator.h:34:3:tflite::IPersistentBufferAllocator::IPersistentBufferAllocator()	16	static
+ibuffer_allocator.h:35:11:tflite::IPersistentBufferAllocator::~IPersistentBufferAllocator()	16	static
+ibuffer_allocator.h:35:11:virtual tflite::IPersistentBufferAllocator::~IPersistentBufferAllocator()	16	static
+persistent_arena_buffer_allocator.h:42:3:static void tflite::PersistentArenaBufferAllocator::operator delete(void*)	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+persistent_arena_buffer_allocator.cc:22:1:tflite::PersistentArenaBufferAllocator::PersistentArenaBufferAllocator(uint8_t*, size_t)	24	static
+persistent_arena_buffer_allocator.cc:28:1:tflite::PersistentArenaBufferAllocator::~PersistentArenaBufferAllocator()	16	static
+persistent_arena_buffer_allocator.cc:28:1:virtual tflite::PersistentArenaBufferAllocator::~PersistentArenaBufferAllocator()	16	static
+persistent_arena_buffer_allocator.cc:30:10:virtual uint8_t* tflite::PersistentArenaBufferAllocator::AllocatePersistentBuffer(size_t, size_t)	32	static
+persistent_arena_buffer_allocator.cc:48:8:virtual size_t tflite::PersistentArenaBufferAllocator::GetPersistentUsedBytes() const	16	static

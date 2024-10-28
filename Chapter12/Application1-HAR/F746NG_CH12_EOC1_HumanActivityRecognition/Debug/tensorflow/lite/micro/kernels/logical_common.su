@@ -1,0 +1,22 @@
+runtime_shape.h:64:3:tflite::RuntimeShape::~RuntimeShape()	16	static
+runtime_shape.h:66:11:int32_t tflite::RuntimeShape::DimensionsCount() const	16	static
+runtime_shape.h:67:11:int32_t tflite::RuntimeShape::Dims(int) const	16	static
+runtime_shape.h:72:8:void tflite::RuntimeShape::SetDim(int, int32_t)	24	static
+runtime_shape.h:78:23:static tflite::RuntimeShape tflite::RuntimeShape::ExtendedShape(int, const tflite::RuntimeShape&)	24	static
+runtime_shape.h:83:12:int32_t* tflite::RuntimeShape::DimsData()	16	static
+runtime_shape.h:84:18:const int32_t* tflite::RuntimeShape::DimsData() const	16	static
+runtime_shape.h:85:18:const int32_t* tflite::RuntimeShape::DimsDataUpTo5D() const	16	static
+runtime_shape.h:96:7:int tflite::RuntimeShape::FlatSize() const	32	static
+runtime_shape.h:109:3:tflite::RuntimeShape::RuntimeShape(int, const tflite::RuntimeShape&, int)	40	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+types.h:313:12:int tflite::MatchingFlatSize(const tflite::RuntimeShape&, const tflite::RuntimeShape&)	32	static
+types.h:323:12:int tflite::MatchingFlatSize(const tflite::RuntimeShape&, const tflite::RuntimeShape&, const tflite::RuntimeShape&)	40	static
+logical_common.cc:29:14:TfLiteStatus tflite::LogicalImpl(TfLiteContext*, TfLiteNode*, bool (*)(bool, bool))	232	static
+logical_common.cc:59:6:bool tflite::LogicalOr(bool, bool)	16	static
+logical_common.cc:61:6:bool tflite::LogicalAnd(bool, bool)	16	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = bool]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = bool]	16	static
+binary_function.h:75:13:void tflite::reference_ops::BinaryFunction(const tflite::RuntimeShape&, const T1*, const tflite::RuntimeShape&, const T2*, const tflite::RuntimeShape&, R*, R (*)(T1, T2)) [with R = bool; T1 = bool; T2 = bool]	40	static
+binary_function.h:30:13:void tflite::reference_ops::BroadcastBinaryFunction4DSlow(const tflite::RuntimeShape&, const T1*, const tflite::RuntimeShape&, const T2*, const tflite::RuntimeShape&, R*, R (*)(T1, T2)) [with R = bool; T1 = bool; T2 = bool]	192	static
+common.h:1139:13:void tflite::NdArrayDescsForElementwiseBroadcast(const tflite::RuntimeShape&, const tflite::RuntimeShape&, tflite::NdArrayDesc<N>*, tflite::NdArrayDesc<N>*) [with int N = 4]	96	static
+common.h:1128:22:void tflite::CopyDimsToDesc(const tflite::RuntimeShape&, tflite::NdArrayDesc<N>*) [with int N = 4]	24	static

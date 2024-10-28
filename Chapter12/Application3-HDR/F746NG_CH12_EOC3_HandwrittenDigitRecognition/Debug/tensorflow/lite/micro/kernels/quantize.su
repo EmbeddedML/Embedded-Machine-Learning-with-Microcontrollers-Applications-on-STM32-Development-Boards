@@ -1,0 +1,3 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+quantize.cc:28:7:void* tflite::{anonymous}::Init(TfLiteContext*, const char*, size_t)	24	static
+quantize.cc:36:18:TFLMRegistration tflite::Register_QUANTIZE()	24	static

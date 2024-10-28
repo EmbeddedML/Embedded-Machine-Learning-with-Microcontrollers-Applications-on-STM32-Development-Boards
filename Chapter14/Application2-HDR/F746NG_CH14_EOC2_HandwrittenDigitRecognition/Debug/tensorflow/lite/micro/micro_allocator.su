@@ -1,0 +1,133 @@
+new:173:33:void* operator new(std::size_t, void*)	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+table.h:29:18:const uint8_t* flatbuffers::Table::GetVTable() const	24	static
+table.h:35:13:flatbuffers::voffset_t flatbuffers::Table::GetOptionalFieldOffset(flatbuffers::voffset_t) const	24	static
+schema_generated.h:5088:37:const flatbuffers::Vector<float>* tflite::QuantizationParameters::scale() const	16	static
+schema_generated.h:5091:39:const flatbuffers::Vector<long long int>* tflite::QuantizationParameters::zero_point() const	16	static
+schema_generated.h:5104:11:int32_t tflite::QuantizationParameters::quantized_dimension() const	16	static
+schema_generated.h:5771:39:const flatbuffers::Vector<long int>* tflite::Tensor::shape() const	16	static
+schema_generated.h:5774:22:tflite::TensorType tflite::Tensor::type() const	16	static
+schema_generated.h:5777:12:uint32_t tflite::Tensor::buffer() const	16	static
+schema_generated.h:5783:41:const tflite::QuantizationParameters* tflite::Tensor::quantization() const	16	static
+schema_generated.h:5786:8:bool tflite::Tensor::is_variable() const	16	static
+schema_generated.h:15871:67:const flatbuffers::Vector<flatbuffers::Offset<tflite::Tensor> >* tflite::SubGraph::tensors() const	16	static
+schema_generated.h:15991:39:const flatbuffers::Vector<unsigned char>* tflite::Buffer::data() const	16	static
+schema_generated.h:16361:69:const flatbuffers::Vector<flatbuffers::Offset<tflite::SubGraph> >* tflite::Model::subgraphs() const	16	static
+schema_generated.h:16367:67:const flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer> >* tflite::Model::buffers() const	16	static
+flatbuffer_conversions.h:51:11:tflite::BuiltinDataAllocator::~BuiltinDataAllocator()	16	static
+flatbuffer_conversions.h:51:11:virtual tflite::BuiltinDataAllocator::~BuiltinDataAllocator()	16	static
+micro_allocator.h:343:3:static void tflite::MicroAllocator::operator delete(void*)	16	static
+micro_allocation_info.h:64:3:tflite::AllocationInfoBuilder::AllocationInfoBuilder(const tflite::Model*, tflite::INonPersistentBufferAllocator*)	24	static
+micro_allocation_info.h:108:7:int tflite::AllocationInfoBuilder::AllocationCount() const	16	static
+micro_allocation_info.h:111:19:tflite::AllocationInfo* tflite::AllocationInfoBuilder::Finish() const	16	static
+micro_arena_constants.h:24:15:constexpr int tflite::MicroArenaBufferAlignment()	4	static
+flatbuffer_conversions.h:33:7:constexpr tflite::BuiltinDataAllocator::BuiltinDataAllocator()	16	static
+micro_allocator.cc:55:12:tflite::{anonymous}::MicroBuiltinDataAllocator::MicroBuiltinDataAllocator(tflite::IPersistentBufferAllocator*)	16	static
+micro_allocator.cc:59:9:virtual void* tflite::{anonymous}::MicroBuiltinDataAllocator::Allocate(size_t, size_t)	24	static
+micro_allocator.cc:63:8:virtual void tflite::{anonymous}::MicroBuiltinDataAllocator::Deallocate(void*)	16	static
+micro_allocator.cc:68:3:static void tflite::{anonymous}::MicroBuiltinDataAllocator::operator delete(void*)	16	static
+micro_allocator.cc:74:21:tflite::MicroMemoryPlanner* tflite::{anonymous}::CreateMemoryPlanner(tflite::MemoryPlannerType, tflite::IPersistentBufferAllocator*)	32	static
+micro_allocator.cc:97:14:TfLiteStatus tflite::{anonymous}::CreatePlan(tflite::MicroMemoryPlanner*, const tflite::AllocationInfo*, size_t)	56	static
+micro_allocator.cc:120:14:TfLiteStatus tflite::{anonymous}::CommitPlan(tflite::MicroMemoryPlanner*, uint8_t*, const tflite::AllocationInfo*, size_t)	48	static
+ibuffer_allocator.h:32:7:constexpr tflite::IPersistentBufferAllocator::IPersistentBufferAllocator(const tflite::IPersistentBufferAllocator&)	16	static
+persistent_arena_buffer_allocator.h:30:7:constexpr tflite::PersistentArenaBufferAllocator::PersistentArenaBufferAllocator(const tflite::PersistentArenaBufferAllocator&)	16	static
+micro_allocator.cc:138:29:tflite::IPersistentBufferAllocator* tflite::{anonymous}::CreatePersistentArenaAllocator(uint8_t*, size_t)	56	static
+micro_allocator.cc:161:32:tflite::INonPersistentBufferAllocator* tflite::{anonymous}::CreateNonPersistentArenaAllocator(uint8_t*, size_t, tflite::IPersistentBufferAllocator*)	48	static
+micro_allocator.cc:186:7:void* tflite::internal::GetFlatbufferTensorBuffer(const tflite::Tensor&, const flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer> >*)	32	static
+micro_allocator.cc:216:14:TfLiteStatus tflite::internal::InitializeTfLiteTensorFromFlatbuffer(tflite::IPersistentBufferAllocator*, tflite::INonPersistentBufferAllocator*, bool, const tflite::Tensor&, const flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer> >*, TfLiteTensor*)	64	static
+micro_allocator.cc:336:14:TfLiteStatus tflite::internal::InitializeTfLiteEvalTensorFromFlatbuffer(const tflite::Tensor&, const flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer> >*, TfLiteEvalTensor*)	32	static
+micro_allocator.cc:360:8:static size_t tflite::MicroAllocator::GetDefaultTailUsage(bool)	32	static
+micro_allocator.cc:371:1:tflite::MicroAllocator::MicroAllocator(tflite::SingleArenaBufferAllocator*, tflite::MicroMemoryPlanner*)	24	static
+micro_allocator.cc:378:1:tflite::MicroAllocator::MicroAllocator(tflite::IPersistentBufferAllocator*, tflite::INonPersistentBufferAllocator*, tflite::MicroMemoryPlanner*)	24	static
+micro_allocator.cc:387:1:tflite::MicroAllocator::~MicroAllocator()	16	static
+micro_allocator.cc:387:1:virtual tflite::MicroAllocator::~MicroAllocator()	16	static
+micro_allocator.cc:389:17:static tflite::MicroAllocator* tflite::MicroAllocator::Create(uint8_t*, size_t, tflite::MicroMemoryPlanner*)	40	static
+micro_allocator.cc:400:17:static tflite::MicroAllocator* tflite::MicroAllocator::Create(uint8_t*, size_t, tflite::MemoryPlannerType)	40	static
+micro_allocator.cc:416:17:static tflite::MicroAllocator* tflite::MicroAllocator::Create(tflite::SingleArenaBufferAllocator*, tflite::MicroMemoryPlanner*)	32	static
+micro_allocator.cc:429:17:static tflite::MicroAllocator* tflite::MicroAllocator::Create(uint8_t*, size_t, uint8_t*, size_t, tflite::MemoryPlannerType)	56	static
+micro_allocator.cc:472:22:tflite::SubgraphAllocations* tflite::MicroAllocator::StartModelAllocation(const tflite::Model*)	32	static
+micro_allocator.cc:512:14:TfLiteStatus tflite::MicroAllocator::FinishModelAllocation(const tflite::Model*, tflite::SubgraphAllocations*, tflite::ScratchBufferHandle**)	40	static
+micro_allocator.cc:533:7:virtual void* tflite::MicroAllocator::AllocatePersistentBuffer(size_t)	24	static
+micro_allocator.cc:538:14:TfLiteStatus tflite::MicroAllocator::RequestScratchBufferInArena(size_t, int, int*)	40	static
+micro_allocator.cc:579:14:TfLiteStatus tflite::MicroAllocator::FinishPrepareNodeAllocations(int)	40	static
+micro_allocator.cc:609:8:size_t tflite::MicroAllocator::used_bytes() const	24	static
+micro_allocator.cc:614:14:virtual TfLiteStatus tflite::MicroAllocator::AllocateNodeAndRegistrations(const tflite::Model*, tflite::SubgraphAllocations*)	40	static
+micro_allocator.cc:639:15:virtual TfLiteTensor* tflite::MicroAllocator::AllocatePersistentTfLiteTensor(const tflite::Model*, const tflite::SubgraphAllocations*, int, int)	48	static
+micro_allocator.cc:681:6:virtual void tflite::MicroAllocator::DeallocateTempTfLiteTensor(TfLiteTensor*)	24	static
+micro_allocator.cc:705:15:virtual TfLiteTensor* tflite::MicroAllocator::AllocateTempTfLiteTensor(const tflite::Model*, const tflite::SubgraphAllocations*, int, int)	48	static
+micro_allocator.cc:744:10:virtual uint8_t* tflite::MicroAllocator::AllocateTempBuffer(size_t, size_t)	24	static
+micro_allocator.cc:748:6:virtual void tflite::MicroAllocator::DeallocateTempBuffer(uint8_t*)	16	static
+micro_allocator.cc:752:14:virtual TfLiteStatus tflite::MicroAllocator::ResetTempAllocations()	16	static
+micro_allocator.cc:756:6:virtual bool tflite::MicroAllocator::IsAllTempDeallocated()	16	static
+micro_allocator.cc:760:14:virtual TfLiteStatus tflite::MicroAllocator::AllocateTfLiteEvalTensors(const tflite::Model*, tflite::SubgraphAllocations*)	56	static
+micro_allocator.cc:794:14:virtual TfLiteStatus tflite::MicroAllocator::AllocateVariables(const tflite::SubGraph*, TfLiteEvalTensor*, const int32_t*)	64	static
+micro_allocator.cc:821:15:virtual TfLiteTensor* tflite::MicroAllocator::AllocatePersistentTfLiteTensorInternal()	16	static
+micro_allocator.cc:827:14:virtual TfLiteStatus tflite::MicroAllocator::PopulateTfLiteTensorFromFlatbuffer(const tflite::Model*, TfLiteTensor*, int, int, bool)	48	static
+micro_allocator.cc:840:14:virtual TfLiteStatus tflite::MicroAllocator::CommitStaticMemoryPlan(const tflite::Model*, tflite::SubgraphAllocations*, tflite::ScratchBufferHandle*)	144	static
+micro_allocator.cc:937:14:virtual TfLiteStatus tflite::MicroAllocator::AllocateScratchBufferHandles(tflite::ScratchBufferHandle**, size_t)	24	static
+micro_allocator.cc:956:14:TfLiteStatus tflite::MicroAllocator::InitScratchBufferData()	16	static
+micro_allocator.cc:975:33:tflite::internal::ScratchBufferRequest* tflite::MicroAllocator::GetScratchBufferRequests()	16	static
+micro_allocator.cc:980:35:tflite::TfLiteBridgeBuiltinDataAllocator* tflite::MicroAllocator::GetBuiltinDataAllocator()	16	static
+base.h:416:24:T flatbuffers::EndianScalar(T) [with T = long unsigned int]	16	static
+base.h:427:3:T flatbuffers::ReadScalar(const void*) [with T = long unsigned int]	16	static
+base.h:427:3:T flatbuffers::ReadScalar(const void*) [with T = long int]	16	static
+base.h:427:3:T flatbuffers::ReadScalar(const void*) [with T = short unsigned int]	16	static
+base.h:427:3:T flatbuffers::ReadScalar(const void*) [with T = unsigned char]	16	static
+table.h:56:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) const [with P = const flatbuffers::Vector<unsigned char>*]	16	static
+table.h:56:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) const [with P = const flatbuffers::Vector<float>*]	16	static
+table.h:56:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) const [with P = const flatbuffers::Vector<long long int>*]	16	static
+table.h:45:26:T flatbuffers::Table::GetField(flatbuffers::voffset_t, T) const [with T = unsigned char]	24	static
+table.h:45:26:T flatbuffers::Table::GetField(flatbuffers::voffset_t, T) const [with T = long int]	32	static
+table.h:56:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) const [with P = const flatbuffers::Vector<long int>*]	16	static
+table.h:45:26:T flatbuffers::Table::GetField(flatbuffers::voffset_t, T) const [with T = signed char]	24	static
+table.h:45:26:T flatbuffers::Table::GetField(flatbuffers::voffset_t, T) const [with T = long unsigned int]	32	static
+table.h:56:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) const [with P = const tflite::QuantizationParameters*]	16	static
+table.h:56:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) const [with P = const flatbuffers::Vector<flatbuffers::Offset<tflite::Tensor> >*]	16	static
+table.h:56:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) const [with P = const flatbuffers::Vector<flatbuffers::Offset<tflite::SubGraph> >*]	16	static
+table.h:56:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) const [with P = const flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer> >*]	16	static
+vector.h:159:13:flatbuffers::uoffset_t flatbuffers::Vector<T>::size() const [with T = unsigned char]	16	static
+vector.h:159:13:flatbuffers::uoffset_t flatbuffers::Vector<T>::size() const [with T = float]	16	static
+vector.h:169:15:flatbuffers::Vector<T>::return_type flatbuffers::Vector<T>::Get(flatbuffers::uoffset_t) const [with T = float]	16	static
+vector.h:159:13:flatbuffers::uoffset_t flatbuffers::Vector<T>::size() const [with T = long long int]	16	static
+vector.h:169:15:flatbuffers::Vector<T>::return_type flatbuffers::Vector<T>::Get(flatbuffers::uoffset_t) const [with T = long long int]	16	static
+vector.h:159:13:flatbuffers::uoffset_t flatbuffers::Vector<T>::size() const [with T = flatbuffers::Offset<tflite::Tensor>]	16	static
+vector.h:169:15:flatbuffers::Vector<T>::return_type flatbuffers::Vector<T>::Get(flatbuffers::uoffset_t) const [with T = flatbuffers::Offset<tflite::Tensor>]	16	static
+vector.h:159:13:flatbuffers::uoffset_t flatbuffers::Vector<T>::size() const [with T = flatbuffers::Offset<tflite::SubGraph>]	16	static
+vector.h:169:15:flatbuffers::Vector<T>::return_type flatbuffers::Vector<T>::Get(flatbuffers::uoffset_t) const [with T = flatbuffers::Offset<tflite::SubGraph>]	16	static
+vector.h:159:13:flatbuffers::uoffset_t flatbuffers::Vector<T>::size() const [with T = flatbuffers::Offset<tflite::Buffer>]	16	static
+vector.h:169:15:flatbuffers::Vector<T>::return_type flatbuffers::Vector<T>::Get(flatbuffers::uoffset_t) const [with T = flatbuffers::Offset<tflite::Buffer>]	16	static
+vector.h:174:15:flatbuffers::Vector<T>::return_type flatbuffers::Vector<T>::operator[](flatbuffers::uoffset_t) const [with T = flatbuffers::Offset<tflite::Buffer>]	16	static
+vector.h:254:12:const T* flatbuffers::Vector<T>::data() const [with T = unsigned char]	16	static
+memory_helpers.h:38:8:size_t tflite::AlignSizeUp(size_t) [with T = tflite::SingleArenaBufferAllocator]	16	static
+memory_helpers.h:38:8:size_t tflite::AlignSizeUp(size_t) [with T = tflite::MicroAllocator]	16	static
+memory_helpers.h:38:8:size_t tflite::AlignSizeUp(size_t) [with T = tflite::{anonymous}::MicroBuiltinDataAllocator]	16	static
+memory_helpers.h:38:8:size_t tflite::AlignSizeUp(size_t) [with T = tflite::SubgraphAllocations]	16	static
+memory_helpers.h:38:8:size_t tflite::AlignSizeUp(size_t) [with T = tflite::GreedyMemoryPlanner]	16	static
+base.h:416:24:T flatbuffers::EndianScalar(T) [with T = long int]	16	static
+base.h:416:24:T flatbuffers::EndianScalar(T) [with T = short unsigned int]	16	static
+base.h:416:24:T flatbuffers::EndianScalar(T) [with T = unsigned char]	16	static
+base.h:427:3:T flatbuffers::ReadScalar(const void*) [with T = signed char]	16	static
+base.h:416:24:T flatbuffers::EndianScalar(T) [with T = long long int]	16	static
+base.h:416:24:T flatbuffers::EndianScalar(T) [with T = float]	16	static
+table.h:50:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) [with P = const flatbuffers::Vector<unsigned char>*]	24	static
+table.h:50:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) [with P = const flatbuffers::Vector<float>*]	24	static
+table.h:50:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) [with P = const flatbuffers::Vector<long long int>*]	24	static
+table.h:50:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) [with P = const flatbuffers::Vector<long int>*]	24	static
+table.h:50:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) [with P = const tflite::QuantizationParameters*]	24	static
+table.h:50:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) [with P = const flatbuffers::Vector<flatbuffers::Offset<tflite::Tensor> >*]	24	static
+table.h:50:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) [with P = const flatbuffers::Vector<flatbuffers::Offset<tflite::SubGraph> >*]	24	static
+table.h:50:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) [with P = const flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer> >*]	24	static
+vector.h:247:18:const uint8_t* flatbuffers::Vector<T>::Data() const [with T = unsigned char]	16	static
+buffer.h:76:22:static flatbuffers::IndirectHelper<T>::return_type flatbuffers::IndirectHelper<T>::Read(const uint8_t*, flatbuffers::uoffset_t) [with T = float]	16	static
+vector.h:247:18:const uint8_t* flatbuffers::Vector<T>::Data() const [with T = float]	16	static
+buffer.h:76:22:static flatbuffers::IndirectHelper<T>::return_type flatbuffers::IndirectHelper<T>::Read(const uint8_t*, flatbuffers::uoffset_t) [with T = long long int]	16	static
+vector.h:247:18:const uint8_t* flatbuffers::Vector<T>::Data() const [with T = long long int]	16	static
+buffer.h:84:22:static const T* flatbuffers::IndirectHelper<flatbuffers::Offset<T> >::Read(const uint8_t*, flatbuffers::uoffset_t) [with T = tflite::Tensor]	16	static
+vector.h:247:18:const uint8_t* flatbuffers::Vector<T>::Data() const [with T = flatbuffers::Offset<tflite::Tensor>]	16	static
+buffer.h:84:22:static const T* flatbuffers::IndirectHelper<flatbuffers::Offset<T> >::Read(const uint8_t*, flatbuffers::uoffset_t) [with T = tflite::SubGraph]	16	static
+vector.h:247:18:const uint8_t* flatbuffers::Vector<T>::Data() const [with T = flatbuffers::Offset<tflite::SubGraph>]	16	static
+buffer.h:84:22:static const T* flatbuffers::IndirectHelper<flatbuffers::Offset<T> >::Read(const uint8_t*, flatbuffers::uoffset_t) [with T = tflite::Buffer]	16	static
+vector.h:247:18:const uint8_t* flatbuffers::Vector<T>::Data() const [with T = flatbuffers::Offset<tflite::Buffer>]	16	static
+base.h:416:24:T flatbuffers::EndianScalar(T) [with T = signed char]	16	static
+micro_allocator.cc:53:7:tflite::{anonymous}::MicroBuiltinDataAllocator::~MicroBuiltinDataAllocator()	16	static
+micro_allocator.cc:53:7:virtual tflite::{anonymous}::MicroBuiltinDataAllocator::~MicroBuiltinDataAllocator()	16	static

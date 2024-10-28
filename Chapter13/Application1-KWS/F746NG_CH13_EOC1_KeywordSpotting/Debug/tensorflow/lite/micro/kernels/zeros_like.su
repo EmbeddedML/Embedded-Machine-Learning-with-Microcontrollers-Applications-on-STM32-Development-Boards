@@ -1,0 +1,21 @@
+runtime_shape.h:64:3:tflite::RuntimeShape::~RuntimeShape()	16	static
+runtime_shape.h:66:11:int32_t tflite::RuntimeShape::DimensionsCount() const	16	static
+runtime_shape.h:67:11:int32_t tflite::RuntimeShape::Dims(int) const	16	static
+runtime_shape.h:84:18:const int32_t* tflite::RuntimeShape::DimsData() const	16	static
+runtime_shape.h:96:7:int tflite::RuntimeShape::FlatSize() const	32	static
+types.h:313:12:int tflite::MatchingFlatSize(const tflite::RuntimeShape&, const tflite::RuntimeShape&)	32	static
+kernel_util.h:158:12:int tflite::NumInputs(const TfLiteNode*)	16	static
+kernel_util.h:161:12:int tflite::NumOutputs(const TfLiteNode*)	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+micro_context.h:102:22:tflite::MicroContext* tflite::GetMicroContext(const TfLiteContext*)	16	static
+zeros_like.cc:28:14:TfLiteStatus tflite::{anonymous}::Prepare(TfLiteContext*, TfLiteNode*)	56	static
+zeros_like.cc:53:14:TfLiteStatus tflite::{anonymous}::Eval(TfLiteContext*, TfLiteNode*)	88	static
+zeros_like.cc:84:18:TFLMRegistration tflite::Register_ZEROS_LIKE()	24	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = long long int]	16	static
+zeros_like.cc:47:6:void tflite::{anonymous}::resetZeros(T*, int) [with T = long long int]	24	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = long int]	16	static
+zeros_like.cc:47:6:void tflite::{anonymous}::resetZeros(T*, int) [with T = long int]	24	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = signed char]	16	static
+zeros_like.cc:47:6:void tflite::{anonymous}::resetZeros(T*, int) [with T = signed char]	24	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = float]	16	static
+zeros_like.cc:47:6:void tflite::{anonymous}::resetZeros(T*, int) [with T = float]	24	static

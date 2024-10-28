@@ -1,0 +1,4 @@
+bits.h:32:19:CountLeadingZeros32	16	static
+bits.h:51:19:MostSignificantBit32	16	static
+frontend.c:19:23:FrontendProcessSamples	56	static
+frontend.c:67:6:FrontendReset	16	static

@@ -1,0 +1,2 @@
+kmeans_clus_inference.c:14:8:kmeans_clus_predict	56	static
+kmeans_clus_inference.c:42:14:euclid_distance	32	static

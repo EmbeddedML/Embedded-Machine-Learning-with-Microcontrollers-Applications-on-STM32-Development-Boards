@@ -1,0 +1,6 @@
+cmath:222:3:constexpr float std::exp(float)	16	static
+cmath:501:3:constexpr float std::tanh(float)	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+micro_tensor_utils.cc:33:6:void tflite::PortableApplySigmoidToVector(const float*, int, float*)	32	static
+micro_tensor_utils.cc:40:6:void tflite::PortableApplyTanhToVector(const float*, int, float*)	40	static
+micro_tensor_utils.cc:46:6:void tflite::PortableApplyActivationToVector(const float*, int, TfLiteFusedActivation, float*)	24	static

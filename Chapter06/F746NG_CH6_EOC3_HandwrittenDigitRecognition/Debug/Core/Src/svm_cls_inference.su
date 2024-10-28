@@ -1,0 +1,7 @@
+svm_cls_inference.c:16:5:svm_cls_predict	64	static
+svm_cls_inference.c:41:5:svm_cls_score	240	static
+svm_cls_inference.c:68:13:linear_kernel_func	32	static
+svm_cls_inference.c:82:13:poly_kernel_func	40	static
+svm_cls_inference.c:97:13:rbf_kernel_func	40	static
+svm_cls_inference.c:111:13:calculate_ovo_scores	40	static
+svm_cls_inference.c:129:13:calculate_ovr_scores	128	static

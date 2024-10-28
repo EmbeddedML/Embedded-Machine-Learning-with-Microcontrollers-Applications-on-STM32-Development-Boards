@@ -1,0 +1,5 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+logical.cc:26:14:TfLiteStatus tflite::{anonymous}::LogicalOrEval(TfLiteContext*, TfLiteNode*)	16	static
+logical.cc:30:14:TfLiteStatus tflite::{anonymous}::LogicalAndEval(TfLiteContext*, TfLiteNode*)	16	static
+logical.cc:36:18:TFLMRegistration tflite::Register_LOGICAL_OR()	24	static
+logical.cc:40:18:TFLMRegistration tflite::Register_LOGICAL_AND()	24	static

@@ -1,0 +1,6 @@
+ks_feature_extraction.c:31:8:ks_mfcc_init	24	static
+ks_feature_extraction.c:44:8:ks_mfcc_extract_features	16	static
+ks_feature_extraction.c:50:18:ks_mfcc_freq2mel	24	static
+ks_feature_extraction.c:58:18:ks_mfcc_mel2freq	24	static
+ks_feature_extraction.c:65:13:ks_mfcc_create_dct_matrix	40	static,ignoring_inline_asm
+ks_feature_extraction.c:83:13:ks_mfcc_create_mel_fbank	88	static

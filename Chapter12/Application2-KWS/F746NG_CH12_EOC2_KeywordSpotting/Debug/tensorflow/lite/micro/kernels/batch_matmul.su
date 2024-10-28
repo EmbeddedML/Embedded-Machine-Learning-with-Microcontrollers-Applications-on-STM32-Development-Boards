@@ -1,0 +1,67 @@
+limits:525:7:static constexpr signed char std::numeric_limits<signed char>::min()	4	static
+limits:528:7:static constexpr signed char std::numeric_limits<signed char>::max()	4	static
+limits:925:7:static constexpr short int std::numeric_limits<short int>::min()	4	static
+limits:928:7:static constexpr short int std::numeric_limits<short int>::max()	4	static
+limits:1068:7:static constexpr int std::numeric_limits<int>::max()	4	static
+runtime_shape.h:52:3:tflite::RuntimeShape::RuntimeShape(int, const int32_t*)	24	static
+runtime_shape.h:64:3:tflite::RuntimeShape::~RuntimeShape()	16	static
+runtime_shape.h:66:11:int32_t tflite::RuntimeShape::DimensionsCount() const	16	static
+runtime_shape.h:67:11:int32_t tflite::RuntimeShape::Dims(int) const	16	static
+runtime_shape.h:72:8:void tflite::RuntimeShape::SetDim(int, int32_t)	24	static
+runtime_shape.h:78:23:static tflite::RuntimeShape tflite::RuntimeShape::ExtendedShape(int, const tflite::RuntimeShape&)	24	static
+runtime_shape.h:83:12:int32_t* tflite::RuntimeShape::DimsData()	16	static
+runtime_shape.h:84:18:const int32_t* tflite::RuntimeShape::DimsData() const	16	static
+runtime_shape.h:87:8:void tflite::RuntimeShape::ReplaceWith(int, const int32_t*)	32	static
+runtime_shape.h:109:3:tflite::RuntimeShape::RuntimeShape(int, const tflite::RuntimeShape&, int)	40	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+batch_matmul.h:31:12:int tflite::reference_ops::batch_matmul::broadcast_dim(int, int)	16	static
+batch_matmul.h:40:12:int tflite::reference_ops::batch_matmul::extent(const tflite::RuntimeShape&, int)	24	static
+transpose.h:160:13:void tflite::reference_ops::transpose_internal::SetupTransposeStrides(std::array<int, 6>&, const int32_t*, int)	40	static
+kernel_util.h:153:12:int tflite::NumDimensions(const TfLiteTensor*)	16	static
+kernel_util.h:158:12:int tflite::NumInputs(const TfLiteNode*)	16	static
+kernel_util.h:161:12:int tflite::NumOutputs(const TfLiteNode*)	16	static
+kernel_util.h:171:16:int64_t tflite::NumElements(const int*, int)	40	static
+kernel_util.h:190:16:int64_t tflite::NumElements(const TfLiteIntArray*)	16	static
+kernel_util.h:194:16:int64_t tflite::NumElements(const TfLiteTensor*)	16	static
+kernel_util.h:203:13:bool tflite::IsConstantTensor(const TfLiteTensor*)	16	static
+micro_context.h:102:22:tflite::MicroContext* tflite::GetMicroContext(const TfLiteContext*)	16	static
+batch_matmul.cc:66:3:tflite::{anonymous}::OpContext::OpContext(TfLiteContext*, TfLiteNode*)	24	static
+batch_matmul.cc:75:3:tflite::{anonymous}::PrepareOpContext::PrepareOpContext(TfLiteContext*, TfLiteNode*)	24	static
+batch_matmul.cc:82:3:tflite::{anonymous}::PrepareOpContext::~PrepareOpContext()	16	static
+batch_matmul.cc:104:3:tflite::{anonymous}::EvalOpContext::EvalOpContext(TfLiteContext*, TfLiteNode*)	24	static
+batch_matmul.cc:115:14:TfLiteStatus tflite::{anonymous}::ReshapeOutputTensor(TfLiteContext*, TfLiteNode*, const tflite::RuntimeShape&, const tflite::RuntimeShape&, bool, bool, int, TfLiteTensor*)	96	static
+batch_matmul.cc:156:19:TfLiteEvalTensor* tflite::{anonymous}::AllocInitTransposeTensorFromTfLiteTensor(TfLiteContext*, const TfLiteTensor&)	48	static
+batch_matmul.cc:196:14:TfLiteStatus tflite::{anonymous}::InitializeTemporaries(TfLiteContext*, TfLiteNode*, const tflite::{anonymous}::PrepareOpContext&)	56	static
+batch_matmul.cc:255:14:TfLiteStatus tflite::{anonymous}::TransposeRowsColumns(const TfLiteEvalTensor&, TfLiteEvalTensor*)	16	static
+batch_matmul.cc:274:14:tflite::RuntimeShape tflite::{anonymous}::SwapRowColumnDims(const tflite::RuntimeShape&)	32	static
+batch_matmul.cc:282:7:void* tflite::{anonymous}::Init(TfLiteContext*, const char*, size_t)	32	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = int]	16	static
+batch_matmul.cc:291:14:TfLiteStatus tflite::{anonymous}::Prepare(TfLiteContext*, TfLiteNode*)	248	static
+batch_matmul.cc:395:14:TfLiteStatus tflite::{anonymous}::EvalInt8(TfLiteContext*, const tflite::{anonymous}::OpData&, const tflite::RuntimeShape&, const TfLiteEvalTensor&, const tflite::RuntimeShape&, const TfLiteEvalTensor&, const tflite::RuntimeShape&, TfLiteEvalTensor*)	88	static
+batch_matmul.cc:425:14:TfLiteStatus tflite::{anonymous}::EvalInt16(TfLiteContext*, const tflite::{anonymous}::OpData&, const tflite::RuntimeShape&, const TfLiteEvalTensor&, const tflite::RuntimeShape&, const TfLiteEvalTensor&, const tflite::RuntimeShape&, TfLiteEvalTensor*)	88	static
+batch_matmul.cc:466:14:TfLiteStatus tflite::{anonymous}::Eval(TfLiteContext*, TfLiteNode*)	360	static
+batch_matmul.cc:552:18:TFLMRegistration tflite::Register_BATCH_MATMUL()	24	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = long int]	16	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = long int]	16	static
+array:185:7:std::array<_Tp, _Nm>::value_type& std::array<_Tp, _Nm>::operator[](std::array<_Tp, _Nm>::size_type) [with _Tp = int; unsigned int _Nm = 6]	16	static
+batch_matmul.cc:235:6:void tflite::{anonymous}::TransposeRowsColumnsImpl(const TfLiteEvalTensor&, TfLiteEvalTensor*) [with Scalar = float]	136	static
+batch_matmul.cc:235:6:void tflite::{anonymous}::TransposeRowsColumnsImpl(const TfLiteEvalTensor&, TfLiteEvalTensor*) [with Scalar = signed char]	136	static
+batch_matmul.cc:235:6:void tflite::{anonymous}::TransposeRowsColumnsImpl(const TfLiteEvalTensor&, TfLiteEvalTensor*) [with Scalar = short int]	136	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = signed char]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = signed char]	16	static
+batch_matmul.h:200:13:void tflite::reference_ops::BatchMatMul(const tflite::FullyConnectedParams&, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, T*) [with T = signed char; AccumT = long int]	240	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = short int]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = short int]	16	static
+batch_matmul.h:200:13:void tflite::reference_ops::BatchMatMul(const tflite::FullyConnectedParams&, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, T*) [with T = short int; AccumT = long long int]	280	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = float]	16	static
+batch_matmul.h:54:13:void tflite::reference_ops::BatchMatMul(const tflite::RuntimeShape&, const Ta*, const tflite::RuntimeShape&, const Tb*, const tflite::RuntimeShape&, Tout*) [with Ta = float; Tb = float; Tout = float]	200	static
+array:55:7:static constexpr _Tp& std::__array_traits<_Tp, _Nm>::_S_ref(const _Tp (&)[_Nm], std::size_t) [with _Tp = int; unsigned int _Nm = 6]	16	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = float]	16	static
+transpose.h:176:6:void tflite::reference_ops::Transpose(const tflite::TransposeParams&, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, T*) [with T = float; int N = 6]	120	static
+transpose.h:176:6:void tflite::reference_ops::Transpose(const tflite::TransposeParams&, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, T*) [with T = signed char; int N = 6]	120	static
+transpose.h:176:6:void tflite::reference_ops::Transpose(const tflite::TransposeParams&, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, T*) [with T = short int; int N = 6]	120	static
+array:234:7:std::array<_Tp, _Nm>::value_type* std::array<_Tp, _Nm>::data() [with _Tp = int; unsigned int _Nm = 6]	16	static
+transpose.h:97:6:void tflite::reference_ops::transpose_internal::TransposeImpl(int, int, const int32_t*, const T*, const int*, T*, const int*, const int32_t*) [with T = long int]	56	static
+transpose.h:97:6:void tflite::reference_ops::transpose_internal::TransposeImpl(int, int, const int32_t*, const T*, const int*, T*, const int*, const int32_t*) [with T = signed char]	56	static
+transpose.h:97:6:void tflite::reference_ops::transpose_internal::TransposeImpl(int, int, const int32_t*, const T*, const int*, T*, const int*, const int32_t*) [with T = short int]	56	static
+array:59:7:static constexpr _Tp* std::__array_traits<_Tp, _Nm>::_S_ptr(const _Tp (&)[_Nm]) [with _Tp = int; unsigned int _Nm = 6]	16	static

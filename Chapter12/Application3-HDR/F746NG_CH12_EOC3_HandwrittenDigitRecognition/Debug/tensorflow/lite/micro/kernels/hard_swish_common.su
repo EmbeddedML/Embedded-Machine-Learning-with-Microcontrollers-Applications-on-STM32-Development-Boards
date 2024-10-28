@@ -1,0 +1,8 @@
+limits:928:7:static constexpr short int std::numeric_limits<short int>::max()	4	static
+limits:1207:7:static constexpr long int std::numeric_limits<long int>::max()	4	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+common.h:811:13:void tflite::DownScaleInt32ToInt16Multiplier(int32_t, int16_t*)	24	static
+kernel_util.h:158:12:int tflite::NumInputs(const TfLiteNode*)	16	static
+kernel_util.h:161:12:int tflite::NumOutputs(const TfLiteNode*)	16	static
+micro_context.h:102:22:tflite::MicroContext* tflite::GetMicroContext(const TfLiteContext*)	16	static
+hard_swish_common.cc:34:14:TfLiteStatus tflite::HardSwishPrepare(TfLiteContext*, TfLiteNode*)	96	static

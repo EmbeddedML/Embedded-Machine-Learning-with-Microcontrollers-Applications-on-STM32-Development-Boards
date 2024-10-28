@@ -1,0 +1,6 @@
+filterbank_util.c:24:6:FilterbankFillConfigWithDefaults	16	static
+filterbank_util.c:31:14:FreqToMel	16	static
+filterbank_util.c:33:13:CalculateCenterFrequencies	48	static
+filterbank_util.c:50:13:QuantizeFilterbankWeights	24	static
+filterbank_util.c:56:5:FilterbankPopulateState	144	static
+filterbank_util.c:213:6:FilterbankFreeStateContents	16	static

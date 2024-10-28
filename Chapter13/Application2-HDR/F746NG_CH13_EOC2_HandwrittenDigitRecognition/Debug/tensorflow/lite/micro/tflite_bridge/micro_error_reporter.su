@@ -1,0 +1,10 @@
+error_reporter.h:37:11:tflite::ErrorReporter::~ErrorReporter()	16	static
+error_reporter.h:37:11:virtual tflite::ErrorReporter::~ErrorReporter()	16	static
+micro_error_reporter.h:28:3:tflite::MicroErrorReporter::~MicroErrorReporter()	16	static
+micro_error_reporter.h:28:3:virtual tflite::MicroErrorReporter::~MicroErrorReporter()	16	static
+micro_error_reporter.h:32:3:static void tflite::MicroErrorReporter::operator delete(void*)	16	static
+new:173:33:void* operator new(std::size_t, void*)	16	static
+error_reporter.h:35:7:constexpr tflite::ErrorReporter::ErrorReporter()	16	static
+micro_error_reporter.h:26:7:constexpr tflite::MicroErrorReporter::MicroErrorReporter()	16	static
+micro_error_reporter.cc:31:16:tflite::ErrorReporter* tflite::GetMicroErrorReporter()	16	static
+micro_error_reporter.cc:38:5:virtual int tflite::MicroErrorReporter::Report(const char*, va_list)	24	static

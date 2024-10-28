@@ -1,0 +1,5 @@
+bits.h:32:19:CountLeadingZeros32	16	static
+bits.h:51:19:MostSignificantBit32	16	static
+frontend_util.c:22:6:FrontendFillConfigWithDefaults	16	static
+frontend_util.c:30:5:FrontendPopulateState	48	static
+frontend_util.c:79:6:FrontendFreeStateContents	16	static

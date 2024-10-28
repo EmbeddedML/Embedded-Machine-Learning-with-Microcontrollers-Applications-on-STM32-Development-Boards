@@ -1,0 +1,3 @@
+noise_reduction_util.c:19:6:NoiseReductionFillConfigWithDefaults	16	static
+noise_reduction_util.c:26:5:NoiseReductionPopulateState	24	static
+noise_reduction_util.c:43:6:NoiseReductionFreeStateContents	16	static

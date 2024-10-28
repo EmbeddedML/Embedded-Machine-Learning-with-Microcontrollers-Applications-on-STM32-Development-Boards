@@ -1,0 +1,5 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+kernel_util.h:158:12:int tflite::NumInputs(const TfLiteNode*)	16	static
+kernel_util.h:161:12:int tflite::NumOutputs(const TfLiteNode*)	16	static
+micro_context.h:102:22:tflite::MicroContext* tflite::GetMicroContext(const TfLiteContext*)	16	static
+dequantize_common.cc:28:14:TfLiteStatus tflite::DequantizePrepare(TfLiteContext*, TfLiteNode*)	56	static

@@ -1,0 +1,6 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+micro_context.cc:27:5:int tflite::{anonymous}::GetTensorIndex(int, int, const int*)	32	static
+micro_context.cc:39:15:TfLiteTensor* tflite::MicroContext::AllocateTempInputTensor(const TfLiteNode*, int)	32	static
+micro_context.cc:49:15:TfLiteTensor* tflite::MicroContext::AllocateTempOutputTensor(const TfLiteNode*, int)	32	static
+micro_context.cc:59:15:TfLiteTensor* tflite::MicroContext::AllocateTempIntermediateTensor(const TfLiteNode*, int)	32	static
+micro_context.cc:69:6:)	28	static

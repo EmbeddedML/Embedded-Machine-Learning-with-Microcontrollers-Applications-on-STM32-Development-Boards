@@ -1,0 +1,56 @@
+runtime_shape.h:52:3:tflite::RuntimeShape::RuntimeShape(int, const int32_t*)	24	static
+runtime_shape.h:66:11:int32_t tflite::RuntimeShape::DimensionsCount() const	16	static
+runtime_shape.h:67:11:int32_t tflite::RuntimeShape::Dims(int) const	16	static
+runtime_shape.h:83:12:int32_t* tflite::RuntimeShape::DimsData()	16	static
+runtime_shape.h:84:18:const int32_t* tflite::RuntimeShape::DimsData() const	16	static
+runtime_shape.h:87:8:void tflite::RuntimeShape::ReplaceWith(int, const int32_t*)	32	static
+runtime_shape.h:96:7:int tflite::RuntimeShape::FlatSize() const	32	static
+types.h:264:12:int tflite::MatchingDim(const tflite::RuntimeShape&, int, const tflite::RuntimeShape&, int)	40	static
+types.h:313:12:int tflite::MatchingFlatSize(const tflite::RuntimeShape&, const tflite::RuntimeShape&)	32	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = int]	16	static
+types.h:400:12:int tflite::MatchingExtendedShapeFlatSize(const tflite::RuntimeShape&, const tflite::RuntimeShape&)	48	static
+types.h:419:12:int tflite::MatchingExtendedShapeFlatSize(const tflite::RuntimeShape&, const tflite::RuntimeShape&, const tflite::RuntimeShape&)	32	static
+types.h:519:12:int tflite::FlatSizeSkipDim(const tflite::RuntimeShape&, int)	32	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+micro_context.h:102:22:tflite::MicroContext* tflite::GetMicroContext(const TfLiteContext*)	16	static
+cmath:222:3:constexpr float std::exp(float)	16	static
+cmath:501:3:constexpr float std::tanh(float)	16	static
+fully_connected.h:29:13:void tflite::reference_ops::FullyConnected(const tflite::FullyConnectedParams&, const tflite::RuntimeShape&, const float*, const tflite::RuntimeShape&, const float*, const tflite::RuntimeShape&, const float*, const tflite::RuntimeShape&, float*)	80	static
+logistic.h:63:13:void tflite::reference_integer_ops::Logistic(int32_t, int32_t, int32_t, const int16_t*, int16_t*)	64	static
+tanh.h:63:13:void tflite::reference_integer_ops::Tanh(int32_t, int32_t, const tflite::RuntimeShape&, const int16_t*, const tflite::RuntimeShape&, int16_t*)	64	static
+logistic.h:30:13:void tflite::reference_ops::Logistic(const tflite::RuntimeShape&, const float*, const tflite::RuntimeShape&, float*)	48	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = long int]	16	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = long int]	16	static
+tanh.h:29:13:void tflite::reference_ops::Tanh(const tflite::RuntimeShape&, const float*, const tflite::RuntimeShape&, float*)	40	static
+lstm_eval.cc:31:1:tflite::LstmTensors::LstmTensors(TfLiteContext*, TfLiteNode*)	32	static
+lstm_eval.cc:41:1:tflite::LstmTensors::~LstmTensors()	24	static
+lstm_eval.cc:55:14:TfLiteStatus tflite::LstmTensors::ValidateTensorStatus(TfLiteContext*) const	64	static
+lstm_eval.cc:110:6:void tflite::lstm_internal::AddElementWise(const int16_t*, const int16_t*, int, int, int16_t*)	48	static
+lstm_eval.cc:122:6:void tflite::lstm_internal::AddElementWise(const float*, const float*, int, int, float*)	40	static
+lstm_eval.cc:132:6:void tflite::lstm_internal::Sigmoid(const tflite::RuntimeShape&, int16_t*)	24	static
+lstm_eval.cc:140:6:void tflite::lstm_internal::Sigmoid(const tflite::RuntimeShape&, float*)	16	static
+lstm_eval.cc:144:6:void tflite::lstm_internal::Tanh(int32_t, const tflite::RuntimeShape&, int16_t*, const tflite::RuntimeShape&, int16_t*)	40	static
+lstm_eval.cc:159:6:void tflite::lstm_internal::Tanh(int32_t, const tflite::RuntimeShape&, float*, const tflite::RuntimeShape&, float*)	24	static
+lstm_eval.cc:167:6:void tflite::lstm_internal::Mul(const tflite::RuntimeShape&, const tflite::ArithmeticParams&, const int16_t*, const int16_t*, int8_t*)	32	static
+lstm_eval.cc:175:6:void tflite::lstm_internal::Mul(const tflite::RuntimeShape&, const tflite::ArithmeticParams&, const int16_t*, const int16_t*, int16_t*)	32	static
+lstm_eval.cc:183:6:void tflite::lstm_internal::Mul(const tflite::RuntimeShape&, const tflite::ArithmeticParams&, const float*, const float*, float*)	40	static
+lstm_eval.cc:190:6:void tflite::lstm_internal::FullyConnected(const tflite::FullyConnectedParams&, const tflite::RuntimeShape&, const int8_t*, const tflite::RuntimeShape&, const int8_t*, const tflite::RuntimeShape&, const int32_t*, const tflite::RuntimeShape&, int16_t*)	48	static
+lstm_eval.cc:200:6:void tflite::lstm_internal::FullyConnected(const tflite::FullyConnectedParams&, const tflite::RuntimeShape&, const int16_t*, const tflite::RuntimeShape&, const int8_t*, const tflite::RuntimeShape&, const int64_t*, const tflite::RuntimeShape&, int16_t*)	48	static
+lstm_eval.cc:210:6:void tflite::lstm_internal::FullyConnected(const tflite::FullyConnectedParams&, const tflite::RuntimeShape&, const float*, const tflite::RuntimeShape&, const float*, const tflite::RuntimeShape&, const float*, const tflite::RuntimeShape&, float*)	48	static
+lstm_eval.cc:220:6:void tflite::lstm_internal::Clipping(int, const tflite::CellStateInfo&, int16_t*)	32	static
+lstm_eval.cc:229:6:void tflite::lstm_internal::Clipping(int, const tflite::CellStateInfo&, float*)	32	static
+lstm_eval.cc:239:6:void tflite::lstm_internal::LstmStepManager::UpdateTime()	24	static
+lstm_eval.cc:258:6:void tflite::lstm_internal::LstmStepManager::UpdateBatch()	16	static
+lstm_eval.cc:272:14:tflite::RuntimeShape tflite::lstm_internal::LstmStepManager::InputShape() const	32	static
+lstm_eval.cc:284:14:tflite::RuntimeShape tflite::lstm_internal::LstmStepManager::StateShape() const	32	static
+common.h:177:10:T tflite::ActivationFunctionWithMinMax(T, T, T) [with T = float]	24	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = short int]	16	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = short int]	16	static
+mul.h:31:6:void tflite::reference_integer_ops::MulElementwise(int, const tflite::ArithmeticParams&, const InputType*, const InputType*, OutputType*) [with InputType = short int; OutputType = signed char]	56	static
+mul.h:31:6:void tflite::reference_integer_ops::MulElementwise(int, const tflite::ArithmeticParams&, const InputType*, const InputType*, OutputType*) [with InputType = short int; OutputType = short int]	56	static
+mul.h:51:13:void tflite::reference_ops::Mul(const tflite::ArithmeticParams&, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, T*) [with T = float]	48	static
+fully_connected.h:77:6:void tflite::reference_integer_ops::FullyConnected(const tflite::FullyConnectedParams&, const tflite::RuntimeShape&, const InputType*, const tflite::RuntimeShape&, const WeightType*, const tflite::RuntimeShape&, const BiasType*, const tflite::RuntimeShape&, OutputType*) [with InputType = signed char; WeightType = signed char; OutputType = short int; BiasType = long int]	104	static
+fully_connected.h:77:6:void tflite::reference_integer_ops::FullyConnected(const tflite::FullyConnectedParams&, const tflite::RuntimeShape&, const InputType*, const tflite::RuntimeShape&, const WeightType*, const tflite::RuntimeShape&, const BiasType*, const tflite::RuntimeShape&, OutputType*) [with InputType = short int; WeightType = signed char; OutputType = short int; BiasType = long long int]	120	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = float]	16	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = float]	16	static
+types.h:1067:13:void tflite::GetActivationParams(const P&, float*, float*) [with P = tflite::ArithmeticParams]	24	static

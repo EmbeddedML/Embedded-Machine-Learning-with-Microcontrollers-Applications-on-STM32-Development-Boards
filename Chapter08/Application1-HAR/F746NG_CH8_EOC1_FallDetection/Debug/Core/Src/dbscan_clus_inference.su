@@ -1,0 +1,2 @@
+dbscan_clus_inference.c:13:8:dbscan_clus_predict	40	static
+dbscan_clus_inference.c:36:14:euclid_distance	32	static

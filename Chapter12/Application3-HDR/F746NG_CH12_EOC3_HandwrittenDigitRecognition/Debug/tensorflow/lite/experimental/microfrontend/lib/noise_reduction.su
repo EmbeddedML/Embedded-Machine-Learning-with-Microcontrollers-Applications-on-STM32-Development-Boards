@@ -1,0 +1,2 @@
+noise_reduction.c:19:6:NoiseReductionApply	64	static
+noise_reduction.c:49:6:NoiseReductionReset	16	static

@@ -1,0 +1,6 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+micro_context.h:102:22:tflite::MicroContext* tflite::GetMicroContext(const TfLiteContext*)	16	static
+var_handle.cc:39:7:void* tflite::{anonymous}::Init(TfLiteContext*, const char*, size_t)	24	static
+var_handle.cc:44:14:TfLiteStatus tflite::{anonymous}::Prepare(TfLiteContext*, TfLiteNode*)	40	static
+var_handle.cc:75:14:TfLiteStatus tflite::{anonymous}::Eval(TfLiteContext*, TfLiteNode*)	24	static
+var_handle.cc:89:18:TFLMRegistration tflite::Register_VAR_HANDLE()	24	static

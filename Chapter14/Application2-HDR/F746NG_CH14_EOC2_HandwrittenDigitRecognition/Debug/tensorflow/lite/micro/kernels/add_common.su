@@ -1,0 +1,8 @@
+limits:1668:7:static constexpr float std::numeric_limits<float>::max()	4	static
+limits:1672:7:static constexpr float std::numeric_limits<float>::lowest()	4	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+micro_context.h:102:22:tflite::MicroContext* tflite::GetMicroContext(const TfLiteContext*)	16	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = float]	16	static
+add_common.cc:35:14:TfLiteStatus tflite::CalculateOpDataAdd(TfLiteContext*, TfLiteAddParams*, const TfLiteTensor*, const TfLiteTensor*, TfLiteTensor*, tflite::OpDataAdd*)	80	static
+add_common.cc:81:14:TfLiteStatus tflite::AddPrepare(TfLiteContext*, TfLiteNode*)	72	static
+kernel_util.h:285:6:void tflite::CalculateActivationRange(TfLiteFusedActivation, T*, T*) [with T = float]	24	static

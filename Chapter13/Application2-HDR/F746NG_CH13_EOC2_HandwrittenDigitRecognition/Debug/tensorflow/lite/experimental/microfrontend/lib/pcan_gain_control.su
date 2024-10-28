@@ -1,0 +1,5 @@
+bits.h:32:19:CountLeadingZeros32	16	static
+bits.h:51:19:MostSignificantBit32	16	static
+pcan_gain_control.c:19:9:WideDynamicFunction	24	static
+pcan_gain_control.c:39:10:PcanShrink	16	static
+pcan_gain_control.c:47:6:PcanGainControlApply	48	static

@@ -1,0 +1,79 @@
+limits:525:7:static constexpr signed char std::numeric_limits<signed char>::min()	4	static
+limits:528:7:static constexpr signed char std::numeric_limits<signed char>::max()	4	static
+limits:1204:7:static constexpr long int std::numeric_limits<long int>::min()	4	static
+limits:1207:7:static constexpr long int std::numeric_limits<long int>::max()	4	static
+runtime_shape.h:64:3:tflite::RuntimeShape::~RuntimeShape()	16	static
+runtime_shape.h:66:11:int32_t tflite::RuntimeShape::DimensionsCount() const	16	static
+runtime_shape.h:67:11:int32_t tflite::RuntimeShape::Dims(int) const	16	static
+runtime_shape.h:72:8:void tflite::RuntimeShape::SetDim(int, int32_t)	24	static
+runtime_shape.h:78:23:static tflite::RuntimeShape tflite::RuntimeShape::ExtendedShape(int, const tflite::RuntimeShape&)	24	static
+runtime_shape.h:83:12:int32_t* tflite::RuntimeShape::DimsData()	16	static
+runtime_shape.h:84:18:const int32_t* tflite::RuntimeShape::DimsData() const	16	static
+runtime_shape.h:85:18:const int32_t* tflite::RuntimeShape::DimsDataUpTo5D() const	16	static
+runtime_shape.h:96:7:int tflite::RuntimeShape::FlatSize() const	32	static
+runtime_shape.h:109:3:tflite::RuntimeShape::RuntimeShape(int, const tflite::RuntimeShape&, int)	40	static
+types.h:313:12:int tflite::MatchingFlatSize(const tflite::RuntimeShape&, const tflite::RuntimeShape&)	32	static
+types.h:323:12:int tflite::MatchingFlatSize(const tflite::RuntimeShape&, const tflite::RuntimeShape&, const tflite::RuntimeShape&)	40	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+fixedpoint.h:329:21:IntegerType gemmlowp::SaturatingRoundingDoublingHighMul(IntegerType, IntegerType) [with IntegerType = long int]	64	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = unsigned int]	16	static
+common.h:354:16:int32_t tflite::MultiplyByQuantizedMultiplierSmallerThanOneExp(int32_t, int32_t, int)	24	static
+add.h:28:13:void tflite::reference_integer_ops::CheckArithmeticParams(const tflite::ArithmeticParams&)	24	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = long int]	16	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = long int]	16	static
+kernel_util.h:158:12:int tflite::NumInputs(const TfLiteNode*)	16	static
+kernel_util.h:161:12:int tflite::NumOutputs(const TfLiteNode*)	16	static
+micro_context.h:102:22:tflite::MicroContext* tflite::GetMicroContext(const TfLiteContext*)	16	static
+squared_difference.cc:41:7:void* tflite::{anonymous}::SquaredDifferenceInit(TfLiteContext*, const char*, size_t)	24	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = float]	16	static
+squared_difference.cc:47:6:void tflite::{anonymous}::PrepareQuantized(const TfLiteQuantizationParams&, const TfLiteQuantizationParams&, const TfLiteQuantizationParams&, int, int32_t, int32_t, tflite::{anonymous}::OpData*)	64	static
+squared_difference.cc:85:14:TfLiteStatus tflite::{anonymous}::SquaredDifferencePrepare(TfLiteContext*, TfLiteNode*)	88	static
+squared_difference.cc:233:14:TfLiteStatus tflite::{anonymous}::SquaredDifferenceEval(TfLiteContext*, TfLiteNode*)	40	static
+squared_difference.cc:265:18:TFLMRegistration tflite::Register_SQUARED_DIFFERENCE()	24	static
+fixedpoint.h:357:20:IntegerType gemmlowp::RoundingDivideByPOT(IntegerType, int) [with IntegerType = long int]	56	static
+add.h:64:6:void tflite::reference_integer_ops::ElementWise(int, const tflite::ArithmeticParams&, const T*, const T*, T*, void (*)(const tflite::ArithmeticParams&), T (*)(T, T, const tflite::ArithmeticParams&)) [with T = signed char]	40	static
+add.h:128:6:void tflite::reference_integer_ops::BroadcastBinaryFunction6DSlow(const tflite::ArithmeticParams&, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, T*, void (*)(const tflite::ArithmeticParams&), T (*)(T, T, const tflite::ArithmeticParams&)) [with T = signed char]	160	static
+squared_difference.cc:210:6:void tflite::{anonymous}::EvalSquaredDifference(TfLiteContext*, TfLiteNode*, const tflite::{anonymous}::OpData*, const TfLiteEvalTensor*, const TfLiteEvalTensor*, TfLiteEvalTensor*) [with T = float]	216	static
+squared_difference.cc:210:6:void tflite::{anonymous}::EvalSquaredDifference(TfLiteContext*, TfLiteNode*, const tflite::{anonymous}::OpData*, const TfLiteEvalTensor*, const TfLiteEvalTensor*, TfLiteEvalTensor*) [with T = long int]	216	static
+squared_difference.cc:183:6:void tflite::{anonymous}::EvalQuantizedSquaredDifference(TfLiteContext*, TfLiteNode*, const tflite::{anonymous}::OpData*, const TfLiteEvalTensor*, const TfLiteEvalTensor*, TfLiteEvalTensor*) [with T = signed char]	184	static
+squared_difference.cc:183:6:void tflite::{anonymous}::EvalQuantizedSquaredDifference(TfLiteContext*, TfLiteNode*, const tflite::{anonymous}::OpData*, const TfLiteEvalTensor*, const TfLiteEvalTensor*, TfLiteEvalTensor*) [with T = short int]	184	static
+fixedpoint.h:64:10:tRawType gemmlowp::Dup(typename gemmlowp::FixedPointRawTypeTraits<tRawType>::ScalarRawType) [with tRawType = long int]	16	static
+fixedpoint.h:70:14:tIntegerType gemmlowp::BitAnd(tIntegerType, tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:140:14:tIntegerType gemmlowp::ShiftRight(tIntegerType, int) [with tIntegerType = long int]	16	static
+fixedpoint.h:199:14:tIntegerType gemmlowp::MaskIfLessThan(tIntegerType, tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:94:14:tIntegerType gemmlowp::Add(tIntegerType, tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:185:14:tIntegerType gemmlowp::MaskIfGreaterThan(tIntegerType, tIntegerType) [with tIntegerType = long int]	16	static
+common.h:46:6:bool tflite::ReduceDimensionsForBroadcast(const tflite::RuntimeShape&, const tflite::RuntimeShape&, size_t*, size_t*, size_t*) [with int MAX_DIM = 6]	160	static
+add.h:75:13:void tflite::reference_integer_ops::BroadcastAddRecursiveDimensions(const tflite::ArithmeticParams&, int, size_t*, size_t*, size_t*, size_t*, size_t*, size_t*, const T*, const T*, T*, void (*)(const tflite::ArithmeticParams&), T (*)(T, T, const tflite::ArithmeticParams&)) [with T = signed char]	96	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = float]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = float]	16	static
+squared_difference.cc:36:3:T tflite::{anonymous}::SquaredDifference(T, T) [with T = float]	24	static
+binary_function.h:30:13:void tflite::reference_ops::BroadcastBinaryFunction4DSlow(const tflite::RuntimeShape&, const T1*, const tflite::RuntimeShape&, const T2*, const tflite::RuntimeShape&, R*, R (*)(T1, T2)) [with R = float; T1 = float; T2 = float]	192	static
+binary_function.h:75:13:void tflite::reference_ops::BinaryFunction(const tflite::RuntimeShape&, const T1*, const tflite::RuntimeShape&, const T2*, const tflite::RuntimeShape&, R*, R (*)(T1, T2)) [with R = float; T1 = float; T2 = float]	40	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = long int]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = long int]	16	static
+squared_difference.cc:36:3:T tflite::{anonymous}::SquaredDifference(T, T) [with T = long int]	24	static
+binary_function.h:30:13:void tflite::reference_ops::BroadcastBinaryFunction4DSlow(const tflite::RuntimeShape&, const T1*, const tflite::RuntimeShape&, const T2*, const tflite::RuntimeShape&, R*, R (*)(T1, T2)) [with R = long int; T1 = long int; T2 = long int]	192	static
+binary_function.h:75:13:void tflite::reference_ops::BinaryFunction(const tflite::RuntimeShape&, const T1*, const tflite::RuntimeShape&, const T2*, const tflite::RuntimeShape&, R*, R (*)(T1, T2)) [with R = long int; T1 = long int; T2 = long int]	40	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = signed char]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = signed char]	16	static
+squared_difference.cc:157:3:T tflite::{anonymous}::SquaredDifference(T, T, const tflite::ArithmeticParams&) [with T = signed char]	64	static
+add.h:169:6:void tflite::reference_integer_ops::BroadcastBinaryFunction4DSlow(const tflite::ArithmeticParams&, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, T*, void (*)(const tflite::ArithmeticParams&), T (*)(T, T, const tflite::ArithmeticParams&)) [with T = signed char]	48	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = short int]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = short int]	16	static
+squared_difference.cc:157:3:T tflite::{anonymous}::SquaredDifference(T, T, const tflite::ArithmeticParams&) [with T = short int]	64	static
+add.h:169:6:void tflite::reference_integer_ops::BroadcastBinaryFunction4DSlow(const tflite::ArithmeticParams&, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, T*, void (*)(const tflite::ArithmeticParams&), T (*)(T, T, const tflite::ArithmeticParams&)) [with T = short int]	48	static
+add.h:64:6:void tflite::reference_integer_ops::ElementWise(int, const tflite::ArithmeticParams&, const T*, const T*, T*, void (*)(const tflite::ArithmeticParams&), T (*)(T, T, const tflite::ArithmeticParams&)) [with T = short int]	40	static
+fixedpoint.h:156:14:tIntegerType gemmlowp::MaskIfNonZero(tIntegerType) [with tIntegerType = long int]	16	static
+stl_algobase.h:742:5:void std::fill(_ForwardIterator, _ForwardIterator, const _Tp&) [with _ForwardIterator = unsigned int*; _Tp = int]	32	static
+add.h:41:6:void tflite::reference_integer_ops::BroadcastInput1(int, const tflite::ArithmeticParams&, const T*, const T*, T*, void (*)(const tflite::ArithmeticParams&), T (*)(T, T, const tflite::ArithmeticParams&)) [with T = signed char]	40	static
+add.h:52:6:void tflite::reference_integer_ops::BroadcastInput2(int, const tflite::ArithmeticParams&, const T*, const T*, T*, void (*)(const tflite::ArithmeticParams&), T (*)(T, T, const tflite::ArithmeticParams&)) [with T = signed char]	40	static
+common.h:1139:13:void tflite::NdArrayDescsForElementwiseBroadcast(const tflite::RuntimeShape&, const tflite::RuntimeShape&, tflite::NdArrayDesc<N>*, tflite::NdArrayDesc<N>*) [with int N = 4]	96	static
+add.h:128:6:void tflite::reference_integer_ops::BroadcastBinaryFunction6DSlow(const tflite::ArithmeticParams&, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, T*, void (*)(const tflite::ArithmeticParams&), T (*)(T, T, const tflite::ArithmeticParams&)) [with T = short int]	160	static
+fixedpoint.h:88:14:tIntegerType gemmlowp::BitNot(tIntegerType) [with tIntegerType = long int]	16	static
+stl_algobase.h:280:5:_Iterator std::__niter_base(_Iterator) [with _Iterator = unsigned int*]	16	static
+stl_algobase.h:709:5:typename __gnu_cxx::__enable_if<std::__is_scalar<_Tp>::__value, void>::__type std::__fill_a(_ForwardIterator, _ForwardIterator, const _Tp&) [with _ForwardIterator = unsigned int*; _Tp = int]	32	static
+common.h:1128:22:void tflite::CopyDimsToDesc(const tflite::RuntimeShape&, tflite::NdArrayDesc<N>*) [with int N = 4]	24	static
+add.h:75:13:void tflite::reference_integer_ops::BroadcastAddRecursiveDimensions(const tflite::ArithmeticParams&, int, size_t*, size_t*, size_t*, size_t*, size_t*, size_t*, const T*, const T*, T*, void (*)(const tflite::ArithmeticParams&), T (*)(T, T, const tflite::ArithmeticParams&)) [with T = short int]	96	static
+add.h:41:6:void tflite::reference_integer_ops::BroadcastInput1(int, const tflite::ArithmeticParams&, const T*, const T*, T*, void (*)(const tflite::ArithmeticParams&), T (*)(T, T, const tflite::ArithmeticParams&)) [with T = short int]	40	static
+add.h:52:6:void tflite::reference_integer_ops::BroadcastInput2(int, const tflite::ArithmeticParams&, const T*, const T*, T*, void (*)(const tflite::ArithmeticParams&), T (*)(T, T, const tflite::ArithmeticParams&)) [with T = short int]	40	static

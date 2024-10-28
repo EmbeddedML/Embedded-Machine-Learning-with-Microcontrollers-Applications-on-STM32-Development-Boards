@@ -1,0 +1,5 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+kernel_util.h:158:12:int tflite::NumInputs(const TfLiteNode*)	16	static
+svdf.cc:35:7:void* tflite::{anonymous}::Init(TfLiteContext*, const char*, size_t)	24	static
+svdf.cc:40:14:TfLiteStatus tflite::{anonymous}::Eval(TfLiteContext*, TfLiteNode*)	72	static
+svdf.cc:101:18:TFLMRegistration tflite::Register_SVDF()	24	static

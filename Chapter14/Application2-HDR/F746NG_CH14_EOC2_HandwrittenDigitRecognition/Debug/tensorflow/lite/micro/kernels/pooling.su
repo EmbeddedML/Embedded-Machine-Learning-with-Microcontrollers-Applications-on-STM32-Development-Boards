@@ -1,0 +1,36 @@
+limits:525:7:static constexpr signed char std::numeric_limits<signed char>::min()	4	static
+limits:528:7:static constexpr signed char std::numeric_limits<signed char>::max()	4	static
+limits:925:7:static constexpr short int std::numeric_limits<short int>::min()	4	static
+limits:928:7:static constexpr short int std::numeric_limits<short int>::max()	4	static
+runtime_shape.h:64:3:tflite::RuntimeShape::~RuntimeShape()	16	static
+runtime_shape.h:66:11:int32_t tflite::RuntimeShape::DimensionsCount() const	16	static
+runtime_shape.h:67:11:int32_t tflite::RuntimeShape::Dims(int) const	16	static
+runtime_shape.h:84:18:const int32_t* tflite::RuntimeShape::DimsData() const	16	static
+runtime_shape.h:133:12:int tflite::Offset(const tflite::RuntimeShape&, int, int, int, int)	32	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+types.h:264:12:int tflite::MatchingDim(const tflite::RuntimeShape&, int, const tflite::RuntimeShape&, int)	40	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = int]	16	static
+pooling.h:26:13:bool tflite::reference_integer_ops::AveragePool(const tflite::PoolParams&, const tflite::RuntimeShape&, const int8_t*, const tflite::RuntimeShape&, int8_t*)	160	static
+pooling.h:86:13:void tflite::reference_integer_ops::MaxPool(const tflite::PoolParams&, const tflite::RuntimeShape&, const int8_t*, const tflite::RuntimeShape&, int8_t*)	160	static
+pooling.h:143:13:bool tflite::reference_integer_ops::AveragePool(const tflite::PoolParams&, const tflite::RuntimeShape&, const int16_t*, const tflite::RuntimeShape&, int16_t*)	160	static
+pooling.h:204:13:void tflite::reference_integer_ops::MaxPool(const tflite::PoolParams&, const tflite::RuntimeShape&, const int16_t*, const tflite::RuntimeShape&, int16_t*)	160	static
+pooling.cc:27:14:TfLiteStatus tflite::{anonymous}::AverageEval(TfLiteContext*, TfLiteNode*)	40	static
+pooling.cc:61:14:TfLiteStatus tflite::{anonymous}::MaxEval(TfLiteContext*, TfLiteNode*)	40	static
+pooling.cc:94:7:void* tflite::{anonymous}::Init(TfLiteContext*, const char*, size_t)	24	static
+pooling.cc:101:18:TFLMRegistration tflite::Register_AVERAGE_POOL_2D()	24	static
+pooling.cc:105:18:TFLMRegistration tflite::Register_MAX_POOL_2D()	24	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = long int]	16	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = long int]	16	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = int]	16	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = signed char]	16	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = signed char]	16	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = short int]	16	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = short int]	16	static
+pooling.h:61:6:void tflite::AveragePoolingEvalQuantized(TfLiteContext*, const TfLiteNode*, const TfLitePoolParams*, const tflite::OpDataPooling*, const TfLiteEvalTensor*, TfLiteEvalTensor*) [with T = signed char]	144	static
+pooling.h:61:6:void tflite::AveragePoolingEvalQuantized(TfLiteContext*, const TfLiteNode*, const TfLitePoolParams*, const tflite::OpDataPooling*, const TfLiteEvalTensor*, TfLiteEvalTensor*) [with T = short int]	144	static
+pooling.h:91:6:void tflite::MaxPoolingEvalQuantized(TfLiteContext*, TfLiteNode*, TfLitePoolParams*, const tflite::OpDataPooling*, const TfLiteEvalTensor*, TfLiteEvalTensor*) [with T = signed char]	144	static
+pooling.h:91:6:void tflite::MaxPoolingEvalQuantized(TfLiteContext*, TfLiteNode*, TfLitePoolParams*, const tflite::OpDataPooling*, const TfLiteEvalTensor*, TfLiteEvalTensor*) [with T = short int]	144	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = signed char]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = signed char]	16	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = short int]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = short int]	16	static

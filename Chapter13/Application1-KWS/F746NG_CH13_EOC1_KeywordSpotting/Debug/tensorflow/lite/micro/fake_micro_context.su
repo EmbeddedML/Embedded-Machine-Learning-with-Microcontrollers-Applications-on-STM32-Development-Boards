@@ -1,0 +1,22 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+micro_context.h:99:3:static void tflite::MicroContext::operator delete(void*)	16	static
+fake_micro_context.h:65:3:static void tflite::FakeMicroContext::operator delete(void*)	16	static
+micro_arena_constants.h:24:15:constexpr int tflite::MicroArenaBufferAlignment()	4	static
+micro_context.h:32:7:constexpr tflite::MicroContext::MicroContext()	16	static
+micro_context.h:34:11:tflite::MicroContext::~MicroContext()	16	static
+micro_context.h:34:11:virtual tflite::MicroContext::~MicroContext()	16	static
+fake_micro_context.cc:26:1:tflite::FakeMicroContext::FakeMicroContext(TfLiteTensor*, tflite::SingleArenaBufferAllocator*, tflite::MicroGraph*)	24	static
+fake_micro_context.cc:31:15:virtual TfLiteTensor* tflite::FakeMicroContext::AllocateTempTfLiteTensor(int)	16	static
+fake_micro_context.cc:36:6:virtual void tflite::FakeMicroContext::DeallocateTempTfLiteTensor(TfLiteTensor*)	16	static
+fake_micro_context.cc:40:6:bool tflite::FakeMicroContext::IsAllTempTfLiteTensorDeallocated()	16	static
+fake_micro_context.cc:44:10:virtual uint8_t* tflite::FakeMicroContext::AllocateTempBuffer(size_t, size_t)	24	static
+fake_micro_context.cc:49:6:virtual void tflite::FakeMicroContext::DeallocateTempBuffer(uint8_t*)	16	static
+fake_micro_context.cc:54:19:virtual TfLiteEvalTensor* tflite::FakeMicroContext::GetEvalTensor(int)	24	static
+fake_micro_context.cc:68:7:virtual void* tflite::FakeMicroContext::AllocatePersistentBuffer(size_t)	24	static
+fake_micro_context.cc:77:14:virtual TfLiteStatus tflite::FakeMicroContext::RequestScratchBufferInArena(size_t, int*)	40	static
+fake_micro_context.cc:98:7:virtual void* tflite::FakeMicroContext::GetScratchBuffer(int)	16	static
+fake_micro_context.cc:106:14:virtual TfLiteStatus tflite::FakeMicroContext::set_external_context(void*)	16	static
+fake_micro_context.cc:111:7:virtual void* tflite::FakeMicroContext::external_context()	16	static
+fake_micro_context.cc:113:13:virtual tflite::MicroGraph& tflite::FakeMicroContext::graph()	16	static
+fake_micro_context.h:30:3:tflite::FakeMicroContext::~FakeMicroContext()	16	static
+fake_micro_context.h:30:3:virtual tflite::FakeMicroContext::~FakeMicroContext()	16	static

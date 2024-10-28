@@ -1,0 +1,2 @@
+log_scale_util.c:17:6:LogScaleFillConfigWithDefaults	16	static
+log_scale_util.c:22:5:LogScalePopulateState	16	static

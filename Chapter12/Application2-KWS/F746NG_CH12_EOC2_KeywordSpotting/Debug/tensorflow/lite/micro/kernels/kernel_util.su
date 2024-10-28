@@ -1,0 +1,30 @@
+runtime_shape.h:39:3:tflite::RuntimeShape::RuntimeShape()	16	static
+runtime_shape.h:52:3:tflite::RuntimeShape::RuntimeShape(int, const int32_t*)	24	static
+runtime_shape.h:64:3:tflite::RuntimeShape::~RuntimeShape()	16	static
+runtime_shape.h:83:12:int32_t* tflite::RuntimeShape::DimsData()	16	static
+runtime_shape.h:84:18:const int32_t* tflite::RuntimeShape::DimsData() const	16	static
+runtime_shape.h:87:8:void tflite::RuntimeShape::ReplaceWith(int, const int32_t*)	32	static
+runtime_shape.h:96:7:int tflite::RuntimeShape::FlatSize() const	32	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+kernel_util.cc:28:5:int tflite::micro::{anonymous}::ValidateTensorIndexing(const TfLiteContext*, int, int, const int*)	32	static
+kernel_util.cc:41:18:TFLMRegistration tflite::micro::RegisterOp(void* (*)(TfLiteContext*, const char*, size_t), TfLiteStatus (*)(TfLiteContext*, TfLiteNode*), TfLiteStatus (*)(TfLiteContext*, TfLiteNode*), void (*)(TfLiteContext*, void*), void (*)(TfLiteContext*, void*))	24	static
+kernel_util.cc:56:27:TFLMInferenceRegistration tflite::micro::RegisterOp(TfLiteStatus (*)(TfLiteContext*, TfLiteNode*), void (*)(TfLiteContext*, void*))	24	static
+kernel_util.cc:67:19:TfLiteEvalTensor* tflite::micro::GetMutableEvalInput(const TfLiteContext*, const TfLiteNode*, int)	32	static
+kernel_util.cc:82:25:const TfLiteEvalTensor* tflite::micro::GetEvalInput(const TfLiteContext*, const TfLiteNode*, int)	24	static
+kernel_util.cc:88:19:TfLiteEvalTensor* tflite::micro::GetEvalOutput(const TfLiteContext*, const TfLiteNode*, int)	24	static
+kernel_util.cc:95:6:bool tflite::micro::HaveSameShapes(const TfLiteEvalTensor*, const TfLiteEvalTensor*)	16	static
+kernel_util.cc:102:20:const tflite::RuntimeShape tflite::micro::GetTensorShape(const TfLiteEvalTensor*)	32	static
+kernel_util.cc:112:13:tflite::PaddingType tflite::micro::RuntimePaddingType(TfLitePadding)	16	static
+kernel_util.cc:128:14:TfLiteStatus tflite::micro::CreateWritableTensorDimsWithCopy(TfLiteContext*, TfLiteTensor*, TfLiteEvalTensor*)	64	static
+kernel_util.cc:151:8:size_t tflite::micro::ValidateAndGetTensorSizes(const TfLiteEvalTensor*, const TfLiteEvalTensor*)	24	static
+kernel_util.cc:161:14:TfLiteStatus tflite::micro::CopyOpInputsToOpOutputs(TfLiteContext*, TfLiteNode*)	48	static
+kernel_util.cc:188:6:void tflite::micro::PrintNBytes(const int8_t*, int, const char*)	32	static
+kernel_util.cc:201:6:void tflite::micro::PrintNBytes(const TfLiteEvalTensor*, int, const char*)	32	static
+kernel_util.cc:209:6:void tflite::micro::PrintNBytes(const TfLiteTensor*, int, const char*)	32	static
+kernel_util.cc:214:14:TfLiteStatus tflite::micro::CopyOpInputsToSubgraphInputs(TfLiteContext*, TfLiteNode*, tflite::MicroGraph*, int, int)	56	static
+kernel_util.cc:234:14:TfLiteStatus tflite::micro::CopyOpOutputsToSubgraphInputs(TfLiteContext*, TfLiteNode*, tflite::MicroGraph*, int)	56	static
+kernel_util.cc:251:14:TfLiteStatus tflite::micro::CopySubgraphOutputsToOpOutputs(TfLiteContext*, TfLiteNode*, tflite::MicroGraph*, int)	56	static
+kernel_util.cc:268:18:TfLiteEvalTensor tflite::micro::MakeUnpackedInt4Tensor(TfLiteContext*, int, const TfLiteEvalTensor*)	72	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = signed char]	16	static
+tensor_ctypes.h:32:17:const T* tflite::GetTensorData(const TfLiteTensor*) [with T = signed char]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = signed char]	16	static

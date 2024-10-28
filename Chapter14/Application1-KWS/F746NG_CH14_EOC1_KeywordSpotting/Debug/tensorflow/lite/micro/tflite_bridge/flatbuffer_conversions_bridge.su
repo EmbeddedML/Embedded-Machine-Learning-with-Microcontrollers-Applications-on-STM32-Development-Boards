@@ -1,0 +1,3 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+flatbuffer_conversions_bridge.cc:24:14:TfLiteStatus tflite::ConvertTensorType(tflite::TensorType, TfLiteType*)	16	static
+flatbuffer_conversions_bridge.cc:28:14:TfLiteStatus tflite::CallBuiltinParseFunction(tflite::TfLiteBridgeBuiltinParseFunction, const tflite::Operator*, tflite::BuiltinDataAllocator*, void**)	32	static

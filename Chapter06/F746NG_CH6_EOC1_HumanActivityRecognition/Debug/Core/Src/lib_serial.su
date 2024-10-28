@@ -1,0 +1,2 @@
+lib_serial.c:17:8:LIB_SERIAL_Transmit	48	static
+lib_serial.c:69:8:LIB_SERIAL_Receive	48	static

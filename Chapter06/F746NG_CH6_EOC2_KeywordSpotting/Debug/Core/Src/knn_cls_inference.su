@@ -1,0 +1,3 @@
+knn_cls_inference.c:22:5:knn_cls_predict	20064	static
+knn_cls_inference.c:41:14:euclid_distance	32	static
+knn_cls_inference.c:52:12:compare	24	static

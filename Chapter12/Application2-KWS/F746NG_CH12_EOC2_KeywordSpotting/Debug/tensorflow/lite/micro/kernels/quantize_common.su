@@ -1,0 +1,39 @@
+cmath:1756:3:constexpr float std::round(float)	16	static
+runtime_shape.h:64:3:tflite::RuntimeShape::~RuntimeShape()	16	static
+runtime_shape.h:66:11:int32_t tflite::RuntimeShape::DimensionsCount() const	16	static
+runtime_shape.h:67:11:int32_t tflite::RuntimeShape::Dims(int) const	16	static
+runtime_shape.h:84:18:const int32_t* tflite::RuntimeShape::DimsData() const	16	static
+runtime_shape.h:96:7:int tflite::RuntimeShape::FlatSize() const	32	static
+types.h:313:12:int tflite::MatchingFlatSize(const tflite::RuntimeShape&, const tflite::RuntimeShape&)	32	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+instrumentation.h:195:3:ruy::profiler::ScopeLabel::~ScopeLabel()	16	static
+kernel_util.h:158:12:int tflite::NumInputs(const TfLiteNode*)	16	static
+kernel_util.h:161:12:int tflite::NumOutputs(const TfLiteNode*)	16	static
+micro_context.h:102:22:tflite::MicroContext* tflite::GetMicroContext(const TfLiteContext*)	16	static
+quantize_common.cc:31:14:TfLiteStatus tflite::PrepareQuantizeReference(TfLiteContext*, TfLiteNode*)	72	static
+quantize_common.cc:92:14:TfLiteStatus tflite::EvalQuantizeReference(TfLiteContext*, TfLiteNode*)	200	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = long int]	16	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = long int]	16	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = float]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = signed char]	16	static
+quantize.h:32:13:void tflite::reference_ops::AffineQuantize(const tflite::QuantizationParams&, const tflite::RuntimeShape&, const InputT*, const tflite::RuntimeShape&, OutputT*) [with InputT = float; OutputT = signed char]	56	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = short int]	16	static
+quantize.h:32:13:void tflite::reference_ops::AffineQuantize(const tflite::QuantizationParams&, const tflite::RuntimeShape&, const InputT*, const tflite::RuntimeShape&, OutputT*) [with InputT = float; OutputT = short int]	56	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = long int]	16	static
+requantize.h:28:13:void tflite::reference_ops::Requantize(const input_type*, int32_t, int32_t, int32_t, int32_t, int32_t, output_type*) [with input_type = long int; output_type = signed char]	64	static
+requantize.h:28:13:void tflite::reference_ops::Requantize(const input_type*, int32_t, int32_t, int32_t, int32_t, int32_t, output_type*) [with input_type = long int; output_type = short int]	64	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = short int]	16	static
+requantize.h:28:13:void tflite::reference_ops::Requantize(const input_type*, int32_t, int32_t, int32_t, int32_t, int32_t, output_type*) [with input_type = short int; output_type = signed char]	64	static
+requantize.h:28:13:void tflite::reference_ops::Requantize(const input_type*, int32_t, int32_t, int32_t, int32_t, int32_t, output_type*) [with input_type = short int; output_type = short int]	64	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = long int]	16	static
+requantize.h:28:13:void tflite::reference_ops::Requantize(const input_type*, int32_t, int32_t, int32_t, int32_t, int32_t, output_type*) [with input_type = short int; output_type = long int]	64	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = signed char]	16	static
+requantize.h:28:13:void tflite::reference_ops::Requantize(const input_type*, int32_t, int32_t, int32_t, int32_t, int32_t, output_type*) [with input_type = signed char; output_type = signed char]	64	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = unsigned char]	16	static
+requantize.h:28:13:void tflite::reference_ops::Requantize(const input_type*, int32_t, int32_t, int32_t, int32_t, int32_t, output_type*) [with input_type = signed char; output_type = unsigned char]	64	static
+requantize.h:28:13:void tflite::reference_ops::Requantize(const input_type*, int32_t, int32_t, int32_t, int32_t, int32_t, output_type*) [with input_type = signed char; output_type = short int]	64	static
+requantize.h:28:13:void tflite::reference_ops::Requantize(const input_type*, int32_t, int32_t, int32_t, int32_t, int32_t, output_type*) [with input_type = signed char; output_type = long int]	64	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = unsigned char]	16	static
+requantize.h:28:13:void tflite::reference_ops::Requantize(const input_type*, int32_t, int32_t, int32_t, int32_t, int32_t, output_type*) [with input_type = unsigned char; output_type = signed char]	64	static
+cppmath.h:35:1:T tflite::TfLiteRound(T) [with T = float]	16	static
+instrumentation.h:191:12:) [with Args = {const char*}]	16	static

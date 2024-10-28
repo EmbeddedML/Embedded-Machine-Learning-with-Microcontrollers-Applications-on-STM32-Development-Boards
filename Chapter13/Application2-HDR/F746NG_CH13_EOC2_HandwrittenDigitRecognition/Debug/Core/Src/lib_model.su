@@ -1,0 +1,123 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+buffer.h:34:13:void flatbuffers::EndianCheck()	16	static
+table.h:29:18:const uint8_t* flatbuffers::Table::GetVTable() const	24	static
+table.h:35:13:flatbuffers::voffset_t flatbuffers::Table::GetOptionalFieldOffset(flatbuffers::voffset_t) const	24	static
+schema_generated.h:16355:12:uint32_t tflite::Model::version() const	16	static
+schema_generated.h:24582:29:const tflite::Model* tflite::GetModel(const void*)	16	static
+micro_op_resolver.h:50:11:tflite::MicroOpResolver::~MicroOpResolver()	16	static
+micro_op_resolver.h:50:11:virtual tflite::MicroOpResolver::~MicroOpResolver()	16	static
+lib_model.cpp:38:97:void __tcf_0()	8	static
+lib_model.cpp:24:8:int8_t LIB_MODEL_Init(const void*, TfLiteTensor**, uint8_t*, uint32_t)	48	static
+lib_model.cpp:59:8:int8_t LIB_MODEL_Run(TfLiteTensor**)	16	static
+lib_model.cpp:75:13:void AllOpsResolver()	288	static
+base.h:416:24:T flatbuffers::EndianScalar(T) [with T = long unsigned int]	16	static
+base.h:427:3:T flatbuffers::ReadScalar(const void*) [with T = long unsigned int]	16	static
+base.h:427:3:T flatbuffers::ReadScalar(const void*) [with T = long int]	16	static
+base.h:427:3:T flatbuffers::ReadScalar(const void*) [with T = short unsigned int]	16	static
+table.h:45:26:T flatbuffers::Table::GetField(flatbuffers::voffset_t, T) const [with T = long unsigned int]	32	static
+buffer.h:132:31:const T* flatbuffers::GetRoot(const void*) [with T = tflite::Model]	16	static
+micro_op_resolver.h:34:7:constexpr tflite::MicroOpResolver::MicroOpResolver()	16	static
+micro_mutable_op_resolver.h:47:12:tflite::MicroMutableOpResolver<tOpCount>::MicroMutableOpResolver() [with unsigned int tOpCount = 89]	16	static
+micro_mutable_op_resolver.h:115:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddAbs() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:119:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddAdd(const TFLMRegistration&) [with unsigned int tOpCount = 89]	16	static
+micro_mutable_op_resolver.h:123:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddAddN() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:128:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddArgMax() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:132:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddArgMin() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:136:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddAssignVariable() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:141:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddAveragePool2D(const TFLMRegistration&) [with unsigned int tOpCount = 89]	16	static
+micro_mutable_op_resolver.h:151:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddBatchToSpaceNd() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:146:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddBatchMatMul() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:166:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddCallOnce() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:171:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddCast() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:175:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddCeil() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:179:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddCircularBuffer() [with unsigned int tOpCount = 89]	16	static
+micro_mutable_op_resolver.h:183:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddConcatenation() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:188:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddConv2D(const TFLMRegistration&) [with unsigned int tOpCount = 89]	16	static
+micro_mutable_op_resolver.h:193:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddCos() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:197:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddCumSum() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:207:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddDepthToSpace() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:212:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddDepthwiseConv2D(const TFLMRegistration&) [with unsigned int tOpCount = 89]	16	static
+micro_mutable_op_resolver.h:218:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddDequantize() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:223:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddDetectionPostprocess() [with unsigned int tOpCount = 89]	16	static
+micro_mutable_op_resolver.h:242:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddElu() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:246:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddEqual() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:250:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddEthosU() [with unsigned int tOpCount = 89]	24	static
+micro_mutable_op_resolver.h:258:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddExp() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:262:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddExpandDims() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:273:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddFill() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:302:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddFloor() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:306:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddFloorDiv() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:311:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddFloorMod() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:321:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddFullyConnected(const TFLMRegistration&) [with unsigned int tOpCount = 89]	16	static
+micro_mutable_op_resolver.h:327:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddGather() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:332:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddGatherNd() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:337:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddGreater() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:342:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddGreaterEqual() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:347:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddHardSwish() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:352:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddIf() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:362:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddL2Normalization() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:367:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddL2Pool2D() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:372:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddLeakyRelu() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:377:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddLess() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:381:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddLessEqual() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:386:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddLog() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:390:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddLogicalAnd() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:395:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddLogicalNot() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:400:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddLogicalOr() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:405:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddLogistic() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:420:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddMaxPool2D(const TFLMRegistration&) [with unsigned int tOpCount = 89]	16	static
+micro_mutable_op_resolver.h:415:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddMaximum() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:430:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddMean() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:434:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddMinimum() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:425:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddMirrorPad() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:439:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddMul(const TFLMRegistration&) [with unsigned int tOpCount = 89]	16	static
+micro_mutable_op_resolver.h:443:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddNeg() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:447:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddNotEqual() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:458:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddPack() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:462:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddPad(const TFLMRegistration&) [with unsigned int tOpCount = 89]	16	static
+micro_mutable_op_resolver.h:466:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddPadV2() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:475:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddPrelu() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:480:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddQuantize() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:485:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddReadVariable() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:490:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddReduceMax() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:495:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddRelu() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:499:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddRelu6() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:504:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddReshape() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:509:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddResizeBilinear() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:514:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddResizeNearestNeighbor() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:526:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddRound() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:530:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddRsqrt() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:539:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddShape() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:543:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddSin() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:547:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddSlice() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:551:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddSoftmax(const TFLMRegistration&) [with unsigned int tOpCount = 89]	16	static
+micro_mutable_op_resolver.h:556:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddSpaceToBatchNd() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:561:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddSpaceToDepth() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:566:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddSplit() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:570:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddSplitV() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:579:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddSqrt() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:583:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddSquare() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:574:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddSqueeze() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:593:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddStridedSlice() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:603:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddSub() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:611:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddSvdf(const TFLMRegistration&) [with unsigned int tOpCount = 89]	16	static
+micro_mutable_op_resolver.h:615:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddTanh() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:624:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddTranspose() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:619:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddTransposeConv() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:629:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddUnpack() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:640:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddVarHandle() [with unsigned int tOpCount = 89]	48	static
+micro_mutable_op_resolver.h:654:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddZerosLike() [with unsigned int tOpCount = 89]	48	static
+base.h:416:24:T flatbuffers::EndianScalar(T) [with T = long int]	16	static
+base.h:416:24:T flatbuffers::EndianScalar(T) [with T = short unsigned int]	16	static
+buffer.h:120:25:T* flatbuffers::GetMutableRoot(void*) [with T = tflite::Model]	16	static
+micro_mutable_op_resolver.h:662:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddBuiltin(tflite::BuiltinOperator, const TFLMRegistration&, tflite::TfLiteBridgeBuiltinParseFunction) [with unsigned int tOpCount = 89]	32	static
+micro_mutable_op_resolver.h:87:16:TfLiteStatus tflite::MicroMutableOpResolver<tOpCount>::AddCustom(const char*, const TFLMRegistration*) [with unsigned int tOpCount = 89]	40	static
+micro_mutable_op_resolver.h:49:27:const TFLMRegistration* tflite::MicroMutableOpResolver<tOpCount>::FindOp(tflite::BuiltinOperator) const [with unsigned int tOpCount = 89]	24	static
+micro_mutable_op_resolver.h:61:27:const TFLMRegistration* tflite::MicroMutableOpResolver<tOpCount>::FindOp(const char*) const [with unsigned int tOpCount = 89]	24	static
+micro_mutable_op_resolver.h:43:7:tflite::MicroMutableOpResolver<89>::~MicroMutableOpResolver()	16	static
+micro_mutable_op_resolver.h:43:7:virtual tflite::MicroMutableOpResolver<89>::~MicroMutableOpResolver()	16	static
+lib_model.cpp:167:1:void __static_initialization_and_destruction_0(int, int)	16	static
+micro_mutable_op_resolver.h:72:36:TfLiteStatus (* tflite::MicroMutableOpResolver<tOpCount>::GetOpDataParser(tflite::BuiltinOperator) const)(const tflite::Operator*, tflite::ErrorReporter*, tflite::BuiltinDataAllocator*, void**) [with unsigned int tOpCount = 89]	24	static
+micro_mutable_op_resolver.h:45:3:static void tflite::MicroMutableOpResolver<tOpCount>::operator delete(void*) [with unsigned int tOpCount = 89]	16	static
+lib_model.cpp:167:1:cpp)	8	static
+lib_model.cpp:167:1:cpp)	8	static

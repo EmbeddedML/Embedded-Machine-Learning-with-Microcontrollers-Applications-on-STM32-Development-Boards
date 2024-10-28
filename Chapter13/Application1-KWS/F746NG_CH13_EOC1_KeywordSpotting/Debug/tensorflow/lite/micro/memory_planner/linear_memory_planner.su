@@ -1,0 +1,15 @@
+micro_memory_planner.h:47:3:tflite::MicroMemoryPlanner::MicroMemoryPlanner()	16	static
+micro_memory_planner.h:48:11:tflite::MicroMemoryPlanner::~MicroMemoryPlanner()	16	static
+micro_memory_planner.h:48:11:virtual tflite::MicroMemoryPlanner::~MicroMemoryPlanner()	16	static
+micro_memory_planner.h:62:24:virtual TfLiteStatus tflite::MicroMemoryPlanner::AddBuffer(int, int, int, int)	24	static
+micro_memory_planner.h:79:24:virtual TfLiteStatus tflite::MicroMemoryPlanner::Init(unsigned char*, int)	24	static
+micro_memory_planner.h:88:16:virtual void tflite::MicroMemoryPlanner::PrintMemoryPlan()	16	static
+linear_memory_planner.h:40:8:virtual bool tflite::LinearMemoryPlanner::preserves_all_tensors() const	16	static
+linear_memory_planner.h:48:3:static void tflite::LinearMemoryPlanner::operator delete(void*)	16	static
+linear_memory_planner.cc:22:1:tflite::LinearMemoryPlanner::LinearMemoryPlanner()	16	static
+linear_memory_planner.cc:24:1:tflite::LinearMemoryPlanner::~LinearMemoryPlanner()	16	static
+linear_memory_planner.cc:24:1:virtual tflite::LinearMemoryPlanner::~LinearMemoryPlanner()	16	static
+linear_memory_planner.cc:26:14:virtual TfLiteStatus tflite::LinearMemoryPlanner::AddBuffer(int, int, int)	24	static
+linear_memory_planner.cc:38:8:virtual size_t tflite::LinearMemoryPlanner::GetMaximumMemorySize()	16	static
+linear_memory_planner.cc:40:5:virtual int tflite::LinearMemoryPlanner::GetBufferCount()	16	static
+linear_memory_planner.cc:42:14:virtual TfLiteStatus tflite::LinearMemoryPlanner::GetOffsetForBuffer(int, int*)	24	static

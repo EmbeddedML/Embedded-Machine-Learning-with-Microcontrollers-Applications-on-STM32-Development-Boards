@@ -1,0 +1,28 @@
+std_abs.h:75:3:constexpr float std::abs(float)	16	static
+cmath:338:3:constexpr float std::log(float)	16	static
+cmath:1756:3:constexpr float std::round(float)	16	static
+limits:1068:7:static constexpr int std::numeric_limits<int>::max()	4	static
+limits:1207:7:static constexpr long int std::numeric_limits<long int>::max()	4	static
+limits:1344:7:static constexpr long long int std::numeric_limits<long long int>::min()	4	static
+limits:1347:7:static constexpr long long int std::numeric_limits<long long int>::max()	4	static
+limits:1781:7:static constexpr double std::numeric_limits<double>::infinity()	4	static
+limits:1784:7:static constexpr double std::numeric_limits<double>::quiet_NaN()	4	static
+quantization_util.cc:53:6:void tflite::QuantizeMultiplier(double, int32_t*, int*)	40	static
+quantization_util.cc:106:6:void tflite::QuantizeMultiplierGreaterThanOne(double, int32_t*, int*)	24	static
+quantization_util.cc:114:6:void tflite::QuantizeMultiplierSmallerThanOneExp(double, int32_t*, int*)	32	static
+quantization_util.cc:125:9:int64_t tflite::IntegerFrExp(double, int*)	112	static
+quantization_util.cc:191:8:double tflite::DoubleFromFractionAndShift(int64_t, int)	136	static
+quantization_util.cc:238:8:double tflite::IntegerDoubleMultiply(double, double)	64	static
+quantization_util.cc:253:5:int tflite::IntegerDoubleCompare(double, double)	48	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = double]	16	static
+quantization_util.cc:282:6:void tflite::PreprocessSoftmaxScaling(double, double, int, int32_t*, int*)	72	static
+quantization_util.cc:321:6:void tflite::PreprocessLogSoftmaxScalingExp(double, double, int, int32_t*, int*, int32_t*, int*)	56	static
+quantization_util.cc:338:5:int tflite::CalculateInputRadius(int, int, int)	64	static
+quantization_util.cc:357:6:void tflite::NudgeQuantizationRange(float, float, int, int, float*, float*, float*)	48	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = float]	16	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = float]	16	static
+quantization_util.cc:378:6:void tflite::FakeQuantizeArray(float, float, float, const float*, float*, float)	56	static
+quantization_util.cc:395:6:bool tflite::CheckedLog2(float, int*)	40	static
+quantization_util.cc:407:6:void tflite::QuantizeMultiplierArray(const double*, size_t, int32_t*, int*)	32	static
+cppmath.h:35:1:T tflite::TfLiteRound(T) [with T = double]	16	static
+cppmath.h:35:1:T tflite::TfLiteRound(T) [with T = float]	16	static

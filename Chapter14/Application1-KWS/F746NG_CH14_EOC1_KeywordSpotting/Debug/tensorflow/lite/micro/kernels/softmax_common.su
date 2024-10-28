@@ -1,0 +1,25 @@
+limits:925:7:static constexpr short int std::numeric_limits<short int>::min()	4	static
+limits:928:7:static constexpr short int std::numeric_limits<short int>::max()	4	static
+cmath:222:3:constexpr float std::exp(float)	16	static
+cmath:1756:3:constexpr float std::round(float)	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+kernel_util.h:153:12:int tflite::NumDimensions(const TfLiteTensor*)	16	static
+kernel_util.h:158:12:int tflite::NumInputs(const TfLiteNode*)	16	static
+kernel_util.h:161:12:int tflite::NumOutputs(const TfLiteNode*)	16	static
+micro_context.h:102:22:tflite::MicroContext* tflite::GetMicroContext(const TfLiteContext*)	16	static
+softmax_common.cc:64:9:tflite::{anonymous}::InitializeLutForInt16(TfLiteContext*, const TfLiteTensor*, TfLiteTensor*, tflite::SoftmaxParams*)::<lambda(float)>	16	static
+softmax_common.cc:64:9:static float tflite::{anonymous}::InitializeLutForInt16(TfLiteContext*, const TfLiteTensor*, TfLiteTensor*, tflite::SoftmaxParams*)::<lambda(float)>::_FUN(float)	16	static
+softmax_common.cc:64:9:tflite::{anonymous}::InitializeLutForInt16(TfLiteContext*, const TfLiteTensor*, TfLiteTensor*, tflite::SoftmaxParams*)::<lambda(float)>::operator float (*)(float)() const	16	static
+softmax_common.cc:68:9:tflite::{anonymous}::InitializeLutForInt16(TfLiteContext*, const TfLiteTensor*, TfLiteTensor*, tflite::SoftmaxParams*)::<lambda(float)>	16	static
+softmax_common.cc:68:9:static float tflite::{anonymous}::InitializeLutForInt16(TfLiteContext*, const TfLiteTensor*, TfLiteTensor*, tflite::SoftmaxParams*)::<lambda(float)>::_FUN(float)	16	static
+softmax_common.cc:68:9:tflite::{anonymous}::InitializeLutForInt16(TfLiteContext*, const TfLiteTensor*, TfLiteTensor*, tflite::SoftmaxParams*)::<lambda(float)>::operator float (*)(float)() const	16	static
+softmax_common.cc:31:14:TfLiteStatus tflite::{anonymous}::InitializeLutForInt16(TfLiteContext*, const TfLiteTensor*, TfLiteTensor*, tflite::SoftmaxParams*)	72	static
+softmax_common.cc:80:14:TfLiteStatus tflite::CalculateSoftmaxParams(TfLiteContext*, const TfLiteTensor*, TfLiteTensor*, const TfLiteSoftmaxParams*, tflite::SoftmaxParams*)	96	static
+softmax_common.cc:140:7:void* tflite::SoftmaxInit(TfLiteContext*, const char*, size_t)	24	static
+softmax_common.cc:145:14:TfLiteStatus tflite::SoftmaxPrepare(TfLiteContext*, TfLiteNode*)	64	static
+common.h:601:1:typename std::enable_if<std::is_same<T, short int>::value, void>::type tflite::LUTPopulate(float, int32_t, float, int32_t, float (*)(float), T*) [with T = short int]	40	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = float]	16	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = float]	16	static
+common.h:520:13:void tflite::detail::LUTPopulateInt16(FloatT, int32_t, FloatT, int32_t, Func, const void*, int16_t*) [with FloatT = float; Func = float (*)(float)]	136	static
+common.h:474:1:typename std::enable_if<std::is_same<Func, FloatT (*)(FloatT)>::value, FloatT>::type tflite::detail::LUTTransform(Func, const void*, FloatT) [with FloatT = float; Func = float (*)(float)]	24	static
+cppmath.h:35:1:T tflite::TfLiteRound(T) [with T = float]	16	static

@@ -1,0 +1,25 @@
+micro_memory_planner.h:47:3:tflite::MicroMemoryPlanner::MicroMemoryPlanner()	16	static
+micro_memory_planner.h:48:11:tflite::MicroMemoryPlanner::~MicroMemoryPlanner()	16	static
+micro_memory_planner.h:48:11:virtual tflite::MicroMemoryPlanner::~MicroMemoryPlanner()	16	static
+micro_memory_planner.h:62:24:virtual TfLiteStatus tflite::MicroMemoryPlanner::AddBuffer(int, int, int, int)	24	static
+micro_memory_planner.h:79:24:virtual TfLiteStatus tflite::MicroMemoryPlanner::Init(unsigned char*, int)	24	static
+micro_memory_planner.h:88:16:virtual void tflite::MicroMemoryPlanner::PrintMemoryPlan()	16	static
+greedy_memory_planner.h:100:17:static size_t tflite::GreedyMemoryPlanner::per_buffer_size()	16	static
+greedy_memory_planner.h:113:8:virtual bool tflite::GreedyMemoryPlanner::preserves_all_tensors() const	16	static
+greedy_memory_planner.h:165:3:static void tflite::GreedyMemoryPlanner::operator delete(void*)	16	static
+greedy_memory_planner.cc:26:6:char tflite::{anonymous}::GetOrdinalCharacter(int)	16	static
+greedy_memory_planner.cc:42:6:void tflite::ReverseSortInPlace(int*, int*, int)	40	static
+greedy_memory_planner.cc:60:1:tflite::GreedyMemoryPlanner::GreedyMemoryPlanner()	16	static
+greedy_memory_planner.cc:62:14:virtual TfLiteStatus tflite::GreedyMemoryPlanner::Init(unsigned char*, int)	40	static
+greedy_memory_planner.cc:88:1:tflite::GreedyMemoryPlanner::~GreedyMemoryPlanner()	16	static
+greedy_memory_planner.cc:88:1:virtual tflite::GreedyMemoryPlanner::~GreedyMemoryPlanner()	16	static
+greedy_memory_planner.cc:92:14:virtual TfLiteStatus tflite::GreedyMemoryPlanner::AddBuffer(int, int, int)	32	static
+greedy_memory_planner.cc:108:14:virtual TfLiteStatus tflite::GreedyMemoryPlanner::AddBuffer(int, int, int, int)	40	static
+greedy_memory_planner.cc:119:6:bool tflite::GreedyMemoryPlanner::DoesEntryOverlapInTime(const tflite::GreedyMemoryPlanner::ListEntry*, int, int) const	32	static
+greedy_memory_planner.cc:134:1:tflite::GreedyMemoryPlanner::ListEntry* tflite::GreedyMemoryPlanner::NextSimultaneouslyActiveBuffer(const tflite::GreedyMemoryPlanner::ListEntry*, int, int)	32	static
+greedy_memory_planner.cc:162:6:void tflite::GreedyMemoryPlanner::CalculateOffsetsIfNeeded()	104	static
+greedy_memory_planner.cc:312:8:virtual size_t tflite::GreedyMemoryPlanner::GetMaximumMemorySize()	32	static
+greedy_memory_planner.cc:334:6:virtual void tflite::GreedyMemoryPlanner::PrintMemoryPlan()	200	static
+greedy_memory_planner.cc:395:5:virtual int tflite::GreedyMemoryPlanner::GetBufferCount()	16	static
+greedy_memory_planner.cc:397:14:virtual TfLiteStatus tflite::GreedyMemoryPlanner::GetOffsetForBuffer(int, int*)	24	static
+greedy_memory_planner.cc:409:6:bool tflite::GreedyMemoryPlanner::DoAnyBuffersOverlap()	104	static

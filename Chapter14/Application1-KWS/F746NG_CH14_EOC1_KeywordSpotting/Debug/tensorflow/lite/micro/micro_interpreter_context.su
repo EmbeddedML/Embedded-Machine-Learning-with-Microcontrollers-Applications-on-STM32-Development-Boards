@@ -1,0 +1,25 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+micro_context.h:99:3:static void tflite::MicroContext::operator delete(void*)	16	static
+micro_interpreter_graph.h:87:7:int tflite::MicroInterpreterGraph::GetCurrentSubgraphIndex()	16	static
+micro_interpreter_graph.h:91:24:tflite::SubgraphAllocations* tflite::MicroInterpreterGraph::GetAllocations()	16	static
+micro_interpreter_context.h:100:9:virtual void* tflite::MicroInterpreterContext::external_context()	16	static
+micro_interpreter_context.h:102:15:virtual tflite::MicroGraph& tflite::MicroInterpreterContext::graph()	16	static
+micro_interpreter_context.h:118:3:static void tflite::MicroInterpreterContext::operator delete(void*)	16	static
+micro_context.h:32:7:constexpr tflite::MicroContext::MicroContext()	16	static
+micro_context.h:34:11:tflite::MicroContext::~MicroContext()	16	static
+micro_context.h:34:11:virtual tflite::MicroContext::~MicroContext()	16	static
+micro_interpreter_context.cc:23:1:tflite::MicroInterpreterContext::MicroInterpreterContext(tflite::MicroAllocator*, const tflite::Model*, tflite::MicroInterpreterGraph*)	24	static
+micro_interpreter_context.cc:31:1:tflite::MicroInterpreterContext::~MicroInterpreterContext()	16	static
+micro_interpreter_context.cc:31:1:virtual tflite::MicroInterpreterContext::~MicroInterpreterContext()	16	static
+micro_interpreter_context.cc:33:7:virtual void* tflite::MicroInterpreterContext::AllocatePersistentBuffer(size_t)	16	static
+micro_interpreter_context.cc:39:14:virtual TfLiteStatus tflite::MicroInterpreterContext::RequestScratchBufferInArena(size_t, int*)	32	static
+micro_interpreter_context.cc:46:7:virtual void* tflite::MicroInterpreterContext::GetScratchBuffer(int)	24	static
+micro_interpreter_context.cc:52:15:virtual TfLiteTensor* tflite::MicroInterpreterContext::AllocateTempTfLiteTensor(int)	40	static
+micro_interpreter_context.cc:59:6:virtual void tflite::MicroInterpreterContext::DeallocateTempTfLiteTensor(TfLiteTensor*)	16	static
+micro_interpreter_context.cc:63:10:virtual uint8_t* tflite::MicroInterpreterContext::AllocateTempBuffer(size_t, size_t)	24	static
+micro_interpreter_context.cc:69:6:virtual void tflite::MicroInterpreterContext::DeallocateTempBuffer(uint8_t*)	16	static
+micro_interpreter_context.cc:74:19:virtual TfLiteEvalTensor* tflite::MicroInterpreterContext::GetEvalTensor(int)	24	static
+micro_interpreter_context.cc:79:6:void tflite::MicroInterpreterContext::SetScratchBufferHandles(tflite::ScratchBufferHandle*)	16	static
+micro_interpreter_context.cc:84:14:virtual TfLiteStatus tflite::MicroInterpreterContext::set_external_context(void*)	16	static
+micro_interpreter_context.cc:100:6:void tflite::MicroInterpreterContext::SetInterpreterState(tflite::MicroInterpreterContext::InterpreterState)	16	static
+micro_interpreter_context.cc:105:1:tflite::MicroInterpreterContext::InterpreterState tflite::MicroInterpreterContext::GetInterpreterState() const	16	static

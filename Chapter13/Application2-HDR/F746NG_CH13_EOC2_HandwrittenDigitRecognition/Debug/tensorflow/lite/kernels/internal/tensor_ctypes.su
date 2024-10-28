@@ -1,0 +1,9 @@
+runtime_shape.h:39:3:tflite::RuntimeShape::RuntimeShape()	16	static
+runtime_shape.h:52:3:tflite::RuntimeShape::RuntimeShape(int, const int32_t*)	24	static
+runtime_shape.h:83:12:int32_t* tflite::RuntimeShape::DimsData()	16	static
+runtime_shape.h:87:8:void tflite::RuntimeShape::ReplaceWith(int, const int32_t*)	32	static
+tensor_ctypes.cc:22:14:tflite::RuntimeShape tflite::GetTensorShape(const TfLiteTensor*)	32	static
+tensor_ctypes.cc:33:14:tflite::RuntimeShape tflite::GetTensorShape(std::vector<long int>)	24	static
+stl_vector.h:915:7:std::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::size() const [with _Tp = long int; _Alloc = std::allocator<long int>]	16	static
+stl_vector.h:1165:7:_Tp* std::vector<_Tp, _Alloc>::data() [with _Tp = long int; _Alloc = std::allocator<long int>]	16	static
+stl_vector.h:1840:2:_Up* std::vector<_Tp, _Alloc>::_M_data_ptr(_Up*) const [with _Up = long int; _Tp = long int; _Alloc = std::allocator<long int>]	16	static

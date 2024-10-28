@@ -1,0 +1,8 @@
+cmath:661:3:constexpr bool std::signbit(float)	16	static
+portable_tensor_utils.cc:40:6:void tflite::tensor_utils::ApplyReluToVector(const float*, int, float*)	32	static
+portable_tensor_utils.cc:48:6:void tflite::tensor_utils::ApplyRelu1ToVector(const float*, int, float*)	40	static
+portable_tensor_utils.cc:56:6:void tflite::tensor_utils::ApplyRelu6ToVector(const float*, int, float*)	40	static
+portable_tensor_utils.cc:64:6:void tflite::tensor_utils::ApplySignbitToVector(const float*, int, float*)	32	static
+portable_tensor_utils.cc:71:6:void tflite::tensor_utils::UnpackDenseInt4IntoInt8(const int8_t*, int, int8_t*)	32	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = float]	16	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = float]	16	static

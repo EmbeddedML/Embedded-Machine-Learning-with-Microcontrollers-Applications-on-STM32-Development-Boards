@@ -1,0 +1,19 @@
+ibuffer_allocator.h:49:3:tflite::INonPersistentBufferAllocator::INonPersistentBufferAllocator()	16	static
+ibuffer_allocator.h:50:11:tflite::INonPersistentBufferAllocator::~INonPersistentBufferAllocator()	16	static
+ibuffer_allocator.h:50:11:virtual tflite::INonPersistentBufferAllocator::~INonPersistentBufferAllocator()	16	static
+non_persistent_arena_buffer_allocator.h:77:3:static void tflite::NonPersistentArenaBufferAllocator::operator delete(void*)	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+non_persistent_arena_buffer_allocator.cc:22:1:tflite::NonPersistentArenaBufferAllocator::NonPersistentArenaBufferAllocator(uint8_t*, size_t)	24	static
+non_persistent_arena_buffer_allocator.cc:29:1:tflite::NonPersistentArenaBufferAllocator::~NonPersistentArenaBufferAllocator()	16	static
+non_persistent_arena_buffer_allocator.cc:29:1:virtual tflite::NonPersistentArenaBufferAllocator::~NonPersistentArenaBufferAllocator()	16	static
+non_persistent_arena_buffer_allocator.cc:32:10:virtual uint8_t* tflite::NonPersistentArenaBufferAllocator::AllocateTemp(size_t, size_t)	32	static
+non_persistent_arena_buffer_allocator.cc:50:6:virtual void tflite::NonPersistentArenaBufferAllocator::DeallocateTemp(uint8_t*)	16	static
+non_persistent_arena_buffer_allocator.cc:56:6:virtual bool tflite::NonPersistentArenaBufferAllocator::IsAllTempDeallocated()	16	static
+non_persistent_arena_buffer_allocator.cc:71:14:virtual TfLiteStatus tflite::NonPersistentArenaBufferAllocator::ResetTempAllocations()	16	static
+non_persistent_arena_buffer_allocator.cc:82:10:virtual uint8_t* tflite::NonPersistentArenaBufferAllocator::AllocateResizableBuffer(size_t, size_t)	40	static
+non_persistent_arena_buffer_allocator.cc:103:14:virtual TfLiteStatus tflite::NonPersistentArenaBufferAllocator::ResizeBuffer(uint8_t*, size_t, size_t)	32	static
+non_persistent_arena_buffer_allocator.cc:130:14:virtual TfLiteStatus tflite::NonPersistentArenaBufferAllocator::DeallocateResizableBuffer(uint8_t*)	32	static
+non_persistent_arena_buffer_allocator.cc:141:10:virtual uint8_t* tflite::NonPersistentArenaBufferAllocator::GetOverlayMemoryAddress() const	16	static
+non_persistent_arena_buffer_allocator.cc:150:1:virtual TfLiteStatus tflite::NonPersistentArenaBufferAllocator::ReserveNonPersistentOverlayMemory(size_t, size_t)	40	static
+non_persistent_arena_buffer_allocator.cc:157:8:virtual size_t tflite::NonPersistentArenaBufferAllocator::GetNonPersistentUsedBytes() const	16	static
+non_persistent_arena_buffer_allocator.cc:163:8:virtual size_t tflite::NonPersistentArenaBufferAllocator::GetAvailableMemory(size_t) const	24	static

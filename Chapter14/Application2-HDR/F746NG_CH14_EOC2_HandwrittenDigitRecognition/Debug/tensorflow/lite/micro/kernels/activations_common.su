@@ -1,0 +1,21 @@
+limits:525:7:static constexpr signed char std::numeric_limits<signed char>::min()	4	static
+limits:528:7:static constexpr signed char std::numeric_limits<signed char>::max()	4	static
+limits:1706:7:static constexpr float std::numeric_limits<float>::infinity()	4	static
+runtime_shape.h:64:3:tflite::RuntimeShape::~RuntimeShape()	16	static
+runtime_shape.h:66:11:int32_t tflite::RuntimeShape::DimensionsCount() const	16	static
+runtime_shape.h:67:11:int32_t tflite::RuntimeShape::Dims(int) const	16	static
+runtime_shape.h:84:18:const int32_t* tflite::RuntimeShape::DimsData() const	16	static
+runtime_shape.h:96:7:int tflite::RuntimeShape::FlatSize() const	32	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+types.h:313:12:int tflite::MatchingFlatSize(const tflite::RuntimeShape&, const tflite::RuntimeShape&)	32	static
+micro_context.h:102:22:tflite::MicroContext* tflite::GetMicroContext(const TfLiteContext*)	16	static
+activations_common.cc:36:6:void tflite::ReluQuantized(const tflite::ReluOpData&, const tflite::RuntimeShape&, const tflite::RuntimeShape&, const int8_t*, int8_t*)	48	static
+activations_common.cc:82:6:void tflite::ReluFloat(const tflite::RuntimeShape&, const float*, const tflite::RuntimeShape&, float*)	48	static
+activations_common.cc:93:6:void tflite::Relu6Float(const tflite::RuntimeShape&, const float*, const tflite::RuntimeShape&, float*)	48	static
+activations_common.cc:105:6:void tflite::Relu6Quantized(int8_t, int8_t, const tflite::RuntimeShape&, const int8_t*, const tflite::RuntimeShape&, int8_t*)	40	static
+activations_common.cc:116:14:TfLiteStatus tflite::ReluPrepare(TfLiteContext*, TfLiteNode*)	48	static
+activations_common.cc:138:14:TfLiteStatus tflite::Relu6Prepare(TfLiteContext*, TfLiteNode*)	48	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = long int]	16	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = long int]	16	static
+activations_common.cc:54:6:void tflite::CalculateReluOpData(const TfLiteTensor*, TfLiteTensor*, tflite::ReluOpData*) [with T = signed char]	120	static
+micro_utils.h:42:3:T tflite::FloatToQuantizedType(float, float, int) [with T = signed char]	48	static

@@ -1,0 +1,8 @@
+kernel_util.h:158:12:int tflite::NumInputs(const TfLiteNode*)	16	static
+kernel_util.h:161:12:int tflite::NumOutputs(const TfLiteNode*)	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+shape.cc:32:6:void tflite::{anonymous}::ExtractShape(const TfLiteEvalTensor*, int32_t*)	24	static
+shape.cc:38:14:TfLiteStatus tflite::{anonymous}::Prepare(TfLiteContext*, TfLiteNode*)	40	static
+shape.cc:45:14:TfLiteStatus tflite::{anonymous}::Eval(TfLiteContext*, TfLiteNode*)	24	static
+shape.cc:63:18:TFLMRegistration tflite::Register_SHAPE()	24	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = long int]	16	static

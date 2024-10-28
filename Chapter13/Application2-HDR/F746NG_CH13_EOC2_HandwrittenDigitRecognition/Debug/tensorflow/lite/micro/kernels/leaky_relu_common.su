@@ -1,0 +1,6 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+kernel_util.h:158:12:int tflite::NumInputs(const TfLiteNode*)	16	static
+kernel_util.h:161:12:int tflite::NumOutputs(const TfLiteNode*)	16	static
+micro_context.h:102:22:tflite::MicroContext* tflite::GetMicroContext(const TfLiteContext*)	16	static
+leaky_relu_common.cc:31:14:TfLiteStatus tflite::CalculateOpDataLeakyRelu(TfLiteContext*, TfLiteNode*)	88	static
+leaky_relu_common.cc:74:14:TfLiteStatus tflite::LeakyReluPrepare(TfLiteContext*, TfLiteNode*)	16	static

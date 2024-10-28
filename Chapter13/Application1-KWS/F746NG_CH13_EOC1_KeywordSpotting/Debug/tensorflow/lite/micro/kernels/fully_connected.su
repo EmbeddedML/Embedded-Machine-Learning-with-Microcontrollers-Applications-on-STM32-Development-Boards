@@ -1,0 +1,34 @@
+runtime_shape.h:52:3:tflite::RuntimeShape::RuntimeShape(int, const int32_t*)	24	static
+runtime_shape.h:64:3:tflite::RuntimeShape::~RuntimeShape()	16	static
+runtime_shape.h:66:11:int32_t tflite::RuntimeShape::DimensionsCount() const	16	static
+runtime_shape.h:67:11:int32_t tflite::RuntimeShape::Dims(int) const	16	static
+runtime_shape.h:83:12:int32_t* tflite::RuntimeShape::DimsData()	16	static
+runtime_shape.h:84:18:const int32_t* tflite::RuntimeShape::DimsData() const	16	static
+runtime_shape.h:87:8:void tflite::RuntimeShape::ReplaceWith(int, const int32_t*)	32	static
+runtime_shape.h:96:7:int tflite::RuntimeShape::FlatSize() const	32	static
+types.h:264:12:int tflite::MatchingDim(const tflite::RuntimeShape&, int, const tflite::RuntimeShape&, int)	40	static
+types.h:519:12:int tflite::FlatSizeSkipDim(const tflite::RuntimeShape&, int)	32	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+fully_connected.h:29:13:void tflite::reference_ops::FullyConnected(const tflite::FullyConnectedParams&, const tflite::RuntimeShape&, const float*, const tflite::RuntimeShape&, const float*, const tflite::RuntimeShape&, const float*, const tflite::RuntimeShape&, float*)	80	static
+micro_context.h:102:22:tflite::MicroContext* tflite::GetMicroContext(const TfLiteContext*)	16	static
+fully_connected.cc:29:7:void* tflite::{anonymous}::Init(TfLiteContext*, const char*, size_t)	24	static
+fully_connected.cc:35:14:TfLiteStatus tflite::{anonymous}::Prepare(TfLiteContext*, TfLiteNode*)	104	static
+fully_connected.cc:90:14:TfLiteStatus tflite::{anonymous}::Eval(TfLiteContext*, TfLiteNode*)	720	static
+fully_connected.cc:202:18:TFLMRegistration tflite::Register_FULLY_CONNECTED()	24	static
+fully_connected.cc:206:27:TFLMInferenceRegistration tflite::RegisterInference_FULLY_CONNECTED()	16	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = long int]	16	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = long int]	16	static
+common.h:177:10:T tflite::ActivationFunctionWithMinMax(T, T, T) [with T = float]	24	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = float]	16	static
+kernel_util.h:89:10:const T* tflite::micro::GetOptionalTensorData(const TfLiteEvalTensor*) [with T = float]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = float]	16	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = signed char]	16	static
+kernel_util.h:89:10:const T* tflite::micro::GetOptionalTensorData(const TfLiteEvalTensor*) [with T = long int]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = signed char]	16	static
+fully_connected.h:77:6:void tflite::reference_integer_ops::FullyConnected(const tflite::FullyConnectedParams&, const tflite::RuntimeShape&, const InputType*, const tflite::RuntimeShape&, const WeightType*, const tflite::RuntimeShape&, const BiasType*, const tflite::RuntimeShape&, OutputType*) [with InputType = signed char; WeightType = signed char; OutputType = signed char; BiasType = long int]	104	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = short int]	16	static
+kernel_util.h:89:10:const T* tflite::micro::GetOptionalTensorData(const TfLiteEvalTensor*) [with T = long long int]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = short int]	16	static
+fully_connected.h:77:6:void tflite::reference_integer_ops::FullyConnected(const tflite::FullyConnectedParams&, const tflite::RuntimeShape&, const InputType*, const tflite::RuntimeShape&, const WeightType*, const tflite::RuntimeShape&, const BiasType*, const tflite::RuntimeShape&, OutputType*) [with InputType = short int; WeightType = signed char; OutputType = short int; BiasType = long long int]	120	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = float]	16	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = float]	16	static

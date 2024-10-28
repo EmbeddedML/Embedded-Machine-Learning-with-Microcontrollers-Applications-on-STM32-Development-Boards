@@ -1,0 +1,5 @@
+bits.h:32:19:CountLeadingZeros32	16	static
+bits.h:51:19:MostSignificantBit32	16	static
+log_scale.c:29:17:Log2FractionPart	56	static
+log_scale.c:49:17:Log	48	static
+log_scale.c:60:11:LogScaleApply	48	static

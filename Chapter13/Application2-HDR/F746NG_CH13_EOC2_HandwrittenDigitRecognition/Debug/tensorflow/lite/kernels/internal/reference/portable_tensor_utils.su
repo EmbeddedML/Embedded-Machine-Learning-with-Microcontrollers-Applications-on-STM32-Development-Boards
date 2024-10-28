@@ -1,0 +1,290 @@
+predefined_ops.h:48:3:constexpr __gnu_cxx::__ops::_Iter_less_iter __gnu_cxx::__ops::__iter_less_iter()	4	static
+std_abs.h:71:3:constexpr double std::abs(double)	16	static
+std_abs.h:75:3:constexpr float std::abs(float)	16	static
+limits:925:7:static constexpr short int std::numeric_limits<short int>::min()	4	static
+limits:928:7:static constexpr short int std::numeric_limits<short int>::max()	4	static
+limits:1204:7:static constexpr long int std::numeric_limits<long int>::min()	4	static
+limits:1207:7:static constexpr long int std::numeric_limits<long int>::max()	4	static
+cmath:222:3:constexpr float std::exp(float)	16	static
+cmath:463:3:constexpr float std::sqrt(float)	16	static
+cmath:501:3:constexpr float std::tanh(float)	16	static
+cmath:1756:3:constexpr float std::round(float)	16	static
+fixedpoint.h:245:21:IntegerType gemmlowp::RoundingHalfSum(IntegerType, IntegerType) [with IntegerType = short int]	32	static
+fixedpoint.h:262:21:IntegerType gemmlowp::SaturatingAdd(IntegerType, IntegerType) [with IntegerType = short int]	40	static
+fixedpoint.h:329:21:IntegerType gemmlowp::SaturatingRoundingDoublingHighMul(IntegerType, IntegerType) [with IntegerType = long int]	64	static
+fixedpoint.h:342:21:IntegerType gemmlowp::SaturatingRoundingDoublingHighMul(IntegerType, IntegerType) [with IntegerType = short int]	40	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+common.h:961:13:void tflite::GetInvSqrtQuantizedMultiplierExp(int32_t, int, int32_t*, int*)	72	static
+stl_algo.h:3397:5:constexpr std::pair<_FIter, _FIter> std::minmax_element(_FIter, _FIter) [with _FIter = const float*]	40	static
+portable_tensor_utils.cc:40:6:void tflite::tensor_utils::PortableSymmetricQuantizeFloats(const float*, int, int8_t*, float*, float*, float*)	32	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = float]	16	static
+portable_tensor_utils.cc:51:6:void tflite::tensor_utils::PortableSymmetricQuantizeFloats(const float*, int, int8_t*, float, float, float*)	64	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = long int]	16	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = long int]	16	static
+portable_tensor_utils.cc:72:6:void tflite::tensor_utils::PortableAsymmetricQuantizeFloats(const float*, int, int8_t*, float*, int32_t*)	152	static
+portable_tensor_utils.cc:119:6:void tflite::tensor_utils::PortableMatrixBatchVectorMultiplyAccumulate(const float*, int, int, const float*, int, float*)	56	static
+portable_tensor_utils.cc:138:6:void tflite::tensor_utils::PortableMatrixBatchVectorMultiplyAccumulate(const int8_t*, int, int, const int8_t*, const float*, int, float*)	48	static
+portable_tensor_utils.cc:163:6:void tflite::tensor_utils::PortableMatrixBatchVectorMultiplyAccumulate(const int8_t*, int, int, const int8_t*, const float*, int, float*, const float*, const int32_t*, int32_t*, int32_t*, bool*, tflite::CpuBackendContext*)	72	static
+portable_tensor_utils.cc:206:6:void tflite::tensor_utils::PortableSparseMatrixBatchVectorMultiplyAccumulate1x4(const float*, const int32_t*, const int32_t*, int, int, const float*, int, float*)	64	static
+portable_tensor_utils.cc:230:6:void tflite::tensor_utils::PortableSparseMatrixBatchVectorMultiplyAccumulate1x16(const int8_t*, const int32_t*, const int32_t*, int, int, const int8_t*, const int32_t*, int, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int8_t*)	72	static
+portable_tensor_utils.cc:265:6:void tflite::tensor_utils::PortableSparseMatrixBatchVectorMultiplyAccumulate(const float*, const uint8_t*, int, int, const float*, int, float*)	72	static
+portable_tensor_utils.cc:294:6:void tflite::tensor_utils::PortableSparseMatrixBatchVectorMultiplyAccumulate(const int8_t*, const uint8_t*, int, int, const int8_t*, const float*, int, float*)	72	static
+portable_tensor_utils.cc:357:6:void tflite::tensor_utils::PortableMatrixBatchVectorMultiplyAccumulate(const int8_t*, const int32_t*, const int8_t*, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t*, int16_t*, tflite::CpuBackendContext*)	48	static
+portable_tensor_utils.cc:367:6:void tflite::tensor_utils::PortableMatrixBatchVectorMultiplyAccumulate(const int8_t*, const int32_t*, const int8_t*, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t*, int8_t*, tflite::CpuBackendContext*)	48	static
+portable_tensor_utils.cc:377:6:void tflite::tensor_utils::PortableMatrixBatchVectorMultiply(const int8_t*, int32_t, const int8_t*, int32_t, int32_t, int32_t, int32_t, int32_t, int8_t*, int8_t)	56	static
+portable_tensor_utils.cc:409:6:void tflite::tensor_utils::PortableMatrixBatchVectorMultiply(const int16_t*, const int8_t*, int32_t, int32_t, const int32_t*, int32_t, int32_t, int32_t, int32_t, int8_t*)	80	static
+portable_tensor_utils.cc:445:6:void tflite::tensor_utils::PortableApplyLayerNorm(const int16_t*, const int16_t*, const int32_t*, int32_t, int32_t, int32_t, int, int, int16_t*)	184	static
+cmath:415:5:constexpr typename __gnu_cxx::__promote_2<_Tp, _Up>::__type std::pow(_Tp, _Up) [with _Tp = double; _Up = int]	24	static
+portable_tensor_utils.cc:495:6:void tflite::tensor_utils::PortableApplyLayerNormFloat(const int16_t*, const int16_t*, int32_t, int32_t, const int32_t*, int, int, int16_t*)	104	static
+portable_tensor_utils.cc:540:6:void tflite::tensor_utils::PortableMatrixScalarMultiplyAccumulate(const int8_t*, int32_t, int32_t, int32_t, int32_t*)	40	static
+portable_tensor_utils.cc:552:6:void tflite::tensor_utils::PortableApplySigmoid(const int16_t*, int32_t, int32_t, int16_t*)	48	static
+cmath:415:5:constexpr typename __gnu_cxx::__promote_2<_Tp, _Up>::__type std::pow(_Tp, _Up) [with _Tp = int; _Up = int]	24	static
+portable_tensor_utils.cc:566:6:void tflite::tensor_utils::PortableApplySigmoidFloat(const int16_t*, int32_t, int32_t, int16_t*)	72	static
+portable_tensor_utils.cc:600:6:void tflite::tensor_utils::PortableApplyTanh(int32_t, const int16_t*, int32_t, int32_t, int16_t*)	24	static
+portable_tensor_utils.cc:621:6:void tflite::tensor_utils::PortableApplyTanhFloat(const int16_t*, int32_t, int32_t, int32_t, int16_t*)	80	static
+portable_tensor_utils.cc:642:6:void tflite::tensor_utils::PortableCwiseMul(const int16_t*, const int16_t*, int, int, int, int16_t*)	48	static
+portable_tensor_utils.cc:656:6:void tflite::tensor_utils::PortableCwiseMul(const int16_t*, const int16_t*, int32_t, int32_t, int32_t, int32_t, int32_t, int8_t*)	56	static
+portable_tensor_utils.cc:675:6:void tflite::tensor_utils::PortableCwiseAdd(const int16_t*, const int16_t*, int, int, int16_t*)	48	static
+portable_tensor_utils.cc:687:7:float tflite::tensor_utils::PortableVectorVectorDotProduct(const float*, const float*, int)	32	static
+portable_tensor_utils.cc:697:16:int32_t tflite::tensor_utils::{anonymous}::VectorVectorDotProduct(const int16_t*, const int16_t*, int)	32	static
+portable_tensor_utils.cc:707:6:void tflite::tensor_utils::PortableBatchVectorBatchVectorDotProduct(const int16_t*, const int16_t*, int, int, int32_t*)	40	static
+portable_tensor_utils.cc:718:6:void tflite::tensor_utils::PortableVectorBatchVectorCwiseProductAccumulate(const int16_t*, int, const int16_t*, int, int32_t, int, int16_t*)	48	static
+portable_tensor_utils.cc:733:6:void tflite::tensor_utils::PortableSub1Vector(const float*, int, float*)	32	static
+portable_tensor_utils.cc:739:6:void tflite::tensor_utils::PortableSub1Vector(const int16_t*, int, int16_t*)	32	static
+portable_tensor_utils.cc:746:6:void tflite::tensor_utils::PortableVectorScalarMultiply(const int8_t*, int, float, float*)	32	static
+portable_tensor_utils.cc:753:6:void tflite::tensor_utils::PortableMeanStddevNormalization(const float*, float*, int, int)	72	static
+portable_tensor_utils.cc:779:6:void tflite::tensor_utils::PortableTwoGateSaturatingAdd(const int8_t*, int8_t, const int8_t*, int8_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int16_t*)	56	static
+fixedpoint.h:357:20:IntegerType gemmlowp::RoundingDivideByPOT(IntegerType, int) [with IntegerType = long int]	56	static
+common.h:413:5:int tflite::CountLeadingZeros(T) [with T = long unsigned int]	16	static
+fixedpoint.h:525:12:gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType& gemmlowp::FixedPoint<tRawType, tIntegerBits>::raw() [with tRawType = long int; int tIntegerBits = 0]	16	static
+fixedpoint.h:481:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType) [with tRawType = long int; int tIntegerBits = 3]	24	static
+fixedpoint.h:559:36:gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::SaturatingRoundingMultiplyByPOT(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tExponent = -1; tRawType = long int; int tIntegerBits = 3]	16	static
+fixedpoint.h:487:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromScalarRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::ScalarRawType) [with tRawType = long int; int tIntegerBits = 3]	32	static
+fixedpoint.h:687:47:typename FixedPointType::ScalarRawType gemmlowp::RescaleConstantInitializer(int32_t) [with FixedPointType = gemmlowp::FixedPoint<long int, 3>]	16	static
+fixedpoint.h:508:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::One() [with tRawType = long int; int tIntegerBits = 3]	8	static
+fixedpoint.h:539:55:gemmlowp::FixedPoint<tRawType, (tIntegerBits_a + tIntegerBits_b)> gemmlowp::operator*(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_b>) [with tRawType = long int; int tIntegerBits_a = 3; int tIntegerBits_b = 3]	40	static
+fixedpoint.h:539:55:gemmlowp::FixedPoint<tRawType, (tIntegerBits_a + tIntegerBits_b)> gemmlowp::operator*(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_b>) [with tRawType = long int; int tIntegerBits_a = 6; int tIntegerBits_b = 3]	40	static
+fixedpoint.h:668:39:gemmlowp::FixedPoint<tRawType, tIntegerBitsDst> gemmlowp::Rescale(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tIntegerBitsDst = 3; tRawType = long int; int tIntegerBitsSrc = 9]	32	static
+fixedpoint.h:586:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator-(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = long int; int tIntegerBits = 6]	24	static
+fixedpoint.h:668:39:gemmlowp::FixedPoint<tRawType, tIntegerBitsDst> gemmlowp::Rescale(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tIntegerBitsDst = 3; tRawType = long int; int tIntegerBitsSrc = 6]	32	static
+fixedpoint.h:487:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromScalarRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::ScalarRawType) [with tRawType = long int; int tIntegerBits = 0]	32	static
+fixedpoint.h:687:47:typename FixedPointType::ScalarRawType gemmlowp::RescaleConstantInitializer(int32_t) [with FixedPointType = gemmlowp::FixedPoint<long int, 0>]	16	static
+fixedpoint.h:539:55:gemmlowp::FixedPoint<tRawType, (tIntegerBits_a + tIntegerBits_b)> gemmlowp::operator*(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_b>) [with tRawType = long int; int tIntegerBits_a = 3; int tIntegerBits_b = 0]	40	static
+fixedpoint.h:525:12:gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType& gemmlowp::FixedPoint<tRawType, tIntegerBits>::raw() [with tRawType = long int; int tIntegerBits = 3]	16	static
+predefined_ops.h:42:7:constexpr bool __gnu_cxx::__ops::_Iter_less_iter::operator()(_Iterator1, _Iterator2) const [with _Iterator1 = const float*; _Iterator2 = const float*]	24	static
+stl_algo.h:3326:5:constexpr std::pair<_FIter, _FIter> std::__minmax_element(_ForwardIterator, _ForwardIterator, _Compare) [with _ForwardIterator = const float*; _Compare = __gnu_cxx::__ops::_Iter_less_iter]	40	static
+cppmath.h:35:1:T tflite::TfLiteRound(T) [with T = float]	16	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = float]	16	static
+portable_tensor_utils_impl.h:213:6:void tflite::tensor_utils::PortableReductionSumVector(const INPUT*, OUTPUT*, int, int) [with INPUT = signed char; OUTPUT = long int]	40	static
+common.h:177:10:T tflite::ActivationFunctionWithMinMax(T, T, T) [with T = long int]	24	static
+portable_tensor_utils.cc:328:6:void tflite::tensor_utils::PortableMatrixBatchVectorMultiplyAccumulateImpl(const int8_t*, const int32_t*, const int8_t*, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, T*) [with T = short int]	48	static
+portable_tensor_utils.cc:328:6:void tflite::tensor_utils::PortableMatrixBatchVectorMultiplyAccumulateImpl(const int8_t*, const int32_t*, const int8_t*, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, T*) [with T = signed char]	48	static
+fixedpoint.h:481:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType) [with tRawType = short int; int tIntegerBits = 3]	24	static
+fixedpoint.h:873:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::logistic(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 3]	40	static
+fixedpoint.h:525:12:gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType& gemmlowp::FixedPoint<tRawType, tIntegerBits>::raw() [with tRawType = short int; int tIntegerBits = 0]	16	static
+portable_tensor_utils.cc:586:6:void tflite::tensor_utils::PortableApplyTanhImpl(const int16_t*, int32_t, int32_t, int16_t*) [with int IntegerBits = 0]	48	static
+portable_tensor_utils.cc:586:6:void tflite::tensor_utils::PortableApplyTanhImpl(const int16_t*, int32_t, int32_t, int16_t*) [with int IntegerBits = 1]	48	static
+portable_tensor_utils.cc:586:6:void tflite::tensor_utils::PortableApplyTanhImpl(const int16_t*, int32_t, int32_t, int16_t*) [with int IntegerBits = 2]	48	static
+portable_tensor_utils.cc:586:6:void tflite::tensor_utils::PortableApplyTanhImpl(const int16_t*, int32_t, int32_t, int16_t*) [with int IntegerBits = 3]	48	static
+portable_tensor_utils.cc:586:6:void tflite::tensor_utils::PortableApplyTanhImpl(const int16_t*, int32_t, int32_t, int16_t*) [with int IntegerBits = 4]	48	static
+portable_tensor_utils.cc:586:6:void tflite::tensor_utils::PortableApplyTanhImpl(const int16_t*, int32_t, int32_t, int16_t*) [with int IntegerBits = 5]	48	static
+portable_tensor_utils.cc:586:6:void tflite::tensor_utils::PortableApplyTanhImpl(const int16_t*, int32_t, int32_t, int16_t*) [with int IntegerBits = 6]	48	static
+fixedpoint.h:64:10:tRawType gemmlowp::Dup(typename gemmlowp::FixedPointRawTypeTraits<tRawType>::ScalarRawType) [with tRawType = long int]	16	static
+fixedpoint.h:70:14:tIntegerType gemmlowp::BitAnd(tIntegerType, tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:140:14:tIntegerType gemmlowp::ShiftRight(tIntegerType, int) [with tIntegerType = long int]	16	static
+fixedpoint.h:199:14:tIntegerType gemmlowp::MaskIfLessThan(tIntegerType, tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:94:14:tIntegerType gemmlowp::Add(tIntegerType, tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:185:14:tIntegerType gemmlowp::MaskIfGreaterThan(tIntegerType, tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:416:13:IntegerType gemmlowp::SaturatingRoundingMultiplyByPOT(IntegerType) [with int Exponent = -1; IntegerType = long int]	16	static
+fixedpoint.h:525:12:gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType& gemmlowp::FixedPoint<tRawType, tIntegerBits>::raw() [with tRawType = long int; int tIntegerBits = 6]	16	static
+fixedpoint.h:525:12:gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType& gemmlowp::FixedPoint<tRawType, tIntegerBits>::raw() [with tRawType = long int; int tIntegerBits = 9]	16	static
+fixedpoint.h:416:13:IntegerType gemmlowp::SaturatingRoundingMultiplyByPOT(IntegerType) [with int Exponent = 6; IntegerType = long int]	16	static
+fixedpoint.h:481:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType) [with tRawType = long int; int tIntegerBits = 6]	24	static
+fixedpoint.h:105:14:tIntegerType gemmlowp::Sub(tIntegerType, tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:416:13:IntegerType gemmlowp::SaturatingRoundingMultiplyByPOT(IntegerType) [with int Exponent = 3; IntegerType = long int]	16	static
+stl_pair.h:524:5:constexpr std::pair<typename std::__decay_and_strip<_Tp>::__type, typename std::__decay_and_strip<_T2>::__type> std::make_pair(_T1&&, _T2&&) [with _T1 = const float*&; _T2 = const float*&]	32	static
+fixedpoint.h:525:12:gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType& gemmlowp::FixedPoint<tRawType, tIntegerBits>::raw() [with tRawType = short int; int tIntegerBits = 3]	16	static
+fixedpoint.h:506:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::Zero() [with tRawType = short int; int tIntegerBits = 3]	8	static
+fixedpoint.h:612:1:tRawType gemmlowp::MaskIfGreaterThan(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 3]	24	static
+fixedpoint.h:608:1:tRawType gemmlowp::MaskIfZero(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 3]	16	static
+fixedpoint.h:583:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator-(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 3]	16	static
+fixedpoint.h:621:36:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::SelectUsingMask(tRawType, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 3]	24	static
+fixedpoint.h:866:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::logistic_on_positive_values(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 3]	16	static
+fixedpoint.h:508:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::One() [with tRawType = short int; int tIntegerBits = 0]	8	static
+fixedpoint.h:586:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator-(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 0]	24	static
+fixedpoint.h:487:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromScalarRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::ScalarRawType) [with tRawType = short int; int tIntegerBits = 0]	32	static
+fixedpoint.h:687:47:typename FixedPointType::ScalarRawType gemmlowp::RescaleConstantInitializer(int32_t) [with FixedPointType = gemmlowp::FixedPoint<short int, 0>]	16	static
+fixedpoint.h:621:36:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::SelectUsingMask(tRawType, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 0]	24	static
+fixedpoint.h:481:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType) [with tRawType = short int; int tIntegerBits = 0]	24	static
+fixedpoint.h:827:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::tanh(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 0]	40	static
+fixedpoint.h:481:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType) [with tRawType = short int; int tIntegerBits = 1]	24	static
+fixedpoint.h:827:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::tanh(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 1]	40	static
+fixedpoint.h:481:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType) [with tRawType = short int; int tIntegerBits = 2]	24	static
+fixedpoint.h:827:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::tanh(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 2]	40	static
+fixedpoint.h:827:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::tanh(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 3]	40	static
+fixedpoint.h:481:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType) [with tRawType = short int; int tIntegerBits = 4]	24	static
+fixedpoint.h:827:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::tanh(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 4]	40	static
+fixedpoint.h:481:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType) [with tRawType = short int; int tIntegerBits = 5]	24	static
+fixedpoint.h:827:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::tanh(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 5]	40	static
+fixedpoint.h:481:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType) [with tRawType = short int; int tIntegerBits = 6]	24	static
+fixedpoint.h:827:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::tanh(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 6]	40	static
+fixedpoint.h:156:14:tIntegerType gemmlowp::MaskIfNonZero(tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:410:22:static IntegerType gemmlowp::ImplSaturatingRoundingMultiplyByPOT<Exponent, IntegerType, -1>::eval(IntegerType) [with int Exponent = -1; IntegerType = long int]	16	static
+fixedpoint.h:385:22:static IntegerType gemmlowp::ImplSaturatingRoundingMultiplyByPOT<Exponent, IntegerType, 1>::eval(IntegerType) [with int Exponent = 6; IntegerType = long int]	48	static
+fixedpoint.h:385:22:static IntegerType gemmlowp::ImplSaturatingRoundingMultiplyByPOT<Exponent, IntegerType, 1>::eval(IntegerType) [with int Exponent = 3; IntegerType = long int]	48	static
+move.h:74:5:constexpr _Tp&& std::forward(typename std::remove_reference<_Tp>::type&) [with _Tp = const float*&]	16	static
+stl_pair.h:341:12:constexpr std::pair<_T1, _T2>::pair(_U1&&, _U2&&) [with _U1 = const float*&; _U2 = const float*&; typename std::enable_if<(std::_PCC<true, _T1, _T2>::_MoveConstructiblePair<_U1, _U2>() && std::_PCC<true, _T1, _T2>::_ImplicitlyMoveConvertiblePair<_U1, _U2>()), bool>::type <anonymous> = true; _T1 = const float*; _T2 = const float*]	24	static
+fixedpoint.h:487:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromScalarRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::ScalarRawType) [with tRawType = short int; int tIntegerBits = 3]	32	static
+fixedpoint.h:185:14:tIntegerType gemmlowp::MaskIfGreaterThan(tIntegerType, tIntegerType) [with tIntegerType = short int]	16	static
+fixedpoint.h:164:14:tIntegerType gemmlowp::MaskIfZero(tIntegerType) [with tIntegerType = short int]	16	static
+fixedpoint.h:111:14:tIntegerType gemmlowp::Neg(tIntegerType) [with tIntegerType = short int]	16	static
+fixedpoint.h:148:14:tIntegerType gemmlowp::SelectUsingMask(tIntegerType, tIntegerType, tIntegerType) [with tIntegerType = short int]	24	static
+fixedpoint.h:746:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::exp_on_negative_values(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 3]	80	static
+fixedpoint.h:842:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::one_over_one_plus_x_for_x_in_0_1(gemmlowp::FixedPoint<tRawType, 0>) [with tRawType = short int]	48	static
+fixedpoint.h:469:30:static const ScalarRawType gemmlowp::FixedPoint<tRawType, tIntegerBits>::ScalarRawMax() [with tRawType = short int; int tIntegerBits = 0]	8	static
+fixedpoint.h:105:14:tIntegerType gemmlowp::Sub(tIntegerType, tIntegerType) [with tIntegerType = short int]	16	static
+fixedpoint.h:64:10:tRawType gemmlowp::Dup(typename gemmlowp::FixedPointRawTypeTraits<tRawType>::ScalarRawType) [with tRawType = short int]	16	static
+fixedpoint.h:506:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::Zero() [with tRawType = short int; int tIntegerBits = 0]	8	static
+fixedpoint.h:614:1:tRawType gemmlowp::MaskIfLessThan(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 0]	24	static
+fixedpoint.h:608:1:tRawType gemmlowp::MaskIfZero(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 0]	16	static
+fixedpoint.h:583:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator-(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 0]	16	static
+fixedpoint.h:819:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::neg_tanh_on_negative_values(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 0]	16	static
+fixedpoint.h:525:12:gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType& gemmlowp::FixedPoint<tRawType, tIntegerBits>::raw() [with tRawType = short int; int tIntegerBits = 1]	16	static
+fixedpoint.h:506:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::Zero() [with tRawType = short int; int tIntegerBits = 1]	8	static
+fixedpoint.h:614:1:tRawType gemmlowp::MaskIfLessThan(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 1]	24	static
+fixedpoint.h:608:1:tRawType gemmlowp::MaskIfZero(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 1]	16	static
+fixedpoint.h:583:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator-(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 1]	16	static
+fixedpoint.h:621:36:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::SelectUsingMask(tRawType, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 1]	24	static
+fixedpoint.h:819:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::neg_tanh_on_negative_values(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 1]	16	static
+fixedpoint.h:525:12:gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType& gemmlowp::FixedPoint<tRawType, tIntegerBits>::raw() [with tRawType = short int; int tIntegerBits = 2]	16	static
+fixedpoint.h:506:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::Zero() [with tRawType = short int; int tIntegerBits = 2]	8	static
+fixedpoint.h:614:1:tRawType gemmlowp::MaskIfLessThan(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 2]	24	static
+fixedpoint.h:608:1:tRawType gemmlowp::MaskIfZero(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 2]	16	static
+fixedpoint.h:583:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator-(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 2]	16	static
+fixedpoint.h:621:36:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::SelectUsingMask(tRawType, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 2]	24	static
+fixedpoint.h:819:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::neg_tanh_on_negative_values(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 2]	16	static
+fixedpoint.h:614:1:tRawType gemmlowp::MaskIfLessThan(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 3]	24	static
+fixedpoint.h:819:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::neg_tanh_on_negative_values(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 3]	16	static
+fixedpoint.h:525:12:gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType& gemmlowp::FixedPoint<tRawType, tIntegerBits>::raw() [with tRawType = short int; int tIntegerBits = 4]	16	static
+fixedpoint.h:506:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::Zero() [with tRawType = short int; int tIntegerBits = 4]	8	static
+fixedpoint.h:614:1:tRawType gemmlowp::MaskIfLessThan(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 4]	24	static
+fixedpoint.h:608:1:tRawType gemmlowp::MaskIfZero(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 4]	16	static
+fixedpoint.h:583:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator-(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 4]	16	static
+fixedpoint.h:621:36:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::SelectUsingMask(tRawType, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 4]	24	static
+fixedpoint.h:819:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::neg_tanh_on_negative_values(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 4]	16	static
+fixedpoint.h:525:12:gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType& gemmlowp::FixedPoint<tRawType, tIntegerBits>::raw() [with tRawType = short int; int tIntegerBits = 5]	16	static
+fixedpoint.h:506:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::Zero() [with tRawType = short int; int tIntegerBits = 5]	8	static
+fixedpoint.h:614:1:tRawType gemmlowp::MaskIfLessThan(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 5]	24	static
+fixedpoint.h:608:1:tRawType gemmlowp::MaskIfZero(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 5]	16	static
+fixedpoint.h:583:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator-(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 5]	16	static
+fixedpoint.h:621:36:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::SelectUsingMask(tRawType, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 5]	24	static
+fixedpoint.h:819:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::neg_tanh_on_negative_values(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 5]	16	static
+fixedpoint.h:525:12:gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType& gemmlowp::FixedPoint<tRawType, tIntegerBits>::raw() [with tRawType = short int; int tIntegerBits = 6]	16	static
+fixedpoint.h:506:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::Zero() [with tRawType = short int; int tIntegerBits = 6]	8	static
+fixedpoint.h:614:1:tRawType gemmlowp::MaskIfLessThan(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 6]	24	static
+fixedpoint.h:608:1:tRawType gemmlowp::MaskIfZero(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 6]	16	static
+fixedpoint.h:583:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator-(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 6]	16	static
+fixedpoint.h:621:36:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::SelectUsingMask(tRawType, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 6]	24	static
+fixedpoint.h:819:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::neg_tanh_on_negative_values(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 6]	16	static
+fixedpoint.h:88:14:tIntegerType gemmlowp::BitNot(tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:125:14:tIntegerType gemmlowp::ShiftLeft(tIntegerType, int) [with tIntegerType = long int]	40	static
+fixedpoint.h:148:14:tIntegerType gemmlowp::SelectUsingMask(tIntegerType, tIntegerType, tIntegerType) [with tIntegerType = long int]	32	static
+fixedpoint.h:156:14:tIntegerType gemmlowp::MaskIfNonZero(tIntegerType) [with tIntegerType = short int]	16	static
+fixedpoint.h:70:14:tIntegerType gemmlowp::BitAnd(tIntegerType, tIntegerType) [with tIntegerType = short int]	16	static
+fixedpoint.h:88:14:tIntegerType gemmlowp::BitNot(tIntegerType) [with tIntegerType = short int]	16	static
+fixedpoint.h:82:14:tIntegerType gemmlowp::BitXor(tIntegerType, tIntegerType) [with tIntegerType = short int]	16	static
+fixedpoint.h:498:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::ConstantPOT() [with int Exponent = -2; tRawType = short int; int tIntegerBits = 3]	8	static
+fixedpoint.h:586:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator-(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 3]	24	static
+fixedpoint.h:587:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator&(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 3]	24	static
+fixedpoint.h:668:39:gemmlowp::FixedPoint<tRawType, tIntegerBitsDst> gemmlowp::Rescale(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tIntegerBitsDst = 0; tRawType = short int; int tIntegerBitsSrc = 3]	32	static
+fixedpoint.h:721:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::exp_on_interval_between_negative_one_quarter_and_0_excl(gemmlowp::FixedPoint<tRawType, 0>) [with tRawType = short int]	48	static
+fixedpoint.h:539:55:gemmlowp::FixedPoint<tRawType, (tIntegerBits_a + tIntegerBits_b)> gemmlowp::operator*(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_b>) [with tRawType = short int; int tIntegerBits_a = 0; int tIntegerBits_b = 0]	40	static
+fixedpoint.h:590:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::RoundingHalfSum(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 0]	24	static
+fixedpoint.h:487:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromScalarRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::ScalarRawType) [with tRawType = short int; int tIntegerBits = 2]	32	static
+fixedpoint.h:687:47:typename FixedPointType::ScalarRawType gemmlowp::RescaleConstantInitializer(int32_t) [with FixedPointType = gemmlowp::FixedPoint<short int, 2>]	16	static
+fixedpoint.h:539:55:gemmlowp::FixedPoint<tRawType, (tIntegerBits_a + tIntegerBits_b)> gemmlowp::operator*(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_b>) [with tRawType = short int; int tIntegerBits_a = 0; int tIntegerBits_b = 2]	40	static
+fixedpoint.h:585:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator+(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 2]	24	static
+fixedpoint.h:508:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::One() [with tRawType = short int; int tIntegerBits = 2]	8	static
+fixedpoint.h:586:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator-(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 2]	24	static
+fixedpoint.h:539:55:gemmlowp::FixedPoint<tRawType, (tIntegerBits_a + tIntegerBits_b)> gemmlowp::operator*(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_b>) [with tRawType = short int; int tIntegerBits_a = 2; int tIntegerBits_b = 2]	40	static
+fixedpoint.h:668:39:gemmlowp::FixedPoint<tRawType, tIntegerBitsDst> gemmlowp::Rescale(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tIntegerBitsDst = 2; tRawType = short int; int tIntegerBitsSrc = 4]	32	static
+fixedpoint.h:549:48:gemmlowp::FixedPoint<tRawType, (tExponent + tIntegerBits)> gemmlowp::ExactMulByPot(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tExponent = -1; tRawType = short int; int tIntegerBits = 2]	32	static
+fixedpoint.h:668:39:gemmlowp::FixedPoint<tRawType, tIntegerBitsDst> gemmlowp::Rescale(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tIntegerBitsDst = 0; tRawType = short int; int tIntegerBitsSrc = 1]	32	static
+fixedpoint.h:199:14:tIntegerType gemmlowp::MaskIfLessThan(tIntegerType, tIntegerType) [with tIntegerType = short int]	16	static
+fixedpoint.h:549:48:gemmlowp::FixedPoint<tRawType, (tExponent + tIntegerBits)> gemmlowp::ExactMulByPot(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tExponent = 1; tRawType = short int; int tIntegerBits = 0]	32	static
+fixedpoint.h:746:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::exp_on_negative_values(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 1]	80	static
+fixedpoint.h:795:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::one_minus_x_over_one_plus_x_for_x_in_0_1(gemmlowp::FixedPoint<tRawType, 0>) [with tRawType = short int]	48	static
+fixedpoint.h:487:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromScalarRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::ScalarRawType) [with tRawType = short int; int tIntegerBits = 1]	32	static
+fixedpoint.h:549:48:gemmlowp::FixedPoint<tRawType, (tExponent + tIntegerBits)> gemmlowp::ExactMulByPot(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tExponent = 1; tRawType = short int; int tIntegerBits = 1]	32	static
+fixedpoint.h:746:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::exp_on_negative_values(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 2]	80	static
+fixedpoint.h:549:48:gemmlowp::FixedPoint<tRawType, (tExponent + tIntegerBits)> gemmlowp::ExactMulByPot(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tExponent = 1; tRawType = short int; int tIntegerBits = 2]	32	static
+fixedpoint.h:549:48:gemmlowp::FixedPoint<tRawType, (tExponent + tIntegerBits)> gemmlowp::ExactMulByPot(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tExponent = 1; tRawType = short int; int tIntegerBits = 3]	32	static
+fixedpoint.h:746:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::exp_on_negative_values(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 4]	80	static
+fixedpoint.h:487:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromScalarRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::ScalarRawType) [with tRawType = short int; int tIntegerBits = 4]	32	static
+fixedpoint.h:549:48:gemmlowp::FixedPoint<tRawType, (tExponent + tIntegerBits)> gemmlowp::ExactMulByPot(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tExponent = 1; tRawType = short int; int tIntegerBits = 4]	32	static
+fixedpoint.h:746:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::exp_on_negative_values(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 5]	80	static
+fixedpoint.h:487:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromScalarRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::ScalarRawType) [with tRawType = short int; int tIntegerBits = 5]	32	static
+fixedpoint.h:549:48:gemmlowp::FixedPoint<tRawType, (tExponent + tIntegerBits)> gemmlowp::ExactMulByPot(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tExponent = 1; tRawType = short int; int tIntegerBits = 5]	32	static
+fixedpoint.h:746:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::exp_on_negative_values(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 6]	80	static
+fixedpoint.h:487:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromScalarRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::ScalarRawType) [with tRawType = short int; int tIntegerBits = 6]	32	static
+fixedpoint.h:549:48:gemmlowp::FixedPoint<tRawType, (tExponent + tIntegerBits)> gemmlowp::ExactMulByPot(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tExponent = 1; tRawType = short int; int tIntegerBits = 6]	32	static
+fixedpoint.h:746:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::exp_on_negative_values(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 7]	80	static
+fixedpoint.h:82:14:tIntegerType gemmlowp::BitXor(tIntegerType, tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:416:13:IntegerType gemmlowp::SaturatingRoundingMultiplyByPOT(IntegerType) [with int Exponent = 3; IntegerType = short int]	16	static
+fixedpoint.h:498:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::ConstantPOT() [with int Exponent = -3; tRawType = short int; int tIntegerBits = 0]	8	static
+fixedpoint.h:585:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator+(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 0]	24	static
+fixedpoint.h:559:36:gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::SaturatingRoundingMultiplyByPOT(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tExponent = -2; tRawType = short int; int tIntegerBits = 0]	16	static
+fixedpoint.h:559:36:gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::SaturatingRoundingMultiplyByPOT(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tExponent = -1; tRawType = short int; int tIntegerBits = 0]	16	static
+fixedpoint.h:649:36:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::AddSaturatingIf16Bit(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 0]	24	static
+fixedpoint.h:94:14:tIntegerType gemmlowp::Add(tIntegerType, tIntegerType) [with tIntegerType = short int]	16	static
+fixedpoint.h:416:13:IntegerType gemmlowp::SaturatingRoundingMultiplyByPOT(IntegerType) [with int Exponent = 2; IntegerType = short int]	16	static
+fixedpoint.h:416:13:IntegerType gemmlowp::SaturatingRoundingMultiplyByPOT(IntegerType) [with int Exponent = 1; IntegerType = short int]	16	static
+fixedpoint.h:498:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::ConstantPOT() [with int Exponent = -2; tRawType = short int; int tIntegerBits = 1]	8	static
+fixedpoint.h:586:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator-(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 1]	24	static
+fixedpoint.h:587:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator&(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 1]	24	static
+fixedpoint.h:668:39:gemmlowp::FixedPoint<tRawType, tIntegerBitsDst> gemmlowp::Rescale(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tIntegerBitsDst = 0; tRawType = short int; int tIntegerBitsSrc = 2]	32	static
+fixedpoint.h:498:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::ConstantPOT() [with int Exponent = -2; tRawType = short int; int tIntegerBits = 2]	8	static
+fixedpoint.h:587:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator&(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 2]	24	static
+fixedpoint.h:498:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::ConstantPOT() [with int Exponent = -2; tRawType = short int; int tIntegerBits = 4]	8	static
+fixedpoint.h:586:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator-(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 4]	24	static
+fixedpoint.h:587:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator&(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 4]	24	static
+fixedpoint.h:668:39:gemmlowp::FixedPoint<tRawType, tIntegerBitsDst> gemmlowp::Rescale(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tIntegerBitsDst = 0; tRawType = short int; int tIntegerBitsSrc = 4]	32	static
+fixedpoint.h:498:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::ConstantPOT() [with int Exponent = -2; tRawType = short int; int tIntegerBits = 5]	8	static
+fixedpoint.h:586:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator-(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 5]	24	static
+fixedpoint.h:587:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator&(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 5]	24	static
+fixedpoint.h:668:39:gemmlowp::FixedPoint<tRawType, tIntegerBitsDst> gemmlowp::Rescale(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tIntegerBitsDst = 0; tRawType = short int; int tIntegerBitsSrc = 5]	32	static
+fixedpoint.h:498:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::ConstantPOT() [with int Exponent = -2; tRawType = short int; int tIntegerBits = 6]	8	static
+fixedpoint.h:586:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator-(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 6]	24	static
+fixedpoint.h:587:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator&(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 6]	24	static
+fixedpoint.h:668:39:gemmlowp::FixedPoint<tRawType, tIntegerBitsDst> gemmlowp::Rescale(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tIntegerBitsDst = 0; tRawType = short int; int tIntegerBitsSrc = 6]	32	static
+fixedpoint.h:687:47:typename FixedPointType::ScalarRawType gemmlowp::RescaleConstantInitializer(int32_t) [with FixedPointType = gemmlowp::FixedPoint<short int, 6>]	16	static
+fixedpoint.h:525:12:gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType& gemmlowp::FixedPoint<tRawType, tIntegerBits>::raw() [with tRawType = short int; int tIntegerBits = 7]	16	static
+fixedpoint.h:498:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::ConstantPOT() [with int Exponent = -2; tRawType = short int; int tIntegerBits = 7]	8	static
+fixedpoint.h:487:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromScalarRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::ScalarRawType) [with tRawType = short int; int tIntegerBits = 7]	32	static
+fixedpoint.h:586:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator-(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 7]	24	static
+fixedpoint.h:587:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator&(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 7]	24	static
+fixedpoint.h:668:39:gemmlowp::FixedPoint<tRawType, tIntegerBitsDst> gemmlowp::Rescale(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tIntegerBitsDst = 0; tRawType = short int; int tIntegerBitsSrc = 7]	32	static
+fixedpoint.h:687:47:typename FixedPointType::ScalarRawType gemmlowp::RescaleConstantInitializer(int32_t) [with FixedPointType = gemmlowp::FixedPoint<short int, 7>]	16	static
+fixedpoint.h:614:1:tRawType gemmlowp::MaskIfLessThan(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 7]	24	static
+fixedpoint.h:608:1:tRawType gemmlowp::MaskIfZero(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = short int; int tIntegerBits = 7]	16	static
+fixedpoint.h:385:22:static IntegerType gemmlowp::ImplSaturatingRoundingMultiplyByPOT<Exponent, IntegerType, 1>::eval(IntegerType) [with int Exponent = 3; IntegerType = short int]	40	static
+fixedpoint.h:416:13:IntegerType gemmlowp::SaturatingRoundingMultiplyByPOT(IntegerType) [with int Exponent = -2; IntegerType = short int]	16	static
+fixedpoint.h:416:13:IntegerType gemmlowp::SaturatingRoundingMultiplyByPOT(IntegerType) [with int Exponent = -1; IntegerType = short int]	16	static
+fixedpoint.h:284:13:IntegerType gemmlowp::AddSaturatingIf16Bit(IntegerType, IntegerType) [with IntegerType = short int]	16	static
+fixedpoint.h:385:22:static IntegerType gemmlowp::ImplSaturatingRoundingMultiplyByPOT<Exponent, IntegerType, 1>::eval(IntegerType) [with int Exponent = 2; IntegerType = short int]	40	static
+fixedpoint.h:385:22:static IntegerType gemmlowp::ImplSaturatingRoundingMultiplyByPOT<Exponent, IntegerType, 1>::eval(IntegerType) [with int Exponent = 1; IntegerType = short int]	40	static
+fixedpoint.h:416:13:IntegerType gemmlowp::SaturatingRoundingMultiplyByPOT(IntegerType) [with int Exponent = 4; IntegerType = short int]	16	static
+fixedpoint.h:416:13:IntegerType gemmlowp::SaturatingRoundingMultiplyByPOT(IntegerType) [with int Exponent = 5; IntegerType = short int]	16	static
+fixedpoint.h:416:13:IntegerType gemmlowp::SaturatingRoundingMultiplyByPOT(IntegerType) [with int Exponent = 6; IntegerType = short int]	16	static
+fixedpoint.h:481:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType) [with tRawType = short int; int tIntegerBits = 7]	24	static
+fixedpoint.h:416:13:IntegerType gemmlowp::SaturatingRoundingMultiplyByPOT(IntegerType) [with int Exponent = 7; IntegerType = short int]	16	static
+fixedpoint.h:125:14:tIntegerType gemmlowp::ShiftLeft(tIntegerType, int) [with tIntegerType = short int]	40	static
+fixedpoint.h:410:22:static IntegerType gemmlowp::ImplSaturatingRoundingMultiplyByPOT<Exponent, IntegerType, -1>::eval(IntegerType) [with int Exponent = -2; IntegerType = short int]	16	static
+fixedpoint.h:410:22:static IntegerType gemmlowp::ImplSaturatingRoundingMultiplyByPOT<Exponent, IntegerType, -1>::eval(IntegerType) [with int Exponent = -1; IntegerType = short int]	16	static
+fixedpoint.h:279:22:static IntegerType gemmlowp::AddSaturatingIf16BitImpl<IntegerType, true>::Run(IntegerType, IntegerType) [with IntegerType = short int]	16	static
+fixedpoint.h:385:22:static IntegerType gemmlowp::ImplSaturatingRoundingMultiplyByPOT<Exponent, IntegerType, 1>::eval(IntegerType) [with int Exponent = 4; IntegerType = short int]	40	static
+fixedpoint.h:385:22:static IntegerType gemmlowp::ImplSaturatingRoundingMultiplyByPOT<Exponent, IntegerType, 1>::eval(IntegerType) [with int Exponent = 5; IntegerType = short int]	40	static
+fixedpoint.h:385:22:static IntegerType gemmlowp::ImplSaturatingRoundingMultiplyByPOT<Exponent, IntegerType, 1>::eval(IntegerType) [with int Exponent = 6; IntegerType = short int]	40	static
+fixedpoint.h:385:22:static IntegerType gemmlowp::ImplSaturatingRoundingMultiplyByPOT<Exponent, IntegerType, 1>::eval(IntegerType) [with int Exponent = 7; IntegerType = short int]	40	static
+fixedpoint.h:357:20:IntegerType gemmlowp::RoundingDivideByPOT(IntegerType, int) [with IntegerType = short int]	48	static
+fixedpoint.h:140:14:tIntegerType gemmlowp::ShiftRight(tIntegerType, int) [with tIntegerType = short int]	16	static

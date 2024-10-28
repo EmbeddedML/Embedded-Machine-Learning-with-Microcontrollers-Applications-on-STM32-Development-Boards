@@ -1,0 +1,2 @@
+fft_util.cc:21:5:int FftPopulateState(FftState*, size_t)	24	static
+fft_util.cc:66:6:void FftFreeStateContents(FftState*)	16	static

@@ -1,0 +1,21 @@
+cmath:165:3:constexpr float std::ceil(float)	16	static
+limits:1065:7:static constexpr int std::numeric_limits<int>::min()	4	static
+limits:1068:7:static constexpr int std::numeric_limits<int>::max()	4	static
+limits:1072:7:static constexpr int std::numeric_limits<int>::lowest()	8	static
+runtime_shape.h:64:3:tflite::RuntimeShape::~RuntimeShape()	16	static
+runtime_shape.h:67:11:int32_t tflite::RuntimeShape::Dims(int) const	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+strided_slice_logic.h:29:12:int tflite::strided_slice::Clamp(int, int, int)	24	static
+strided_slice_logic.h:142:12:int tflite::strided_slice::StartForAxis(const tflite::StridedSliceParams&, const tflite::RuntimeShape&, int)	48	static
+strided_slice_logic.h:189:12:int tflite::strided_slice::StopForAxis(const tflite::StridedSliceParams&, const tflite::RuntimeShape&, int, int)	48	static
+kernel_util.h:153:12:int tflite::NumDimensions(const TfLiteTensor*)	16	static
+kernel_util.h:158:12:int tflite::NumInputs(const TfLiteNode*)	16	static
+kernel_util.h:161:12:int tflite::NumOutputs(const TfLiteNode*)	16	static
+micro_context.h:102:22:tflite::MicroContext* tflite::GetMicroContext(const TfLiteContext*)	16	static
+strided_slice_common.cc:33:3:tflite::{anonymous}::StridedSliceContext::StridedSliceContext(TfLiteContext*, TfLiteNode*)	24	static
+strided_slice_common.cc:47:3:tflite::{anonymous}::StridedSliceContext::~StridedSliceContext()	16	static
+strided_slice_common.cc:68:28:tflite::StridedSliceParams tflite::{anonymous}::BuildStridedSliceParams(tflite::{anonymous}::StridedSliceContext*)	24	static
+strided_slice_common.cc:92:14:TfLiteStatus tflite::{anonymous}::CheckOutputSize(TfLiteContext*, tflite::{anonymous}::StridedSliceContext*)	184	static
+strided_slice_common.cc:129:7:void* tflite::StridedSliceInit(TfLiteContext*, const char*, size_t)	24	static
+strided_slice_common.cc:135:14:TfLiteStatus tflite::StridedSlicePrepare(TfLiteContext*, TfLiteNode*)	160	static
+tensor_ctypes.h:27:11:T* tflite::GetTensorData(TfLiteTensor*) [with T = long int]	16	static

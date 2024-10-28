@@ -1,0 +1,5 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+micro_context.h:102:22:tflite::MicroContext* tflite::GetMicroContext(const TfLiteContext*)	16	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = float]	16	static
+sub_common.cc:36:14:TfLiteStatus tflite::CalculateOpDataSub(TfLiteContext*, TfLiteSubParams*, const TfLiteTensor*, const TfLiteTensor*, TfLiteTensor*, tflite::OpDataSub*)	72	static
+sub_common.cc:79:14:TfLiteStatus tflite::SubPrepare(TfLiteContext*, TfLiteNode*)	64	static

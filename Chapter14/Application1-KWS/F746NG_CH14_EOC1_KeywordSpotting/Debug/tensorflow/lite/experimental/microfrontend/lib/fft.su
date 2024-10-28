@@ -1,0 +1,3 @@
+fft.cc:21:6:void FftCompute(FftState*, const int16_t*, int)	40	static
+fft.cc:45:6:void FftInit(FftState*)	16	static
+fft.cc:49:6:void FftReset(FftState*)	16	static

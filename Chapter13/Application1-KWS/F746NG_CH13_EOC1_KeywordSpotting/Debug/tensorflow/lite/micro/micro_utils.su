@@ -1,0 +1,8 @@
+limits:525:7:static constexpr signed char std::numeric_limits<signed char>::min()	4	static
+limits:528:7:static constexpr signed char std::numeric_limits<signed char>::max()	4	static
+micro_utils.h:144:12:int tflite::QMinFromTfLiteType(TfLiteType)	16	static
+micro_utils.h:152:12:int tflite::QMaxFromTfLiteType(TfLiteType)	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+micro_utils.cc:30:5:int tflite::ElementCount(const TfLiteIntArray&)	24	static
+micro_utils.cc:38:8:size_t tflite::EvalTensorBytes(const TfLiteEvalTensor*)	24	static
+micro_utils.cc:45:6:void tflite::SignedSymmetricPerChannelQuantize(const float*, TfLiteIntArray*, int, int8_t*, float*, TfLiteType)	104	static

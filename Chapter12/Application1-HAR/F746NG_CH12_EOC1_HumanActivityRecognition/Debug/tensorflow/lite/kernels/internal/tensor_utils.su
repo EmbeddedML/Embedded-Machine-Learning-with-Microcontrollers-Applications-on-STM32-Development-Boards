@@ -1,0 +1,55 @@
+portable_tensor_utils.h:28:6:bool tflite::tensor_utils::IsZeroVector(const float*, int)	16	static
+portable_tensor_utils.h:33:6:bool tflite::tensor_utils::IsZeroVector(const int8_t*, int)	16	static
+portable_tensor_utils.h:37:6:void tflite::tensor_utils::SymmetricQuantizeFloats(const float*, int, int8_t*, float*, float*, float*)	32	static
+portable_tensor_utils.h:44:6:void tflite::tensor_utils::SymmetricQuantizeFloats(const float*, int, int8_t*, float, float, float*)	32	static
+portable_tensor_utils.h:51:6:void tflite::tensor_utils::AsymmetricQuantizeFloats(const float*, int, int8_t*, float*, int32_t*)	32	static
+portable_tensor_utils.h:58:6:void tflite::tensor_utils::MatrixBatchVectorMultiplyAccumulate(const float*, int, int, const float*, int, float*)	32	static
+portable_tensor_utils.h:65:6:void tflite::tensor_utils::MatrixBatchVectorMultiplyAccumulate(const int8_t*, int, int, const int8_t*, const float*, int, float*)	40	static
+portable_tensor_utils.h:75:6:void tflite::tensor_utils::MatrixBatchVectorMultiplyAccumulate(const int8_t*, int, int, const int8_t*, const float*, int, float*, const float*, const int32_t*, int32_t*, int32_t*, bool*, tflite::CpuBackendContext*)	64	static
+portable_tensor_utils.h:87:6:void tflite::tensor_utils::MatrixBatchVectorMultiplyAccumulate(const int8_t*, int, int, const int8_t*, const float*, int, int32_t*, float*, tflite::CpuBackendContext*)	40	static
+portable_tensor_utils.h:98:6:void tflite::tensor_utils::SparseMatrixBatchVectorMultiplyAccumulate1x4(const float*, const int32_t*, const int32_t*, int, int, const float*, int, float*)	40	static
+portable_tensor_utils.h:106:6:void tflite::tensor_utils::SparseMatrixBatchVectorMultiplyAccumulate(const float*, const uint8_t*, int, int, const float*, int, float*)	40	static
+portable_tensor_utils.h:114:6:void tflite::tensor_utils::SparseMatrixBatchVectorMultiplyAccumulate1x16(const int8_t*, const int32_t*, const int32_t*, int, int, const int8_t*, const int32_t*, int, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int8_t*)	72	static
+portable_tensor_utils.h:129:6:void tflite::tensor_utils::SparseMatrixBatchVectorMultiplyAccumulate(const int8_t*, const uint8_t*, int, int, const int8_t*, const float*, int, float*)	40	static
+portable_tensor_utils.h:138:6:void tflite::tensor_utils::MatrixBatchVectorMultiplyAccumulate(const int8_t*, const int32_t*, const int8_t*, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t*, int16_t*, tflite::CpuBackendContext*)	56	static
+portable_tensor_utils.h:148:6:void tflite::tensor_utils::MatrixBatchVectorMultiplyAccumulate(const int8_t*, const int32_t*, const int8_t*, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t*, int8_t*, tflite::CpuBackendContext*)	56	static
+portable_tensor_utils.h:158:6:void tflite::tensor_utils::MatrixScalarMultiplyAccumulate(const int8_t*, int32_t, int32_t, int32_t, int32_t*)	32	static
+portable_tensor_utils.h:164:6:void tflite::tensor_utils::MatrixBatchVectorMultiply(const int8_t*, int32_t, const int8_t*, int32_t, int32_t, int32_t, int32_t, int32_t, int8_t*, int8_t)	48	static
+portable_tensor_utils.h:176:6:void tflite::tensor_utils::MatrixBatchVectorMultiply(const int16_t*, const int8_t*, int32_t, int32_t, const int32_t*, int32_t, int32_t, int32_t, int32_t, int8_t*)	48	static
+portable_tensor_utils.h:189:6:void tflite::tensor_utils::ApplyLayerNorm(const int16_t*, const int16_t*, const int32_t*, int32_t, int32_t, int32_t, int, int, int16_t*)	48	static
+portable_tensor_utils.h:198:6:void tflite::tensor_utils::ApplyLayerNormFloat(const int16_t*, const int16_t*, int32_t, int32_t, const int32_t*, int, int, int16_t*)	40	static
+portable_tensor_utils.h:208:6:void tflite::tensor_utils::ApplySigmoid(const int16_t*, int32_t, int32_t, int16_t*)	24	static
+portable_tensor_utils.h:213:6:void tflite::tensor_utils::ApplySigmoidFloat(const int16_t*, int32_t, int32_t, int16_t*)	24	static
+portable_tensor_utils.h:218:6:void tflite::tensor_utils::ApplyTanh(int32_t, const int16_t*, int32_t, int32_t, int16_t*)	32	static
+portable_tensor_utils.h:223:6:void tflite::tensor_utils::ApplyTanhFloat(const int16_t*, int32_t, int32_t, int32_t, int16_t*)	32	static
+portable_tensor_utils.h:228:6:void tflite::tensor_utils::CwiseMul(const int16_t*, const int16_t*, int, int, int, int16_t*)	32	static
+portable_tensor_utils.h:233:6:void tflite::tensor_utils::CwiseMul(const int16_t*, const int16_t*, int32_t, int32_t, int32_t, int32_t, int32_t, int8_t*)	40	static
+portable_tensor_utils.h:240:6:void tflite::tensor_utils::CwiseAdd(const int16_t*, const int16_t*, int, int, int16_t*)	32	static
+portable_tensor_utils.h:245:6:void tflite::tensor_utils::CwiseClipping(float*, int, float)	24	static
+portable_tensor_utils.h:250:6:void tflite::tensor_utils::CwiseClipping(int16_t*, int, int16_t)	24	static
+portable_tensor_utils.h:255:6:void tflite::tensor_utils::CwiseClipping(int8_t*, int, int8_t)	24	static
+portable_tensor_utils.h:260:6:void tflite::tensor_utils::VectorBatchVectorCwiseProductAccumulate(const int16_t*, int, const int16_t*, int, int32_t, int, int16_t*)	40	static
+portable_tensor_utils.h:268:7:float tflite::tensor_utils::VectorVectorDotProduct(const float*, const float*, int)	24	static
+portable_tensor_utils.h:273:6:void tflite::tensor_utils::BatchVectorBatchVectorDotProduct(const int16_t*, const int16_t*, int, int, int32_t*)	32	static
+portable_tensor_utils.h:280:6:void tflite::tensor_utils::Sub1Vector(const float*, int, float*)	24	static
+portable_tensor_utils.h:284:6:void tflite::tensor_utils::Sub1Vector(const int16_t*, int, int16_t*)	24	static
+portable_tensor_utils.h:289:6:void tflite::tensor_utils::VectorScalarMultiply(const int8_t*, int, float, float*)	24	static
+portable_tensor_utils.h:294:6:void tflite::tensor_utils::ReductionSumVector(const float*, float*, int, int)	24	static
+portable_tensor_utils.h:300:6:void tflite::tensor_utils::ReductionSumVector(const int32_t*, int32_t*, int, int)	24	static
+portable_tensor_utils.h:306:6:void tflite::tensor_utils::ReductionSumVector(const int8_t*, int32_t*, int, int)	24	static
+portable_tensor_utils.h:312:6:void tflite::tensor_utils::MeanStddevNormalization(const float*, float*, int, int)	24	static
+portable_tensor_utils.h:317:6:void tflite::tensor_utils::TwoGateSaturatingAdd(const int8_t*, int8_t, const int8_t*, int8_t, int32_t, int32_t, int32_t, int32_t, int32_t, int32_t, int16_t*)	56	static
+portable_tensor_utils_impl.h:34:6:bool tflite::tensor_utils::PortableIsZeroVector(const T*, int) [with T = float]	24	static
+portable_tensor_utils_impl.h:34:6:bool tflite::tensor_utils::PortableIsZeroVector(const T*, int) [with T = signed char]	24	static
+portable_tensor_utils_impl.h:185:6:void tflite::tensor_utils::PortableCwiseClipping(T*, int, const T&) [with T = float]	32	static
+portable_tensor_utils_impl.h:185:6:void tflite::tensor_utils::PortableCwiseClipping(T*, int, const T&) [with T = short int]	32	static
+portable_tensor_utils_impl.h:185:6:void tflite::tensor_utils::PortableCwiseClipping(T*, int, const T&) [with T = signed char]	32	static
+portable_tensor_utils_impl.h:213:6:void tflite::tensor_utils::PortableReductionSumVector(const INPUT*, OUTPUT*, int, int) [with INPUT = float; OUTPUT = float]	40	static
+portable_tensor_utils_impl.h:213:6:void tflite::tensor_utils::PortableReductionSumVector(const INPUT*, OUTPUT*, int, int) [with INPUT = long int; OUTPUT = long int]	40	static
+portable_tensor_utils_impl.h:213:6:void tflite::tensor_utils::PortableReductionSumVector(const INPUT*, OUTPUT*, int, int) [with INPUT = signed char; OUTPUT = long int]	40	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = float]	16	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = float]	16	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = short int]	16	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = short int]	16	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = signed char]	16	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = signed char]	16	static

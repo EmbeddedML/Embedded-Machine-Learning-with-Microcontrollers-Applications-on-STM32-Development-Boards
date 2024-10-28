@@ -1,0 +1,10 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+reduce.cc:31:7:void* tflite::InitReduce(TfLiteContext*, const char*, size_t)	24	static
+reduce.cc:35:14:TfLiteStatus tflite::PrepareMax(TfLiteContext*, TfLiteNode*)	16	static
+reduce.cc:40:14:TfLiteStatus tflite::PrepareMeanOrSum(TfLiteContext*, TfLiteNode*)	16	static
+reduce.cc:45:14:TfLiteStatus tflite::EvalMean(TfLiteContext*, TfLiteNode*)	16	static
+reduce.cc:50:14:TfLiteStatus tflite::EvalMax(TfLiteContext*, TfLiteNode*)	24	static
+reduce.cc:55:14:TfLiteStatus tflite::EvalSum(TfLiteContext*, TfLiteNode*)	16	static
+reduce.cc:60:18:TFLMRegistration tflite::Register_MEAN()	24	static
+reduce.cc:64:18:TFLMRegistration tflite::Register_REDUCE_MAX()	24	static
+reduce.cc:68:18:TFLMRegistration tflite::Register_SUM()	24	static

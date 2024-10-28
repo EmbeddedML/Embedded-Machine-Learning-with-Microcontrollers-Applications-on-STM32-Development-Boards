@@ -1,0 +1,7 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+test_helper_custom_ops.cc:38:25:static const TFLMRegistration* tflite::testing::PackerOp::getRegistration()	8	static
+test_helper_custom_ops.cc:42:19:static TFLMRegistration* tflite::testing::PackerOp::GetMutableRegistration()	4	static
+test_helper_custom_ops.cc:51:7:static void* tflite::testing::PackerOp::Init(TfLiteContext*, const char*, size_t)	24	static
+test_helper_custom_ops.cc:58:6:static void tflite::testing::PackerOp::Free(TfLiteContext*, void*)	16	static
+test_helper_custom_ops.cc:60:14:static TfLiteStatus tflite::testing::PackerOp::Prepare(TfLiteContext*, TfLiteNode*)	16	static
+test_helper_custom_ops.cc:64:14:static TfLiteStatus tflite::testing::PackerOp::Invoke(TfLiteContext*, TfLiteNode*)	88	static

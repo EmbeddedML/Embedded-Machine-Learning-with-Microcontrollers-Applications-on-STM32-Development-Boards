@@ -1,0 +1,10 @@
+limits:1068:7:static constexpr int std::numeric_limits<int>::max()	4	static
+kernel_util.h:158:12:int tflite::NumInputs(const TfLiteNode*)	16	static
+kernel_util.h:161:12:int tflite::NumOutputs(const TfLiteNode*)	16	static
+kernel_util.h:171:16:int64_t tflite::NumElements(const int*, int)	40	static
+kernel_util.h:190:16:int64_t tflite::NumElements(const TfLiteIntArray*)	16	static
+kernel_util.h:194:16:int64_t tflite::NumElements(const TfLiteTensor*)	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+micro_context.h:102:22:tflite::MicroContext* tflite::GetMicroContext(const TfLiteContext*)	16	static
+reshape_common.cc:32:14:TfLiteStatus tflite::{anonymous}::ReshapeOutput(TfLiteContext*, TfLiteNode*)	88	static
+reshape_common.cc:87:14:TfLiteStatus tflite::PrepareReshapeReference(TfLiteContext*, TfLiteNode*)	40	static

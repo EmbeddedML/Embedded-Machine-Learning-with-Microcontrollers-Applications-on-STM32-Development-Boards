@@ -1,0 +1,16 @@
+common.cc:109:8:size_t TfLiteIntArrayGetSizeInBytes(int)	16	static
+common.cc:113:5:int TfLiteIntArrayEqual(const TfLiteIntArray*, const TfLiteIntArray*)	16	static
+common.cc:117:5:int TfLiteIntArrayEqualsArray(const TfLiteIntArray*, int, const int*)	24	static
+common.cc:136:5:int TfLiteFloatArrayGetSizeInBytes(int)	16	static
+common.cc:341:13:const char* TfLiteTypeGetName(TfLiteType)	16	static
+common.cc:385:16:TfLiteDelegate TfLiteDelegateCreate()	16	static
+common.cc:409:7:void* TfLiteOpaqueDelegateGetData(const TfLiteOpaqueDelegate*)	24	static
+common.cc:424:26:TfLiteAllocationStrategy TfLiteTensorGetAllocationStrategy(const TfLiteTensor*)	16	static
+common.cc:448:20:TfLiteRunStability TfLiteTensorGetBufferAddressStability(const TfLiteTensor*)	16	static
+common.cc:472:20:TfLiteRunStability TfLiteTensorGetDataStability(const TfLiteTensor*)	16	static
+common.cc:498:15:TfLiteRunStep TfLiteTensorGetDataKnownStep(const TfLiteTensor*)	16	static
+common.cc:525:15:TfLiteRunStep TfLiteTensorGetShapeKnownStep(const TfLiteTensor*)	16	static
+common.cc:34:8:size_t {anonymous}::TfLiteVarArrayGetSizeInBytes(int) [with T = TfLiteIntArray]	24	static
+common.cc:59:5:int {anonymous}::TfLiteVarArrayEqual(const T*, const T*) [with T = TfLiteIntArray]	16	static
+common.cc:45:5:int {anonymous}::TfLiteVarArrayEqualsArray(const T*, int, const U*) [with T = TfLiteIntArray; U = int]	24	static
+common.cc:34:8:size_t {anonymous}::TfLiteVarArrayGetSizeInBytes(int) [with T = TfLiteFloatArray]	24	static

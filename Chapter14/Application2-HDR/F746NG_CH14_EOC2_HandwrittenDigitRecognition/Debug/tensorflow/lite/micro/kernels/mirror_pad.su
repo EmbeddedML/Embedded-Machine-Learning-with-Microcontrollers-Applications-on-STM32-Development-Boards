@@ -1,0 +1,23 @@
+limits:1068:7:static constexpr int std::numeric_limits<int>::max()	4	static
+kernel_util.h:153:12:int tflite::NumDimensions(const TfLiteTensor*)	16	static
+kernel_util.h:154:12:int tflite::SizeOfDimension(const TfLiteTensor*, int)	16	static
+kernel_util.h:171:16:int64_t tflite::NumElements(const int*, int)	40	static
+kernel_util.h:190:16:int64_t tflite::NumElements(const TfLiteIntArray*)	16	static
+kernel_util.h:194:16:int64_t tflite::NumElements(const TfLiteTensor*)	16	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = int]	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+micro_context.h:102:22:tflite::MicroContext* tflite::GetMicroContext(const TfLiteContext*)	16	static
+mirror_pad.cc:42:12:int tflite::{anonymous}::GetInputDimension(int, int, int, int, int)	48	static
+mirror_pad.cc:59:5:int tflite::{anonymous}::GetFlatIndex(int, int, const TfLiteEvalTensor*, const TfLiteIntArray*, int*, int*, int)	80	static
+mirror_pad.cc:103:14:TfLiteStatus tflite::{anonymous}::Eval(TfLiteContext*, TfLiteNode*)	96	static
+mirror_pad.cc:164:7:void* tflite::{anonymous}::Init(TfLiteContext*, const char*, size_t)	24	static
+mirror_pad.cc:169:14:TfLiteStatus tflite::{anonymous}::Prepare(TfLiteContext*, TfLiteNode*)	72	static
+mirror_pad.cc:211:18:TFLMRegistration tflite::Register_MIRROR_PAD()	24	static
+mirror_pad.cc:34:13:void tflite::{anonymous}::GetPadding(const T*, int, int64_t*, int64_t*) [with T = long int]	24	static
+mirror_pad.cc:34:13:void tflite::{anonymous}::GetPadding(const T*, int, int64_t*, int64_t*) [with T = long long int]	24	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = float]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = float]	16	static
+mirror_pad.cc:91:6:void tflite::{anonymous}::MirrorPad(const TfLiteEvalTensor*, const TfLiteIntArray*, int*, int*, const T*, T*, int, int, int) [with T = float]	48	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = signed char]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = signed char]	16	static
+mirror_pad.cc:91:6:void tflite::{anonymous}::MirrorPad(const TfLiteEvalTensor*, const TfLiteIntArray*, int*, int*, const T*, T*, int, int, int) [with T = signed char]	48	static

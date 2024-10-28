@@ -1,0 +1,4 @@
+pcan_gain_control_util.c:22:6:PcanGainControlFillConfigWithDefaults	16	static
+pcan_gain_control_util.c:30:9:PcanGainLookupFunction	40	static
+pcan_gain_control_util.c:43:5:PcanGainControlPopulateState	80	static
+pcan_gain_control_util.c:90:6:PcanGainControlFreeStateContents	16	static

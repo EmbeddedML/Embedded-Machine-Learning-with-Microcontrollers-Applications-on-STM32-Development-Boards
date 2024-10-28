@@ -1,0 +1,6 @@
+limits:525:7:static constexpr signed char std::numeric_limits<signed char>::min()	4	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+micro_context.h:102:22:tflite::MicroContext* tflite::GetMicroContext(const TfLiteContext*)	16	static
+logistic_common.cc:32:14:TfLiteStatus tflite::CalculateArithmeticOpDataLogistic(TfLiteContext*, TfLiteNode*, tflite::OpDataLogistic*)	104	static
+logistic_common.cc:112:14:TfLiteStatus tflite::LogisticPrepare(TfLiteContext*, TfLiteNode*)	24	static
+cppmath.h:35:1:T tflite::TfLiteRound(T) [with T = double]	16	static

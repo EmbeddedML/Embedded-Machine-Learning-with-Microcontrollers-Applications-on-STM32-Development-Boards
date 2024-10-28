@@ -1,0 +1,15 @@
+recording_single_arena_buffer_allocator.h:58:3:static void tflite::RecordingSingleArenaBufferAllocator::operator delete(void*)	16	static
+new:173:33:void* operator new(std::size_t, void*)	16	static
+recording_single_arena_buffer_allocator.cc:24:1:tflite::RecordingSingleArenaBufferAllocator::RecordingSingleArenaBufferAllocator(uint8_t*, size_t)	24	static
+recording_single_arena_buffer_allocator.cc:32:1:tflite::RecordingSingleArenaBufferAllocator::~RecordingSingleArenaBufferAllocator()	16	static
+recording_single_arena_buffer_allocator.cc:32:1:virtual tflite::RecordingSingleArenaBufferAllocator::~RecordingSingleArenaBufferAllocator()	16	static
+ibuffer_allocator.h:47:7:constexpr tflite::INonPersistentBufferAllocator::INonPersistentBufferAllocator(const tflite::INonPersistentBufferAllocator&)	16	static
+ibuffer_allocator.h:32:7:constexpr tflite::IPersistentBufferAllocator::IPersistentBufferAllocator(const tflite::IPersistentBufferAllocator&)	16	static
+single_arena_buffer_allocator.h:31:7:constexpr tflite::SingleArenaBufferAllocator::SingleArenaBufferAllocator(const tflite::SingleArenaBufferAllocator&)	16	static
+recording_single_arena_buffer_allocator.h:27:7:constexpr tflite::RecordingSingleArenaBufferAllocator::RecordingSingleArenaBufferAllocator(const tflite::RecordingSingleArenaBufferAllocator&)	16	static
+recording_single_arena_buffer_allocator.cc:35:1:static tflite::RecordingSingleArenaBufferAllocator* tflite::RecordingSingleArenaBufferAllocator::Create(uint8_t*, size_t)	80	static
+recording_single_arena_buffer_allocator.cc:48:8:size_t tflite::RecordingSingleArenaBufferAllocator::GetRequestedBytes() const	16	static
+recording_single_arena_buffer_allocator.cc:52:8:size_t tflite::RecordingSingleArenaBufferAllocator::GetUsedBytes() const	16	static
+recording_single_arena_buffer_allocator.cc:56:8:size_t tflite::RecordingSingleArenaBufferAllocator::GetAllocatedCount() const	16	static
+recording_single_arena_buffer_allocator.cc:60:14:virtual TfLiteStatus tflite::RecordingSingleArenaBufferAllocator::ResizeBuffer(uint8_t*, size_t, size_t)	32	static
+recording_single_arena_buffer_allocator.cc:72:10:virtual uint8_t* tflite::RecordingSingleArenaBufferAllocator::AllocatePersistentBuffer(size_t, size_t)	32	static

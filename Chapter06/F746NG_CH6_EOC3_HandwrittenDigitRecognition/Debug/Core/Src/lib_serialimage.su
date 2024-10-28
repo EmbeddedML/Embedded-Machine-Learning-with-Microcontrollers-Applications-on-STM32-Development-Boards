@@ -1,0 +1,2 @@
+lib_serialimage.c:15:8:LIB_SERIAL_IMG_Transmit	40	static
+lib_serialimage.c:48:8:LIB_SERIAL_IMG_Receive	40	static

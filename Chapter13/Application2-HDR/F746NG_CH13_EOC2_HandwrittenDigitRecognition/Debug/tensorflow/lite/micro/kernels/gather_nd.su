@@ -1,0 +1,17 @@
+kernel_util.h:153:12:int tflite::NumDimensions(const TfLiteTensor*)	16	static
+kernel_util.h:154:12:int tflite::SizeOfDimension(const TfLiteTensor*, int)	16	static
+kernel_util.h:158:12:int tflite::NumInputs(const TfLiteNode*)	16	static
+kernel_util.h:161:12:int tflite::NumOutputs(const TfLiteNode*)	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+micro_context.h:102:22:tflite::MicroContext* tflite::GetMicroContext(const TfLiteContext*)	16	static
+gather_nd.cc:31:14:TfLiteStatus tflite::{anonymous}::Prepare(TfLiteContext*, TfLiteNode*)	96	static
+gather_nd.cc:188:14:TfLiteStatus tflite::{anonymous}::Eval(TfLiteContext*, TfLiteNode*)	32	static
+gather_nd.cc:208:18:TFLMRegistration tflite::Register_GATHER_ND()	24	static
+gather_nd.cc:165:14:TfLiteStatus tflite::{anonymous}::EvalGatherNd(TfLiteContext*, const TfLiteEvalTensor*, const TfLiteEvalTensor*, TfLiteEvalTensor*) [with IndicesT = long int]	32	static
+gather_nd.cc:116:14:TfLiteStatus tflite::{anonymous}::GatherNd(const TfLiteEvalTensor*, const TfLiteEvalTensor*, TfLiteEvalTensor*) [with ParamsT = float; IndicesT = long int]	120	static
+gather_nd.cc:116:14:TfLiteStatus tflite::{anonymous}::GatherNd(const TfLiteEvalTensor*, const TfLiteEvalTensor*, TfLiteEvalTensor*) [with ParamsT = signed char; IndicesT = long int]	120	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = long int]	16	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = float]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = float]	16	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = signed char]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = signed char]	16	static

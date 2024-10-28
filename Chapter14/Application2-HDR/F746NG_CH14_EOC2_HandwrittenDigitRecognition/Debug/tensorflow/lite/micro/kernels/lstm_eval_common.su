@@ -1,0 +1,32 @@
+limits:525:7:static constexpr signed char std::numeric_limits<signed char>::min()	4	static
+limits:528:7:static constexpr signed char std::numeric_limits<signed char>::max()	4	static
+limits:925:7:static constexpr short int std::numeric_limits<short int>::min()	4	static
+limits:928:7:static constexpr short int std::numeric_limits<short int>::max()	4	static
+limits:1068:7:static constexpr int std::numeric_limits<int>::max()	4	static
+limits:1668:7:static constexpr float std::numeric_limits<float>::max()	4	static
+limits:1672:7:static constexpr float std::numeric_limits<float>::lowest()	4	static
+kernel_util.h:171:16:int64_t tflite::NumElements(const int*, int)	40	static
+kernel_util.h:190:16:int64_t tflite::NumElements(const TfLiteIntArray*)	16	static
+kernel_util.h:194:16:int64_t tflite::NumElements(const TfLiteTensor*)	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+lstm_eval.h:53:23:const TfLiteTensor* tflite::LstmTensors::GetInternalTensor(int) const	16	static
+lstm_eval.h:57:23:const TfLiteTensor* tflite::LstmTensors::HiddenStateTensor() const	16	static
+lstm_eval.h:60:23:const TfLiteTensor* tflite::LstmTensors::CellStateTensor() const	16	static
+lstm_eval.h:63:23:const TfLiteTensor* tflite::LstmTensors::OutputTensor() const	16	static
+lstm_eval_common.cc:26:14:tflite::LstmSizeInfo tflite::CreateLstmSizeInfo(bool, const TfLiteIntArray*, const TfLiteIntArray*)	24	static
+lstm_eval_common.cc:40:14:TfLiteStatus tflite::ValidateWeightTensorSize(TfLiteContext*, const TfLiteTensor*, int, int)	48	static
+lstm_eval_common.cc:49:14:TfLiteStatus tflite::ValidateBiasTensorSize(TfLiteContext*, const TfLiteTensor*, int)	48	static
+lstm_eval_common.cc:58:14:TfLiteStatus tflite::ValidateTensorSize(TfLiteContext*, const tflite::LstmTensors&, const tflite::LstmSizeInfo&)	72	static
+lstm_eval_common.cc:104:14:TfLiteStatus tflite::CreateGateParams(TfLiteContext*, const TfLiteTensor*, const TfLiteTensor*, const TfLiteTensor*, const TfLiteTensor*, const TfLiteTensor*, const TfLiteTensor*, float, TfLiteType, tflite::GateParameters&)	176	static
+lstm_eval_common.cc:151:26:tflite::ArithmeticParams tflite::CreateInterGateMulParams(float, float, float, TfLiteType, int)	56	static
+lstm_eval_common.cc:182:15:tflite::CellStateInfo tflite::CreateLstmCellStateInfo(float, float)	64	static
+lstm_eval_common.cc:200:15:tflite::CellStateInfo tflite::CreateLstmCellStateInfoFloat(float)	16	static
+lstm_eval_common.cc:208:30:tflite::FullyConnectedParams tflite::CreateFCParamsFloat()	16	static
+lstm_eval_common.cc:215:24:tflite::GateParameters tflite::CreateGateParamsFloat()	64	static
+lstm_eval_common.cc:222:26:tflite::ArithmeticParams tflite::CreateInterGateMulParamsFloat()	16	static
+lstm_eval_common.cc:229:14:TfLiteStatus tflite::PrepareGateParametersFloat(TfLiteContext*, const tflite::LstmTensors&, tflite::OpDataLSTM*)	216	static
+lstm_eval_common.cc:247:14:TfLiteStatus tflite::PrepareGateParametersInteger(TfLiteContext*, const tflite::LstmTensors&, tflite::OpDataLSTM*)	192	static
+lstm_eval_common.cc:313:20:tflite::LSTMKernelContents tflite::CreateLSTMKernelContent(TfLiteContext*, TfLiteNode*)	32	static
+stl_algobase.h:222:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = double]	16	static
+stl_algobase.h:198:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = double]	16	static
+kernel_util.h:285:6:void tflite::CalculateActivationRange(TfLiteFusedActivation, T*, T*) [with T = float]	24	static

@@ -1,0 +1,15 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+micro_context.h:102:22:tflite::MicroContext* tflite::GetMicroContext(const TfLiteContext*)	16	static
+micro_context.h:111:14:void* tflite::MicroContextAllocatePersistentBuffer(TfLiteContext*, size_t)	16	static
+micro_context.h:115:21:TfLiteStatus tflite::MicroContextRequestScratchBufferInArena(TfLiteContext*, size_t, int*)	32	static
+micro_context.h:120:14:void* tflite::MicroContextGetScratchBuffer(TfLiteContext*, int)	16	static
+micro_context.h:123:22:TfLiteTensor* tflite::MicroContextGetTensor(const TfLiteContext*, int)	16	static
+micro_context.h:127:26:TfLiteEvalTensor* tflite::MicroContextGetEvalTensor(const TfLiteContext*, int)	16	static
+micro_context.h:131:31:TfLiteExternalContext* tflite::MicroContextGetExternalContext(TfLiteContext*, TfLiteExternalContextType)	16	static
+kernel_runner.cc:30:6:void tflite::micro::ClearBufferApi(TfLiteContext*)	16	static
+kernel_runner.cc:37:1:tflite::micro::KernelRunner::KernelRunner(const TFLMRegistration&, TfLiteTensor*, int, TfLiteIntArray*, TfLiteIntArray*, const void*, TfLiteIntArray*)	24	static
+kernel_runner.cc:65:6:bool tflite::micro::KernelRunner::ValidateTempBufferDeallocated()	16	static
+kernel_runner.cc:69:14:TfLiteStatus tflite::micro::KernelRunner::InitAndPrepare(const char*, size_t)	48	static
+kernel_runner.cc:93:14:TfLiteStatus tflite::micro::KernelRunner::Invoke()	40	static
+kernel_runner.cc:109:14:TfLiteStatus tflite::micro::KernelRunner::Reset()	16	static
+kernel_runner.cc:122:14:TfLiteStatus tflite::micro::KernelRunner::Free()	16	static

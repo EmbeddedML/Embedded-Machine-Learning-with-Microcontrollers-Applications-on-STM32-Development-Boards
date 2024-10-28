@@ -1,0 +1,16 @@
+lib_ov5640.c:38:8:LIB_OV5640_Init	16	static
+lib_ov5640.c:58:8:LIB_OV5640_StartContinuous	16	static
+lib_ov5640.c:69:8:LIB_OV5640_CaptureSnapshot	32	static
+lib_ov5640.c:91:8:LIB_OV5640_Stop	8	static
+lib_ov5640.c:100:10:LIB_OV5640_GetFrameCount	4	static
+lib_ov5640.c:105:6:HAL_DCMI_FrameEventCallback	16	static
+lib_ov5640.c:113:13:LIB_DMA_Init	16	static
+lib_ov5640.c:129:6:DMA2_Stream1_IRQHandler	8	static
+lib_ov5640.c:139:15:LIB_DCMI_Init	8	static
+lib_ov5640.c:163:13:LIB_DCMI_MspInit	64	static
+lib_ov5640.c:242:15:LIB_I2C1_Init	8	static
+lib_ov5640.c:263:13:LIB_I2C_MspInit	176	static
+lib_ov5640.c:296:6:DCMI_IRQHandler	8	static
+lib_ov5640.c:306:16:__OV5640_ReadReg_Func	40	static
+lib_ov5640.c:315:16:__OV5640_WriteReg_Func	40	static
+lib_ov5640.c:324:16:__OV5640_GetTick_Func	8	static

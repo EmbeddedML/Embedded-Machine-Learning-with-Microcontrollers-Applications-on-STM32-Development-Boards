@@ -1,0 +1,15 @@
+kiss_fft.c:21:13:void kissfft_fixed16::kf_bfly2(kissfft_fixed16::kiss_fft_cpx*, size_t, kissfft_fixed16::kiss_fft_cfg, int)	40	static
+kiss_fft.c:44:13:void kissfft_fixed16::kf_bfly4(kissfft_fixed16::kiss_fft_cpx*, size_t, kissfft_fixed16::kiss_fft_cfg, size_t)	72	static
+kiss_fft.c:92:13:void kissfft_fixed16::kf_bfly3(kissfft_fixed16::kiss_fft_cpx*, size_t, kissfft_fixed16::kiss_fft_cfg, size_t)	64	static
+kiss_fft.c:136:13:void kissfft_fixed16::kf_bfly5(kissfft_fixed16::kiss_fft_cpx*, size_t, kissfft_fixed16::kiss_fft_cfg, int)	120	static
+kiss_fft.c:198:13:void kissfft_fixed16::kf_bfly_generic(kissfft_fixed16::kiss_fft_cpx*, size_t, kissfft_fixed16::kiss_fft_cfg, int, int)	64	static
+kiss_fft.c:238:6:void kissfft_fixed16::kf_work(kissfft_fixed16::kiss_fft_cpx*, const kissfft_fixed16::kiss_fft_cpx*, size_t, int, int*, kissfft_fixed16::kiss_fft_cfg)	48	static
+kiss_fft.c:309:6:void kissfft_fixed16::kf_factor(int, int*)	32	static
+kiss_fft.c:339:14:kissfft_fixed16::kiss_fft_state* kissfft_fixed16::kiss_fft_alloc(int, int, void*, size_t*)	64	static
+kiss_fft.c:371:6:void kissfft_fixed16::kiss_fft_stride(kissfft_fixed16::kiss_fft_cfg, const kissfft_fixed16::kiss_fft_cpx*, kissfft_fixed16::kiss_fft_cpx*, int)	40	static
+kiss_fft.c:385:6:void kissfft_fixed16::kiss_fft(kissfft_fixed16::kiss_fft_cfg, const kissfft_fixed16::kiss_fft_cpx*, kissfft_fixed16::kiss_fft_cpx*)	24	static
+kiss_fft.c:391:6:void kissfft_fixed16::kiss_fft_cleanup()	4	static
+kiss_fft.c:396:5:int kissfft_fixed16::kiss_fft_next_fast_size(int)	24	static
+kiss_fftr.c:27:15:kissfft_fixed16::kiss_fftr_state* kissfft_fixed16::kiss_fftr_alloc(int, int, void*, size_t*)	56	static
+kiss_fftr.c:67:6:void kissfft_fixed16::kiss_fftr(kissfft_fixed16::kiss_fftr_cfg, const int16_t*, kissfft_fixed16::kiss_fft_cpx*)	64	static
+kiss_fftr.c:123:6:void kissfft_fixed16::kiss_fftri(kissfft_fixed16::kiss_fftr_cfg, const kissfft_fixed16::kiss_fft_cpx*, int16_t*)	64	static

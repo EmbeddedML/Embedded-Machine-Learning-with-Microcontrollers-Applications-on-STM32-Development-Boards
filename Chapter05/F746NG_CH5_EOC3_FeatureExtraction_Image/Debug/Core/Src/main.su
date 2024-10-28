@@ -1,0 +1,9 @@
+core_cm7.h:2229:22:SCB_EnableICache	4	static,ignoring_inline_asm
+core_cm7.h:2281:22:SCB_EnableDCache	24	static,ignoring_inline_asm
+main.c:90:5:main	24	static
+main.c:169:6:SystemClock_Config	88	static
+main.c:214:13:MX_DCMI_Init	8	static
+main.c:251:13:MX_USART1_UART_Init	8	static
+main.c:282:13:MX_FMC_Init	40	static
+main.c:333:13:MX_GPIO_Init	72	static
+main.c:740:6:Error_Handler	4	static,ignoring_inline_asm

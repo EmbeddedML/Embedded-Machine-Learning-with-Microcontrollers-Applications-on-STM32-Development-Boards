@@ -1,0 +1,2 @@
+hdr_feature_extraction.c:12:8:hdr_calculate_moments	48	static
+hdr_feature_extraction.c:53:6:hdr_calculate_hu_moments	32	static

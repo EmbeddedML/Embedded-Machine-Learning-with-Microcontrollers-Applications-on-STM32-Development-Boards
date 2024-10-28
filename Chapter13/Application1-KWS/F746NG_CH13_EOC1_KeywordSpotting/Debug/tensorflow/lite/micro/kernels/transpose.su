@@ -1,0 +1,27 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+runtime_shape.h:64:3:tflite::RuntimeShape::~RuntimeShape()	16	static
+runtime_shape.h:66:11:int32_t tflite::RuntimeShape::DimensionsCount() const	16	static
+runtime_shape.h:84:18:const int32_t* tflite::RuntimeShape::DimsData() const	16	static
+transpose.h:160:13:void tflite::reference_ops::transpose_internal::SetupTransposeStrides(std::array<int, 6>&, const int32_t*, int)	40	static
+kernel_util.h:153:12:int tflite::NumDimensions(const TfLiteTensor*)	16	static
+kernel_util.h:158:12:int tflite::NumInputs(const TfLiteNode*)	16	static
+kernel_util.h:161:12:int tflite::NumOutputs(const TfLiteNode*)	16	static
+micro_context.h:102:22:tflite::MicroContext* tflite::GetMicroContext(const TfLiteContext*)	16	static
+transpose.cc:32:3:tflite::{anonymous}::TransposeContext::TransposeContext(TfLiteContext*, TfLiteNode*)	24	static
+transpose.cc:38:3:tflite::{anonymous}::TransposeContext::~TransposeContext()	16	static
+transpose.cc:49:14:TfLiteStatus tflite::{anonymous}::Prepare(TfLiteContext*, TfLiteNode*)	72	static
+transpose.cc:75:14:TfLiteStatus tflite::{anonymous}::Eval(TfLiteContext*, TfLiteNode*)	200	static
+transpose.cc:119:18:TFLMRegistration tflite::Register_TRANSPOSE()	24	static
+array:185:7:std::array<_Tp, _Nm>::value_type& std::array<_Tp, _Nm>::operator[](std::array<_Tp, _Nm>::size_type) [with _Tp = int; unsigned int _Nm = 6]	16	static
+tensor_ctypes.h:27:11:T* tflite::GetTensorData(TfLiteTensor*) [with T = long int]	16	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = float]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = float]	16	static
+transpose.h:176:6:void tflite::reference_ops::Transpose(const tflite::TransposeParams&, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, T*) [with T = float; int N = 6]	120	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = signed char]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = signed char]	16	static
+transpose.h:176:6:void tflite::reference_ops::Transpose(const tflite::TransposeParams&, const tflite::RuntimeShape&, const T*, const tflite::RuntimeShape&, T*) [with T = signed char; int N = 6]	120	static
+array:55:7:static constexpr _Tp& std::__array_traits<_Tp, _Nm>::_S_ref(const _Tp (&)[_Nm], std::size_t) [with _Tp = int; unsigned int _Nm = 6]	16	static
+array:234:7:std::array<_Tp, _Nm>::value_type* std::array<_Tp, _Nm>::data() [with _Tp = int; unsigned int _Nm = 6]	16	static
+transpose.h:97:6:void tflite::reference_ops::transpose_internal::TransposeImpl(int, int, const int32_t*, const T*, const int*, T*, const int*, const int32_t*) [with T = long int]	56	static
+transpose.h:97:6:void tflite::reference_ops::transpose_internal::TransposeImpl(int, int, const int32_t*, const T*, const int*, T*, const int*, const int32_t*) [with T = signed char]	56	static
+array:59:7:static constexpr _Tp* std::__array_traits<_Tp, _Nm>::_S_ptr(const _Tp (&)[_Nm]) [with _Tp = int; unsigned int _Nm = 6]	16	static

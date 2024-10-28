@@ -1,0 +1,7 @@
+lib_bno055.c:22:8:LIB_BNO055_Init	16	static
+lib_bno055.c:41:8:LIB_BNO055_ReadAccelXYZ	40	static
+lib_bno055.c:59:8:LIB_BNO055_ReadGyroXYZ	40	static
+lib_bno055.c:77:8:LIB_BNO055_ReadMagXYZ	40	static
+lib_bno055.c:96:15:__BNO055_Read	32	static
+lib_bno055.c:109:15:__BNO055_Write	32	static
+lib_bno055.c:119:13:__BNO055_Delay	16	static

@@ -1,0 +1,15 @@
+micro_memory_planner.h:47:3:tflite::MicroMemoryPlanner::MicroMemoryPlanner()	16	static
+micro_memory_planner.h:48:11:tflite::MicroMemoryPlanner::~MicroMemoryPlanner()	16	static
+micro_memory_planner.h:48:11:virtual tflite::MicroMemoryPlanner::~MicroMemoryPlanner()	16	static
+micro_memory_planner.h:62:24:virtual TfLiteStatus tflite::MicroMemoryPlanner::AddBuffer(int, int, int, int)	24	static
+micro_memory_planner.h:79:24:virtual TfLiteStatus tflite::MicroMemoryPlanner::Init(unsigned char*, int)	24	static
+micro_memory_planner.h:88:16:virtual void tflite::MicroMemoryPlanner::PrintMemoryPlan()	16	static
+non_persistent_buffer_planner_shim.h:120:8:virtual bool tflite::NonPersistentMemoryPlannerShim::preserves_all_tensors() const	16	static
+non_persistent_buffer_planner_shim.h:128:3:static void tflite::NonPersistentMemoryPlannerShim::operator delete(void*)	16	static
+non_persistent_buffer_planner_shim.cc:22:1:tflite::NonPersistentMemoryPlannerShim::NonPersistentMemoryPlannerShim(const tflite::BufferPlan*)	16	static
+non_persistent_buffer_planner_shim.cc:26:1:tflite::NonPersistentMemoryPlannerShim::~NonPersistentMemoryPlannerShim()	16	static
+non_persistent_buffer_planner_shim.cc:26:1:virtual tflite::NonPersistentMemoryPlannerShim::~NonPersistentMemoryPlannerShim()	16	static
+non_persistent_buffer_planner_shim.cc:28:14:virtual TfLiteStatus tflite::NonPersistentMemoryPlannerShim::AddBuffer(int, int, int)	24	static
+non_persistent_buffer_planner_shim.cc:42:8:virtual size_t tflite::NonPersistentMemoryPlannerShim::GetMaximumMemorySize()	16	static
+non_persistent_buffer_planner_shim.cc:49:5:virtual int tflite::NonPersistentMemoryPlannerShim::GetBufferCount()	16	static
+non_persistent_buffer_planner_shim.cc:53:14:virtual TfLiteStatus tflite::NonPersistentMemoryPlannerShim::GetOffsetForBuffer(int, int*)	24	static

@@ -1,0 +1,2 @@
+ethosu.cc:23:19:TFLMRegistration* tflite::Register_ETHOSU()	4	static
+ethosu.cc:25:13:const char* tflite::GetString_ETHOSU()	4	static

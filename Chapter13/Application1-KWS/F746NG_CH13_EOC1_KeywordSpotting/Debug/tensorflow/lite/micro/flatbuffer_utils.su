@@ -1,0 +1,61 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+table.h:29:18:const uint8_t* flatbuffers::Table::GetVTable() const	24	static
+table.h:35:13:flatbuffers::voffset_t flatbuffers::Table::GetOptionalFieldOffset(flatbuffers::voffset_t) const	24	static
+flexbuffers.h:148:16:int64_t flexbuffers::ReadInt64(const uint8_t*, uint8_t)	16	static
+flexbuffers.h:153:17:uint64_t flexbuffers::ReadUInt64(const uint8_t*, uint8_t)	16	static
+flexbuffers.h:174:15:double flexbuffers::ReadDouble(const uint8_t*, uint8_t)	16	static
+flexbuffers.h:179:23:const uint8_t* flexbuffers::Indirect(const uint8_t*, uint8_t)	16	static
+flexbuffers.h:213:3:flexbuffers::Object::Object(const uint8_t*, uint8_t)	24	static
+flexbuffers.h:225:3:flexbuffers::Sized::Sized(const uint8_t*, uint8_t)	24	static
+flexbuffers.h:232:10:size_t flexbuffers::Sized::read_size() const	16	static
+flexbuffers.h:274:3:flexbuffers::Vector::Vector(const uint8_t*, uint8_t)	24	static
+flexbuffers.h:278:17:static flexbuffers::Vector flexbuffers::Vector::EmptyVector()	16	static
+flexbuffers.h:384:3:flexbuffers::Reference::Reference(const uint8_t*, uint8_t, uint8_t)	24	static
+flexbuffers.h:640:10:flexbuffers::Vector flexbuffers::Reference::AsVector() const	16	static
+flexbuffers.h:764:18:const uint8_t* flexbuffers::Reference::Indirect() const	16	static
+flexbuffers.h:899:18:flexbuffers::Reference flexbuffers::GetRoot(const uint8_t*, size_t)	32	static
+schema_generated.h:15880:69:const flatbuffers::Vector<flatbuffers::Offset<tflite::Operator> >* tflite::SubGraph::operators() const	16	static
+schema_generated.h:16361:69:const flatbuffers::Vector<flatbuffers::Offset<tflite::SubGraph> >* tflite::Model::subgraphs() const	16	static
+flatbuffer_utils.cc:20:1:tflite::FlexbufferWrapper::FlexbufferWrapper(const uint8_t*, size_t)	32	static
+flatbuffer_utils.cc:23:9:int64_t tflite::FlexbufferWrapper::ElementAsInt64(size_t) const	24	static
+flatbuffer_utils.cc:28:10:uint64_t tflite::FlexbufferWrapper::ElementAsUInt64(size_t) const	24	static
+flatbuffer_utils.cc:33:9:int32_t tflite::FlexbufferWrapper::ElementAsInt32(size_t) const	16	static
+flatbuffer_utils.cc:37:6:bool tflite::FlexbufferWrapper::ElementAsBool(size_t) const	16	static
+flatbuffer_utils.cc:41:8:double tflite::FlexbufferWrapper::ElementAsDouble(size_t) const	24	static
+flatbuffer_utils.cc:46:7:float tflite::FlexbufferWrapper::ElementAsFloat(size_t) const	16	static
+flatbuffer_utils.cc:51:10:uint32_t tflite::NumSubgraphOperators(const tflite::SubGraph*)	16	static
+flatbuffer_utils.cc:59:10:uint32_t tflite::NumSubgraphOperators(const tflite::Model*, int)	24	static
+flatbuffer_utils.cc:64:17:TfLiteIntArray* tflite::FlatBufferVectorToTfLiteTypeArray(const flatbuffers::Vector<long int>*)	16	static
+flatbuffer_utils.cc:74:19:TfLiteFloatArray* tflite::FlatBufferVectorToTfLiteTypeArray(const flatbuffers::Vector<float>*)	16	static
+base.h:416:24:T flatbuffers::EndianScalar(T) [with T = long unsigned int]	16	static
+base.h:427:3:T flatbuffers::ReadScalar(const void*) [with T = long unsigned int]	16	static
+base.h:427:3:T flatbuffers::ReadScalar(const void*) [with T = long int]	16	static
+base.h:427:3:T flatbuffers::ReadScalar(const void*) [with T = short unsigned int]	16	static
+base.h:427:3:T flatbuffers::ReadScalar(const void*) [with T = unsigned char]	16	static
+flexbuffers.h:138:3:R flexbuffers::ReadSizedScalar(const uint8_t*, uint8_t) [with R = long long int; T1 = signed char; T2 = short int; T4 = long int; T8 = long long int]	16	static
+flexbuffers.h:138:3:R flexbuffers::ReadSizedScalar(const uint8_t*, uint8_t) [with R = long long unsigned int; T1 = unsigned char; T2 = short unsigned int; T4 = long unsigned int; T8 = long long unsigned int]	16	static
+flexbuffers.h:138:3:R flexbuffers::ReadSizedScalar(const uint8_t*, uint8_t) [with R = double; T1 = signed char; T2 = short int; T4 = float; T8 = double]	16	static
+table.h:56:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) const [with P = const flatbuffers::Vector<flatbuffers::Offset<tflite::Operator> >*]	16	static
+table.h:56:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) const [with P = const flatbuffers::Vector<flatbuffers::Offset<tflite::SubGraph> >*]	16	static
+vector.h:159:13:flatbuffers::uoffset_t flatbuffers::Vector<T>::size() const [with T = flatbuffers::Offset<tflite::Operator>]	16	static
+vector.h:159:13:flatbuffers::uoffset_t flatbuffers::Vector<T>::size() const [with T = flatbuffers::Offset<tflite::SubGraph>]	16	static
+vector.h:169:15:flatbuffers::Vector<T>::return_type flatbuffers::Vector<T>::Get(flatbuffers::uoffset_t) const [with T = flatbuffers::Offset<tflite::SubGraph>]	16	static
+base.h:416:24:T flatbuffers::EndianScalar(T) [with T = long int]	16	static
+base.h:416:24:T flatbuffers::EndianScalar(T) [with T = short unsigned int]	16	static
+base.h:416:24:T flatbuffers::EndianScalar(T) [with T = unsigned char]	16	static
+base.h:427:3:T flatbuffers::ReadScalar(const void*) [with T = signed char]	16	static
+base.h:427:3:T flatbuffers::ReadScalar(const void*) [with T = short int]	16	static
+base.h:427:3:T flatbuffers::ReadScalar(const void*) [with T = long long int]	16	static
+base.h:427:3:T flatbuffers::ReadScalar(const void*) [with T = long long unsigned int]	16	static
+base.h:427:3:T flatbuffers::ReadScalar(const void*) [with T = float]	16	static
+base.h:427:3:T flatbuffers::ReadScalar(const void*) [with T = double]	16	static
+base.h:416:24:T flatbuffers::EndianScalar(T) [with T = long long int]	16	static
+base.h:416:24:T flatbuffers::EndianScalar(T) [with T = long long unsigned int]	16	static
+base.h:416:24:T flatbuffers::EndianScalar(T) [with T = double]	16	static
+base.h:416:24:T flatbuffers::EndianScalar(T) [with T = float]	16	static
+table.h:50:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) [with P = const flatbuffers::Vector<flatbuffers::Offset<tflite::Operator> >*]	24	static
+table.h:50:26:P flatbuffers::Table::GetPointer(flatbuffers::voffset_t) [with P = const flatbuffers::Vector<flatbuffers::Offset<tflite::SubGraph> >*]	24	static
+buffer.h:84:22:static const T* flatbuffers::IndirectHelper<flatbuffers::Offset<T> >::Read(const uint8_t*, flatbuffers::uoffset_t) [with T = tflite::SubGraph]	16	static
+vector.h:247:18:const uint8_t* flatbuffers::Vector<T>::Data() const [with T = flatbuffers::Offset<tflite::SubGraph>]	16	static
+base.h:416:24:T flatbuffers::EndianScalar(T) [with T = signed char]	16	static
+base.h:416:24:T flatbuffers::EndianScalar(T) [with T = short int]	16	static

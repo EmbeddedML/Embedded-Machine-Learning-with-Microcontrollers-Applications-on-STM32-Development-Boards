@@ -1,0 +1,3 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+mul.cc:31:14:TfLiteStatus tflite::MulEval(TfLiteContext*, TfLiteNode*)	56	static
+mul.cc:64:18:TFLMRegistration tflite::Register_MUL()	24	static

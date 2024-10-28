@@ -1,0 +1,10 @@
+bits.h:32:19:CountLeadingZeros32	16	static
+bits.h:51:19:MostSignificantBit32	16	static
+bits.h:64:19:CountLeadingZeros64	16	static
+bits.h:94:19:MostSignificantBit64	16	static
+filterbank.c:21:6:FilterbankConvertFftComplexToEnergy	48	static
+filterbank.c:37:6:FilterbankAccumulateChannels	96	static
+filterbank.c:66:17:Sqrt32	32	static
+filterbank.c:91:17:Sqrt64	96	static
+filterbank.c:119:11:FilterbankSqrt	32	static
+filterbank.c:132:6:FilterbankReset	16	static

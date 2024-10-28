@@ -1,0 +1,15 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+pack.cc:72:14:TfLiteStatus tflite::{anonymous}::Eval(TfLiteContext*, TfLiteNode*)	32	static
+pack.cc:108:18:TFLMRegistration tflite::Register_PACK()	24	static
+pack.cc:29:14:TfLiteStatus tflite::{anonymous}::PackImpl(TfLiteContext*, TfLiteNode*, TfLiteEvalTensor*, int, int) [with T = float]	104	static
+pack.cc:29:14:TfLiteStatus tflite::{anonymous}::PackImpl(TfLiteContext*, TfLiteNode*, TfLiteEvalTensor*, int, int) [with T = signed char]	104	static
+pack.cc:29:14:TfLiteStatus tflite::{anonymous}::PackImpl(TfLiteContext*, TfLiteNode*, TfLiteEvalTensor*, int, int) [with T = long int]	104	static
+pack.cc:29:14:TfLiteStatus tflite::{anonymous}::PackImpl(TfLiteContext*, TfLiteNode*, TfLiteEvalTensor*, int, int) [with T = long long int]	104	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = float]	16	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = float]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = signed char]	16	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = signed char]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = long int]	16	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = long int]	16	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = long long int]	16	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = long long int]	16	static

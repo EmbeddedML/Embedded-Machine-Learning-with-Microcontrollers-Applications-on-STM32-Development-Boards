@@ -1,0 +1,46 @@
+runtime_shape.h:64:3:tflite::RuntimeShape::~RuntimeShape()	16	static
+runtime_shape.h:83:12:int32_t* tflite::RuntimeShape::DimsData()	16	static
+runtime_shape.h:84:18:const int32_t* tflite::RuntimeShape::DimsData() const	16	static
+runtime_shape.h:96:7:int tflite::RuntimeShape::FlatSize() const	32	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+lstm_shared.h:125:27:const TfLiteEvalTensor* tflite::LSTMKernelContents::GetInternalTensor(int) const	16	static
+lstm_shared.h:129:21:TfLiteEvalTensor* tflite::LSTMKernelContents::HiddenStateTensor()	16	static
+lstm_shared.h:132:21:TfLiteEvalTensor* tflite::LSTMKernelContents::CellStateTensor()	16	static
+lstm_eval.h:53:23:const TfLiteTensor* tflite::LstmTensors::GetInternalTensor(int) const	16	static
+lstm_eval.h:57:23:const TfLiteTensor* tflite::LstmTensors::HiddenStateTensor() const	16	static
+lstm_eval.h:60:23:const TfLiteTensor* tflite::LstmTensors::CellStateTensor() const	16	static
+lstm_eval.h:222:12:tflite::lstm_internal::LstmStepManager::LstmStepManager(const tflite::LstmSizeInfo*)	16	static
+lstm_eval.h:228:8:void tflite::lstm_internal::LstmStepManager::ResetTime()	16	static
+lstm_eval.h:232:7:int tflite::lstm_internal::LstmStepManager::InputOffset() const	16	static
+lstm_eval.h:233:7:int tflite::lstm_internal::LstmStepManager::OutputOffset() const	16	static
+lstm_eval.h:234:7:int tflite::lstm_internal::LstmStepManager::HiddenStateOffset() const	16	static
+lstm_eval.h:235:7:int tflite::lstm_internal::LstmStepManager::CellStateOffset() const	16	static
+unidirectional_sequence_lstm.cc:37:7:void* tflite::{anonymous}::UnidirectionalSequenceLstmInit(TfLiteContext*, const char*, size_t)	24	static
+unidirectional_sequence_lstm.cc:43:14:TfLiteStatus tflite::{anonymous}::UnidirectionalSequenceLstmPrepare(TfLiteContext*, TfLiteNode*)	200	static
+unidirectional_sequence_lstm.cc:98:14:TfLiteStatus tflite::{anonymous}::UnidirectionalSequenceLstmEval(TfLiteContext*, TfLiteNode*)	176	static
+unidirectional_sequence_lstm.cc:163:18:TFLMRegistration tflite::Register_UNIDIRECTIONAL_SEQUENCE_LSTM()	24	static
+lstm_eval.h:142:23:tflite::LSTMBuffers<CellType> tflite::CreateLSTMBuffers(TfLiteContext*, const int*) [with CellType = float]	24	static
+lstm_eval.h:510:14:TfLiteStatus tflite::EvalLstm(const tflite::OpDataLSTM&, tflite::LSTMKernelContents&, const tflite::LSTMBuffers<CellType>&) [with ActivationType = float; WeightType = float; CellType = float; BiasType = float]	72	static
+lstm_eval.h:142:23:tflite::LSTMBuffers<CellType> tflite::CreateLSTMBuffers(TfLiteContext*, const int*) [with CellType = short int]	24	static
+lstm_eval.h:510:14:TfLiteStatus tflite::EvalLstm(const tflite::OpDataLSTM&, tflite::LSTMKernelContents&, const tflite::LSTMBuffers<CellType>&) [with ActivationType = signed char; WeightType = signed char; CellType = short int; BiasType = long int]	72	static
+lstm_eval.h:510:14:TfLiteStatus tflite::EvalLstm(const tflite::OpDataLSTM&, tflite::LSTMKernelContents&, const tflite::LSTMBuffers<CellType>&) [with ActivationType = short int; WeightType = signed char; CellType = short int; BiasType = long long int]	72	static
+lstm_eval.h:394:6:void tflite::lstm_internal::LstmStep(const tflite::lstm_internal::LstmStepManager&, const tflite::OpDataLSTM&, tflite::LSTMKernelContents&, const tflite::LSTMBuffers<CellType>&) [with ActivationType = float; WeightType = float; CellType = float; BiasType = float]	208	static
+lstm_eval.h:394:6:void tflite::lstm_internal::LstmStep(const tflite::lstm_internal::LstmStepManager&, const tflite::OpDataLSTM&, tflite::LSTMKernelContents&, const tflite::LSTMBuffers<CellType>&) [with ActivationType = signed char; WeightType = signed char; CellType = short int; BiasType = long int]	208	static
+lstm_eval.h:394:6:void tflite::lstm_internal::LstmStep(const tflite::lstm_internal::LstmStepManager&, const tflite::OpDataLSTM&, tflite::LSTMKernelContents&, const tflite::LSTMBuffers<CellType>&) [with ActivationType = short int; WeightType = signed char; CellType = short int; BiasType = long long int]	208	static
+lstm_eval.h:255:6:void tflite::lstm_internal::CalculateLstmGate(const tflite::lstm_internal::LstmStepManager&, const tflite::GateParameters&, const TfLiteEvalTensor*, const TfLiteEvalTensor*, const TfLiteEvalTensor*, const TfLiteEvalTensor*, const TfLiteEvalTensor*, const TfLiteEvalTensor*, CellType*, CellType*, TfLiteFusedActivation) [with ActivationType = float; WeightType = float; CellType = float; BiasType = float]	376	static
+lstm_eval.h:319:6:void tflite::lstm_internal::UpdateLstmCell(const tflite::lstm_internal::LstmStepManager&, TfLiteEvalTensor*, CellType*, const CellType*, const CellType*, const tflite::ArithmeticParams&, const tflite::ArithmeticParams&, const tflite::CellStateInfo&, CellType*) [with CellType = float]	136	static
+lstm_eval.h:365:6:void tflite::lstm_internal::UpdateLstmHidden(const tflite::lstm_internal::LstmStepManager&, TfLiteEvalTensor*, TfLiteEvalTensor*, const CellType*, const tflite::ArithmeticParams&, int32_t, CellType*) [with CellType = float; ActivationType = float]	184	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = float]	16	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = float]	16	static
+lstm_eval.h:255:6:void tflite::lstm_internal::CalculateLstmGate(const tflite::lstm_internal::LstmStepManager&, const tflite::GateParameters&, const TfLiteEvalTensor*, const TfLiteEvalTensor*, const TfLiteEvalTensor*, const TfLiteEvalTensor*, const TfLiteEvalTensor*, const TfLiteEvalTensor*, CellType*, CellType*, TfLiteFusedActivation) [with ActivationType = signed char; WeightType = signed char; CellType = short int; BiasType = long int]	376	static
+lstm_eval.h:319:6:void tflite::lstm_internal::UpdateLstmCell(const tflite::lstm_internal::LstmStepManager&, TfLiteEvalTensor*, CellType*, const CellType*, const CellType*, const tflite::ArithmeticParams&, const tflite::ArithmeticParams&, const tflite::CellStateInfo&, CellType*) [with CellType = short int]	136	static
+lstm_eval.h:365:6:void tflite::lstm_internal::UpdateLstmHidden(const tflite::lstm_internal::LstmStepManager&, TfLiteEvalTensor*, TfLiteEvalTensor*, const CellType*, const tflite::ArithmeticParams&, int32_t, CellType*) [with CellType = short int; ActivationType = signed char]	184	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = signed char]	16	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = signed char]	16	static
+lstm_eval.h:255:6:void tflite::lstm_internal::CalculateLstmGate(const tflite::lstm_internal::LstmStepManager&, const tflite::GateParameters&, const TfLiteEvalTensor*, const TfLiteEvalTensor*, const TfLiteEvalTensor*, const TfLiteEvalTensor*, const TfLiteEvalTensor*, const TfLiteEvalTensor*, CellType*, CellType*, TfLiteFusedActivation) [with ActivationType = short int; WeightType = signed char; CellType = short int; BiasType = long long int]	376	static
+lstm_eval.h:365:6:void tflite::lstm_internal::UpdateLstmHidden(const tflite::lstm_internal::LstmStepManager&, TfLiteEvalTensor*, TfLiteEvalTensor*, const CellType*, const tflite::ArithmeticParams&, int32_t, CellType*) [with CellType = short int; ActivationType = short int]	184	static
+kernel_util.h:69:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = short int]	16	static
+kernel_util.h:76:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = short int]	16	static
+kernel_util.h:89:10:const T* tflite::micro::GetOptionalTensorData(const TfLiteEvalTensor*) [with T = float]	16	static
+kernel_util.h:89:10:const T* tflite::micro::GetOptionalTensorData(const TfLiteEvalTensor*) [with T = long int]	16	static
+kernel_util.h:89:10:const T* tflite::micro::GetOptionalTensorData(const TfLiteEvalTensor*) [with T = long long int]	16	static
