@@ -7,70 +7,38 @@ We introduced the TensorFlow platform and fundamentals of neural networks in pre
 ## Listings
 <center>
 
-| Description                                                                        | Code                                                                   |
-|----------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| Converting a formed Keras model for classification to TensorFlow Lite format       | [![Code](../Images/py.png)](PythonScripts/convert_Keras_classifier.py) |
-| Converting a formed Keras model for regression to TensorFlow Lite format           | [![Code](../Images/py.png)](PythonScripts/convert_Keras_regression.py) |
-| Converting a saved TensorFlow model to TensorFlow Lite format                      | [![Code](../Images/py.png)](PythonScripts/convert_saved.py)            |
-| Running the TensorFlow Lite interpreter on PC to check how the converted model responds to a given input | [![Code](../Images/py.png)](PythonScripts/TFLite_Interpreter.py) |
-| Dynamic range quantization while forming the TensorFlow Lite model                 | [![Code](../Images/py.png)](PythonScripts/TFLite_DRQ.py)               |
-| Full integer quantization while forming the TensorFlow Lite model                  | [![Code](../Images/py.png)](PythonScripts/TFLite_FIQ.py)               |
-| Quantization aware training while forming the TensorFlow Lite model                | [![Code](../Images/py.png)](PythonScripts/TFLite_QAT.py)               |
-| Pruning while forming the TensorFlow model                                         | [![Code](../Images/py.png)](PythonScripts/TFLite_Prune1.py)            |
-| Quantization applied to the pruned TensorFlow model                                | [![Code](../Images/py.png)](PythonScripts/TFLite_Prune2.py)            |
-| Weight clustering while forming the TensorFlow model                               | [![Code](../Images/py.png)](PythonScripts/TFLite_Cluster1.py)          |
-| Quantization applied to the weight clustered TensorFlow model                      | [![Code](../Images/py.png)](PythonScripts/TFLite_Cluster2.py)          |
-| Usage of the script for converting a TensorFlow Lite model to C array              | [![Code](../Images/py.png)](PythonScripts/export_tflitecc.py)          |
-| Content of the converted file in shortened form                                    | [![Code](../Images/C.png)]()                                           |
-| Python script for comparing TensorFlow Lite model inference results                | [![Code](../Images/py.png)](PythonScripts/Python_tflite_test_setup.py) |
-| TensorFlow Lite model test code for Mbed Studio                                    | [![Code](../Images/C.png)]()                                           |
+| Description                                                                                              | Code                                                                   |
+| -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Converting a formed Keras model for classification to TensorFlow Lite format                             | [![Code](../Images/py.png)](PythonScripts/convert_Keras_classifier.py) |
+| Converting a formed Keras model for regression to TensorFlow Lite format                                 | [![Code](../Images/py.png)](PythonScripts/convert_Keras_regression.py) |
+| Converting a saved TensorFlow model to TensorFlow Lite format                                            | [![Code](../Images/py.png)](PythonScripts/convert_saved.py)            |
+| Running the TensorFlow Lite interpreter on PC to check how the converted model responds to a given input | [![Code](../Images/py.png)](PythonScripts/TFLite_Interpreter.py)       |
+| Dynamic range quantization while forming the TensorFlow Lite model                                       | [![Code](../Images/py.png)](PythonScripts/TFLite_DRQ.py)               |
+| Full integer quantization while forming the TensorFlow Lite model                                        | [![Code](../Images/py.png)](PythonScripts/TFLite_FIQ.py)               |
+| Quantization aware training while forming the TensorFlow Lite model                                      | [![Code](../Images/py.png)](PythonScripts/TFLite_QAT.py)               |
+| Pruning while forming the TensorFlow model                                                               | [![Code](../Images/py.png)](PythonScripts/TFLite_Prune1.py)            |
+| Quantization applied to the pruned TensorFlow model                                                      | [![Code](../Images/py.png)](PythonScripts/TFLite_Prune2.py)            |
+| Weight clustering while forming the TensorFlow model                                                     | [![Code](../Images/py.png)](PythonScripts/TFLite_Cluster1.py)          |
+| Quantization applied to the weight clustered TensorFlow model                                            | [![Code](../Images/py.png)](PythonScripts/TFLite_Cluster2.py)          |
+| Usage of the script for converting a TensorFlow Lite model to C array                                    | [![Code](../Images/py.png)](PythonScripts/export_tflitecc.py)          |
+| Content of the converted file in shortened form                                                          | [![Code](../Images/C.png)]()                                           |
+| Python script for comparing TensorFlow Lite model inference results                                      | [![Code](../Images/py.png)](PythonScripts/Python_tflite_test_setup.py) |
+| TensorFlow Lite model test code for Mbed Studio                                                          | [![Code](../Images/cpp.png)]()                                         |
 
 </center>
 
 
 ## End of Chapter Applications
 
-<table>
-    <thead>
-        <tr>
-            <th>Description</th>
-            <th>Code</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td colspan="2"><b>Application: Human Activity Recognition via Accelerometer Data</b></td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;Saving trained TensorFlow model</td>
-            <td><a href="EOC1/mlp_har.py"><img src="../Images/py.png" alt="Code"></a></td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;Converting TensorFlow model to TensorFlow Lite format and C array</td>
-            <td><a href="EOC1/export_tflite.py"><img src="../Images/py.png" alt="Code"></a></td>
-        </tr>
-        <tr>
-            <td colspan="2"><b>Application: Keyword Spotting from Audio Signals</b></td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;Saving trained TensorFlow model</td>
-            <td><a href="EOC2/mllp_fsdd.py"><img src="../Images/py.png" alt="Code"></a></td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;Converting TensorFlow model to TensorFlow Lite format and C array</td>
-            <td><a href="EOC2/tflite2cc.py"><img src="../Images/py.png" alt="Code"></a></td>
-        </tr>
-        <tr>
-            <td colspan="2"><b>Application: Handwritten Digit Recognition from Digital Images</b></td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;Saving trained TensorFlow model</td>
-            <td><a href="EOC3/mlp_mnist.py"><img src="../Images/py.png" alt="Code"></a></td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;Converting TensorFlow model to TensorFlow Lite format and C array</td>
-            <td><a href="EOC3/tflite2cc.py"><img src="../Images/py.png" alt="Code"></a></td>
-        </tr>
-    </tbody>
-</table>
+
+<center>
+
+| Description                                                        | Python Scripts                                        | Project Files                                                                                 |
+| ------------------------------------------------------------------ | ----------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| **Application: Human Activity Recognition via Accelerometer Data** | [![Code](../Images/py.png)](Application1-HAR/main.py) | [![Code](../Images/stm32.png)](Application1-HAR/F746NG_CH12_EOC1_HumanActivityRecognition)    |
+| **Application: Keyword Spotting from Audio Signals**               | [![Code](../Images/py.png)](Application2-KWS/main.py) | [![Code](../Images/stm32.png)](Application2-KWS/F746NG_CH12_EOC2_KeywordSpotting)             |
+| **Application: Handwritten Digit Recognition from Digital Images** | [![Code](../Images/py.png)](Application3-HDR/main.py) | [![Code](../Images/stm32.png)](Application3-HDR/F746NG_CH12_EOC3_HandwrittenDigitRecognition) |
+| **Application: Estimating Future Temperature Value**               | [![Code](../Images/py.png)](Application4-TP/main.py)  | [![Code](../Images/stm32.png)](Application4-TP/F746NG_CH12_EOC4_TemperaturePrediction)        |
+
+</center>
 

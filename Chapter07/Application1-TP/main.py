@@ -10,12 +10,12 @@ from Data.paths import TEMPERATURE_DATA_PATH
 from Models.paths import REGRESSION_MODEL_DIR
 
 df = pd.read_csv(TEMPERATURE_DATA_PATH)
-y = df['Room_Temp'][::4]
+y = df["Room_Temp"][::4]
 prev_values_count = 5
 
 X = pd.DataFrame()
 for i in range(prev_values_count, 0, -1):
-    X['t-' + str(i)] = y.shift(i)
+    X["t-" + str(i)] = y.shift(i)
 
 X = X[prev_values_count:]
 y = y[prev_values_count:]
@@ -28,9 +28,9 @@ linear_model.fit(X_train, y_train)
 y_train_predicted = linear_model.predict(X_train)
 y_test_predict = linear_model.predict(X_test)
 
-fig, ax = plt.subplots(1,1)
-ax.plot(y_test.to_numpy(), label = "Actual values")
-ax.plot(y_test_predict, label = "Predicted values")
+fig, ax = plt.subplots(1, 1)
+ax.plot(y_test.to_numpy(), label="Actual values")
+ax.plot(y_test_predict, label="Predicted values")
 plt.legend()
 plt.show()
 
@@ -40,4 +40,4 @@ mae_test = np.sqrt(mean_absolute_error(y_test, y_test_predict))
 print(f"Training set MAE: {mae_train}\n")
 print(f"Test set MAE:{mae_test}")
 
-dump(linear_model, os.path.join(REGRESSION_MODEL_DIR,'temperature_pred_linreg.joblib'))
+dump(linear_model, os.path.join(REGRESSION_MODEL_DIR, "temperature_pred_linreg.joblib"))

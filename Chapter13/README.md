@@ -7,69 +7,31 @@ Convolutional neural networks (CNN) are extensively used in image classification
 ## Listings
 <center>
 
-| Description  | Code    |
-|----------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| Sobel filtering example under Keras | [![Code](../Images/py.png)](PythonScripts/sobel.py) |
-| Feature extraction block of the CNN model for handwritten digit recognition | [![Code](../Images/py.png)](PythonScripts/mnist_cnn_model.py) |
-| Visualizing the filters in the trained CNN model for handwritten digit recognition | [![Code](../Images/py.png)](PythonScripts/intermediate_layers.py) |
-| Testing the trained CNN model for handwritten digit recognition | [![Code](../Images/py.png)](PythonScripts/mnist_cnn_model.py) |
-| Building SqueezeNet in Keras | [![Code](../Images/py.png)](PythonScripts/squeezenet.py) |
-| Transfer learning application with the SqueezeNet model for handwritten digit recognition | [![Code](../Images/py.png)](PythonScripts/squeezenet_tl.py) |
-| Transfer learning application with the ResNet model for handwritten digit recognition | [![Code](../Images/py.png)](PythonScripts/resnet_tl.py) |
-| Transfer learning application with the EfficientNet model for handwritten digit recognition| [![Code](../Images/py.png)](PythonScripts/efficientnet_tl.py) |
-| Creating the MobileNetV2 model for handwritten digit recognition | [![Code](../Images/py.png)](PythonScripts/mobilenet.py) |
-| Transfer learning application with the MobileNetV2 model for handwritten digit recognition | [![Code](../Images/py.png)](PythonScripts/mobilenet_tl.py) |
-| Training ShuffleNet model for handwritten digit recognition | [![Code](../Images/py.png)](PythonScripts/shufflenet_tl.py) |
+| Description                                                                                 | Code                                                              |
+| ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| Sobel filtering example under Keras                                                         | [![Code](../Images/py.png)](PythonScripts/sobel.py)               |
+| Feature extraction block of the CNN model for handwritten digit recognition                 | [![Code](../Images/py.png)](PythonScripts/mnist_cnn_model.py)     |
+| Visualizing the filters in the trained CNN model for handwritten digit recognition          | [![Code](../Images/py.png)](PythonScripts/intermediate_layers.py) |
+| Testing the trained CNN model for handwritten digit recognition                             | [![Code](../Images/py.png)](PythonScripts/mnist_cnn_model.py)     |
+| Building SqueezeNet in Keras                                                                | [![Code](../Images/py.png)](PythonScripts/squeezenet.py)          |
+| Transfer learning application with the SqueezeNet model for handwritten digit recognition   | [![Code](../Images/py.png)](PythonScripts/squeezenet_tl.py)       |
+| Transfer learning application with the ResNet model for handwritten digit recognition       | [![Code](../Images/py.png)](PythonScripts/resnet_tl.py)           |
+| Transfer learning application with the EfficientNet model for handwritten digit recognition | [![Code](../Images/py.png)](PythonScripts/efficientnet_tl.py)     |
+| Creating the MobileNetV2 model for handwritten digit recognition                            | [![Code](../Images/py.png)](PythonScripts/mobilenet.py)           |
+| Transfer learning application with the MobileNetV2 model for handwritten digit recognition  | [![Code](../Images/py.png)](PythonScripts/mobilenet_tl.py)        |
+| Training ShuffleNet model for handwritten digit recognition                                 | [![Code](../Images/py.png)](PythonScripts/shufflenet_tl.py)       |
 
 </center>
 
 
 ## End of Chapter Applications
 
+
 <center>
 
-<table>
-    <thead>
-        <tr>
-            <th>Description</th>
-            <th>Code</th>
-            <th>Project Files </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td colspan="2"><b>Application: Keyword Spotting from Audio Signals</b></td>
-            <td><a href = ""><img src = "" alt="Project"></a></td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;Creating spectrogram dataset from audio files</td>
-            <td><a href="EOC1/data_loader.py"><img src="../Images/py.png" alt="Code"></a></td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;Forming a CNN model for keyword spotting</td>
-            <td><a href="EOC1/model.py"><img src="../Images/py.png" alt="Code"></a></td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;Training the formed CNN model for keyword spotting</td>
-            <td><a href="EOC1/fsdd_cnn.py"><img src="../Images/py.png" alt="Code"></a></td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;Converting the trained CNN model to TensorFlow Lite model and C++ array</td>
-            <td><a href="EOC1/convert_lite.py"><img src="../Images/py.png" alt="Code"></a></td>
-        </tr>
-        <tr>
-            <td colspan="2"><b>Application: Handwritten Digit Recognition from Digital Images</b></td>
-            <td><a href = ""><img src = "" alt="Project"></a></td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;Training the ResNet model for handwritten digit recognition</td>
-            <td><a href="EOC3/mlp_mnist.py"><img src="../Images/py.png" alt="Code"></a></td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;Converting the trained ResNet model to TensorFlow Lite model and C++ array</td>
-            <td><a href="EOC3/tflite2cc.py"><img src="../Images/py.png" alt="Code"></a></td>
-        </tr>
-    </tbody>
-</table>
+| Description                                                        | Python Scripts                                        | Project Files                                                                                 |
+| ------------------------------------------------------------------ | ----------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| **Application: Human Activity Recognition via Accelerometer Data** | [![Code](../Images/py.png)](Application1-KWS/main.py) | [![Code](../Images/stm32.png)](Application1-HAR/F746NG_CH13_EOC1_KeywordSpotting)             |
+| **Application: Keyword Spotting from Audio Signals**               | [![Code](../Images/py.png)](Application2-HDR/main.py) | [![Code](../Images/stm32.png)](Application2-KWS/F746NG_CH12_EOC2_HandwrittenDigitRecognition) |
 
 </center>

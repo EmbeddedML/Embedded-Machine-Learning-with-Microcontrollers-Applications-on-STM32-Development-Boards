@@ -7,24 +7,24 @@ As all journeys start with a single step, all neural network models can be forme
 ## Listings
 <center>
 
-| Description                                               | Code                                                                        |
-|---------------------------------------------------------- | --------------------------------------------------------------------------- |
-| Initializing the single neuron weights in TensorFlow      | [![Code](../Images/py.png)](PythonScripts/tf_model_class.py)                |
-| Input output relation of the single neuron in TensorFlow  | [![Code](../Images/py.png)](PythonScripts/tf_model_call.py)                 |
-| Single neuron definition in Keras                         | [![Code](../Images/py.png)](PythonScripts/keras_neuron_def.py)              |
-| Single neuron input output calculation on an interval     | [![Code](../Images/py.png)](PythonScripts/decision_boundary.py)             |
-| Binary cross-entropy loss calculation                     | [![Code](../Images/py.png)](PythonScripts/bce.py)                           |
-| Categorical cross entropy loss calculation                | [![Code](../Images/py.png)](PythonScripts/cce.py)                           |
-| MSE loss calculation                                      | [![Code](../Images/py.png)](PythonScripts/mse.py)                           |
-| Cosine similarity loss calculation                        | [![Code](../Images/py.png)](PythonScripts/cos_sim.py)                       |
-| Stochastic gradient descent optimizer example             | [![Code](../Images/py.png)](PythonScripts/sgd.py)                           |
-| Gradient descent steps in TensorFlow                      | [![Code](../Images/py.png)](PythonScripts/gradient_step.py)                 |
-| RMSProp optimizer example                                 | [![Code](../Images/py.png)](PythonScripts/rmsprop.py)                       |
-| Adam optimizer example                                    | [![Code](../Images/py.png)](PythonScripts/adam.py)                          |
-| Training the single neuron in TensorFlow                  | [![Code](../Images/py.png)](PythonScripts/tf_train_loop.py)                 |
-| Training the single neuron in Keras                       | [![Code](../Images/py.png)](PythonScripts/single_neuron_regressor.py)       |
-| Forming a classifier with the single neuron               | [![Code](../Images/py.png)](PythonScripts/single_neuron_classifier.py)      |
-| Forming a regressor with the single neuron                | [![Code](../Images/py.png)](PythonScripts/single_neuron_regressor_sine.py)  |
+| Description                                              | Code                                                                       |
+| -------------------------------------------------------- | -------------------------------------------------------------------------- |
+| Initializing the single neuron weights in TensorFlow     | [![Code](../Images/py.png)](PythonScripts/tf_model_class.py)               |
+| Input output relation of the single neuron in TensorFlow | [![Code](../Images/py.png)](PythonScripts/tf_model_call.py)                |
+| Single neuron definition in Keras                        | [![Code](../Images/py.png)](PythonScripts/keras_neuron_def.py)             |
+| Single neuron input output calculation on an interval    | [![Code](../Images/py.png)](PythonScripts/decision_boundary.py)            |
+| Binary cross-entropy loss calculation                    | [![Code](../Images/py.png)](PythonScripts/bce.py)                          |
+| Categorical cross entropy loss calculation               | [![Code](../Images/py.png)](PythonScripts/cce.py)                          |
+| MSE loss calculation                                     | [![Code](../Images/py.png)](PythonScripts/mse.py)                          |
+| Cosine similarity loss calculation                       | [![Code](../Images/py.png)](PythonScripts/cos_sim.py)                      |
+| Stochastic gradient descent optimizer example            | [![Code](../Images/py.png)](PythonScripts/sgd.py)                          |
+| Gradient descent steps in TensorFlow                     | [![Code](../Images/py.png)](PythonScripts/gradient_step.py)                |
+| RMSProp optimizer example                                | [![Code](../Images/py.png)](PythonScripts/rmsprop.py)                      |
+| Adam optimizer example                                   | [![Code](../Images/py.png)](PythonScripts/adam.py)                         |
+| Training the single neuron in TensorFlow                 | [![Code](../Images/py.png)](PythonScripts/tf_train_loop.py)                |
+| Training the single neuron in Keras                      | [![Code](../Images/py.png)](PythonScripts/single_neuron_regressor.py)      |
+| Forming a classifier with the single neuron              | [![Code](../Images/py.png)](PythonScripts/single_neuron_classifier.py)     |
+| Forming a regressor with the single neuron               | [![Code](../Images/py.png)](PythonScripts/single_neuron_regressor_sine.py) |
 
 </center>
 
@@ -33,12 +33,13 @@ As all journeys start with a single step, all neural network models can be forme
 
 <center>
 
-| Description                         | Python Scripts                                                                                 | Projecet Files |
-| ----------------------------------- | ---------------------------------------------------------------------------------------------- | -------------- |
-| **Application: Human Activity Recognition via Accelerometer Data** | [![Code](../Images/py.png)](EOC1/har_perceptron.py)             | [![Code]()]()  |
-| **Application: Keyword Spotting from Audio Signals**               | [![Code](../Images/py.png)](EOC2/fsdd_perceptron.py)            | [![Code]()]()  |
-| **Application: Handwritten Digit Recognition from Digital Images** | [![Code](../Images/py.png)](EOC3/mnist_perceptron_train.py)     | [![Code]()]()  |
-| **Application: Estimating Future Temperature Value**               | [![Code](../Images/py.png)](EOC4/temperature_pred.py)           | [![Code]()]()  |
+| Description                                                        | Python Scripts                                        |
+| ------------------------------------------------------------------ | ----------------------------------------------------- |
+| **Application: Human Activity Recognition via Accelerometer Data** | [![Code](../Images/py.png)](Application1-HAR/main.py) |
+| **Application: Keyword Spotting from Audio Signals**               | [![Code](../Images/py.png)](Application2-KWS/main.py) |
+| **Application: Handwritten Digit Recognition from Digital Images** | [![Code](../Images/py.png)](Application3-HDR/main.py) |
+| **Application: Estimating Future Temperature Value**               | [![Code](../Images/py.png)](Application4-TP/main.py)  |
 
 </center>
+
 

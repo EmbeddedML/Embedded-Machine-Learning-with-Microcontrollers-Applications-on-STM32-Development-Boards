@@ -8,7 +8,7 @@ We only had forward connections in neural network models up to this point. In th
 <center>
 
 | Description                                            | Code                                                              |
-|------------------------------------------------------- | ----------------------------------------------------------------- |
+| ------------------------------------------------------ | ----------------------------------------------------------------- |
 | Manual RNN formation                                   | [![Code](../Images/py.png)](PythonScripts/simpleRNN.py)           |
 | Manual RNN formation, second case                      | [![Code](../Images/py.png)](PythonScripts/rnn_layers.py)          |
 | Extracting RNN model parameters                        | [![Code](../Images/py.png)](PythonScripts/rnn_weights.py)         |
@@ -27,68 +27,9 @@ We only had forward connections in neural network models up to this point. In th
 
 <center>
 
-<table>
-    <thead>
-        <tr>
-            <th>Description</th>
-            <th>Code</th>
-            <th>Project Files </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td colspan="2"><b>Application: Keyword Spotting from Audio Signals</b></td>
-            <td><a href = ""><img src = "" alt="Project"></a></td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;Forming a data loader to generate MFCC features for keyword spotting from audio signals</td>
-            <td><a href="EOC1/data_loader.py"><img src="../Images/py.png" alt="Code"></a></td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;Forming the LSTM model for keyword spotting from audio signals</td>
-            <td><a href="EOC1/model.py"><img src="../Images/py.png" alt="Code"></a></td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;Training the formed LSTM model for keyword spotting from audio signals</td>
-            <td><a href="EOC1/fsdd_rnn.py"><img src="../Images/py.png" alt="Code"></a></td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;Converting the trained LSTM model to TensorFlow Lite format and C++ array</td>
-            <td><a href="EOC1/convert_lite.py"><img src="../Images/py.png" alt="Code"></a></td>
-        </tr>
-        <tr>
-            <td colspan="2"><b>Application: Handwritten Digit Recognition from Digital Images</b></td>
-            <td><a href = ""><img src = "" alt="Project"></a></td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;The LSTM model for handwritten digit recognition</td>
-            <td><a href="EOC2/model.py"><img src="../Images/py.png" alt="Code"></a></td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;Training the LSTM model on the MNIST dataset</td>
-            <td><a href="EOC2/mnist_rnn.py"><img src="../Images/py.png" alt="Code"></a></td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;Converting the trained LSTM model to TensorFlow Lite model and C++ array</td>
-            <td><a href="EOC2/convert_lite.py"><img src="../Images/py.png" alt="Code"></a></td>
-        </tr>
-        <tr>
-            <td colspan="2"><b>Application: Handwritten Digit Recognition from Digital Images</b></td>
-            <td><a href = ""><img src = "" alt="Project"></a></td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;Forming the GRU model in Keras</td>
-            <td><a href="EOC3/model.py"><img src="../Images/py.png" alt="Code"></a></td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;Training the GRU model for future temperature value estimation</td>
-            <td><a href="EOC3/rnn_temperature_pred.py"><img src="../Images/py.png" alt="Code"></a></td>
-        </tr>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;Converting future temperature value estimation model to TensorFlow Lite format</td>
-            <td><a href="EOC3/convert_lite.py"><img src="../Images/py.png" alt="Code"></a></td>
-        </tr>
-    </tbody>
-</table>
-
+| Description                                                        | Python Scripts                                        | Project Files                                                                                 |
+| ------------------------------------------------------------------ | ----------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| **Application: Human Activity Recognition via Accelerometer Data** | [![Code](../Images/py.png)](Application1-KWS/main.py) | [![Code](../Images/stm32.png)](Application1-HAR/F746NG_CH14_EOC1_KeywordSpotting)             |
+| **Application: Keyword Spotting from Audio Signals**               | [![Code](../Images/py.png)](Application2-HDR/main.py) | [![Code](../Images/stm32.png)](Application2-KWS/F746NG_CH14_EOC2_HandwrittenDigitRecognition) |
+| **Application: Temperature Prediction**                            | [![Code](../Images/py.png)](Application3-TP/main.py)  | [![Code](../Images/stm32.png)](Application3-TP/F746NG_CH14_EOC3_TemperaturePrediction)        |
 </center>

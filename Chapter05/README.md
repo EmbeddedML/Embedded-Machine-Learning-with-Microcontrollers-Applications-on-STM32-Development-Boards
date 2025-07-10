@@ -7,8 +7,8 @@ This chapter summarizes three key concepts to be used in machine learning method
 ## Listings
 <center>
 
-| Description  | Code    |
-|----------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| Description                                                                        | Code                                                              |
+| ---------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
 | Random number generation from one-dimensional Gaussian pdfs                        | [![Code](../Images/py.png)](PythonScripts/generate_normal.py)     |
 | Random number generation from two-dimensional Gaussian pdfs                        | [![Code](../Images/py.png)](PythonScripts/clf_data_generation.py) |
 | Random number generation for regression operations                                 | [![Code](../Images/py.png)](PythonScripts/reg_data_generation.py) |
@@ -16,6 +16,8 @@ This chapter summarizes three key concepts to be used in machine learning method
 | Random number generation example on Mbed Studio                                    | [![Code](../Images/cpp.png)](mbed_serial.cpp)                     |
 | Normalizing the two-dimensional random numbers by the min-max method               | [![Code](../Images/py.png)](PythonScripts/minmax_scaler.py)       |
 | Normalizing the two-dimensional random numbers by the z-score normalization method | [![Code](../Images/py.png)](PythonScripts/standard_scaler.py)     |
+| Random number generation on board                                                  | [![Code](../Images/stm32.png)](CubeIDEProjects/F746NG_RNG)        |
+| Receive and transmit random numbers                                                | [![Code](../Images/stm32.png)](CubeIDEProjects/F746NG_SETUP)      |
 
 </center>
 
@@ -24,11 +26,11 @@ This chapter summarizes three key concepts to be used in machine learning method
 
 <center>
 
-| Description                         | Python Scripts                                             |  Project Files                                        |
-| ----------------------------------- | ---------------------------------------------------------- | ----------------------------------------------------- |
-| Human Activity Recognition          | [![Code](../Images/py.png)](Application1-HAR/main.py)      | [![Code](../Images/stm32.png)](Application1-HAR/.ioc) |
-| Keyword Spotting                    | [![Code](../Images/py.png)](Application2-KWS/mfcc_main.py) | [![Code](../Images/stm32.png)](Application2-KWS/.ioc) |
-| Handwritten Digit Recognition       | [![Code](../Images/py.png)](Application3-HDR/mnist.py)     | [![Code](../Images/stm32.png)](Application3-HDR/.ioc) |
+| Description                   | Python Scripts                                             | Project Files                                                                                    |
+| ----------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Human Activity Recognition    | [![Code](../Images/py.png)](Application1-HAR/main.py)      | [![Code](../Images/stm32.png)](Application1-HAR/F746NG_CH5_EOC1_FeatureExtraction_Accelerometer) |
+| Keyword Spotting              | [![Code](../Images/py.png)](Application2-KWS/mfcc_main.py) | [![Code](../Images/stm32.png)](Application2-KWS/F746NG_CH5_EOC2_FeatureExtraction_Audio)         |
+| Handwritten Digit Recognition | [![Code](../Images/py.png)](Application3-HDR/mnist.py)     | [![Code](../Images/stm32.png)](Application3-HDR/F746NG_CH5_EOC3_FeatureExtraction_Image)         |
 
 </center>
 

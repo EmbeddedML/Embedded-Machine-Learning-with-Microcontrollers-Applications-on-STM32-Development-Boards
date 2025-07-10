@@ -7,11 +7,11 @@ The single neuron considered in Chapter 10 can be used as an introductory tool f
 ## Listings
 <center>
 
-| Description                                    | Code                                                              |
-|----------------------------------------------- | ----------------------------------------------------------------- |
-| Training the neural network in Keras           | [![Code](../Images/py.png)](PythonScripts/mlp_model.py)           |
-| Forming the classifier with the neural network | [![Code](../Images/py.png)](PythonScripts/mlp_classification.py)  |
-| Forming the regressor with the neural network  | [![Code](../Images/py.png)](PythonScripts/mlp_regression.py)      |
+| Description                                    | Code                                                             |
+| ---------------------------------------------- | ---------------------------------------------------------------- |
+| Training the neural network in Keras           | [![Code](../Images/py.png)](PythonScripts/mlp_model.py)          |
+| Forming the classifier with the neural network | [![Code](../Images/py.png)](PythonScripts/mlp_classification.py) |
+| Forming the regressor with the neural network  | [![Code](../Images/py.png)](PythonScripts/mlp_regression.py)     |
 
 </center>
 
@@ -20,12 +20,12 @@ The single neuron considered in Chapter 10 can be used as an introductory tool f
 
 <center>
 
-| Description                         | Python Scripts                                                                                 | Projecet Files |
-| ----------------------------------- | ---------------------------------------------------------------------------------------------- | -------------- |
-| **Application: Human Activity Recognition via Accelerometer Data** | [![Code](../Images/py.png)](EOC1/mlp_har.py)                    | [![Code]()]()  |
-| **Application: Keyword Spotting from Audio Signals**               | [![Code](../Images/py.png)](EOC2/mlp_fsdd.py)                   | [![Code]()]()  |
-| **Application: Handwritten Digit Recognition from Digital Images** | [![Code](../Images/py.png)](EOC3/mlp_mnist.py)                  | [![Code]()]()  |
-| **Application: Estimating Future Temperature Value**               | [![Code](../Images/py.png)](EOC4/temperature_pred.py)           | [![Code]()]()  |
+| Description                                                        | Python Scripts                                        |
+| ------------------------------------------------------------------ | ----------------------------------------------------- |
+| **Application: Human Activity Recognition via Accelerometer Data** | [![Code](../Images/py.png)](Application1-HAR/main.py) |
+| **Application: Keyword Spotting from Audio Signals**               | [![Code](../Images/py.png)](Application2-KWS/main.py) |
+| **Application: Handwritten Digit Recognition from Digital Images** | [![Code](../Images/py.png)](Application3-HDR/main.py) |
+| **Application: Estimating Future Temperature Value**               | [![Code](../Images/py.png)](Application4-TP/main.py)  |
 
 </center>
 
