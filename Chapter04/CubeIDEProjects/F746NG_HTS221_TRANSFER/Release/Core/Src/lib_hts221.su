@@ -1,0 +1,7 @@
+lib_hts221.c:92:16:__HTS221_WriteReg	24	static
+lib_hts221.c:79:16:__HTS221_ReadReg	24	static
+lib_hts221.c:101:16:__HTS221_Init	0	static
+lib_hts221.c:110:16:__HTS221_GetTick	0	static
+lib_hts221.c:21:8:LIB_HTS221_Init	48	static
+lib_hts221.c:42:8:LIB_HTS221_GetTemperature	16	static
+lib_hts221.c:59:8:LIB_HTS221_GetHumidity	16	static
