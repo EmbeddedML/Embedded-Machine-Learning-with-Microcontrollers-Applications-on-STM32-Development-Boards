@@ -31,7 +31,7 @@ Convolutional neural networks (CNN) are extensively used in image classification
 
 | Description                                                        | Python Scripts                                        | Project Files                                                                                 |
 | ------------------------------------------------------------------ | ----------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| **Application: Human Activity Recognition via Accelerometer Data** | [![Code](../Images/py.png)](Application1-KWS/main.py) | [![Code](../Images/stm32.png)](Application1-HAR/F746NG_CH13_EOC1_KeywordSpotting)             |
-| **Application: Keyword Spotting from Audio Signals**               | [![Code](../Images/py.png)](Application2-HDR/main.py) | [![Code](../Images/stm32.png)](Application2-KWS/F746NG_CH12_EOC2_HandwrittenDigitRecognition) |
+| **Application: Keyword Spotting from Audio Signals**               | [![Code](../Images/py.png)](Application1-KWS/main.py) | [![Code](../Images/stm32.png)](Application1-KWS/F746NG_CH13_EOC1_KeywordSpotting)             |
+| **Application: Handwritten Digit Recognition from Digital Images** | [![Code](../Images/py.png)](Application2-HDR/main.py) | [![Code](../Images/stm32.png)](Application2-HDR/F746NG_CH12_EOC2_HandwrittenDigitRecognition) |
 
 </center>
